@@ -1,9 +1,9 @@
 ---
-title: About profiles and audiences
-description: Learn about profiles and audiences management within Adobe Campaign
+title: Discovering Control Panel interface
+description: Learn more about Control Panel interface
 ---
 
-# Discovering the interface {#discovering-interface}
+# Discovering Control Panel interface {#discovering-interface}
 
 The Control Panel home page gives you access to all actions that can be performed on your Campaign instances.
 

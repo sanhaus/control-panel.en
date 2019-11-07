@@ -1,6 +1,6 @@
 ---
-title: About profiles and audiences
-description: Learn about profiles and audiences management within Adobe Campaign
+title: Accessing Control Panel
+description: Learn how to access Control Panel
 ---
 
 # Accessing Control Panel {#accessing-control-panel}

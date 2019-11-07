@@ -1,6 +1,6 @@
 ---
-title: About profiles and audiences
-description: Learn about profiles and audiences management within Adobe Campaign
+title: Managing permissions to Control Panel
+description: Learn how to manage permissions to Control Panel
 ---
 
 # Managing permsissions to Control Panel {#managing-permissions-control-panel}
