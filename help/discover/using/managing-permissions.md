@@ -13,15 +13,15 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
     >
     >If the Administration tab is not visible, this means that you don't have Admin rights for your organization. Contact your Organization Administrators to complete the steps with them.
 
-    control_panel_add_user1
+    ![](assets/control_panel_add_user1.png)
 
 1. Launch the **Admin Console** by clicking on the available links.
 
-    control_panel_admin1
+    ![](assets/control_panel_admin1.png)
 
 1. Select the desired Campaign product.
 
-    control_panel_add_user3
+    ![](assets/control_panel_add_user3.png)
 
     >[!NOTE]
     >
@@ -29,7 +29,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. The list of instances for your Campaign product displays. Select the instance to which you want to add an Admin user.
 
-    control_panel_add_user4
+    ![](assets/control_panel_add_user4.png)
 
     >[!NOTE]
     >
@@ -41,8 +41,8 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
     >
     >By default, Admin users belong to the "Administrators" Product Profile. According to your organization configuration, the Product Profile can be named differentely ("admin", "admins", ...).
 
-    control_panel_add_user_5
+    ![](assets/control_panel_add_user_5.png)
 
 1. The list of Admin users displays. Click the **[!UICONTROL Add User]** button to add a new user.
 
-    control_panel_add_user_6
+    ![](assets/control_panel_add_user_6.png)

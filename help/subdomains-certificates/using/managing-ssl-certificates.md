@@ -23,15 +23,15 @@ Subdomains are arranged by the closest expiration date of the SSL certificate, w
 * **Orange**: one or more subdomains has a certificate that will expire within the next 60 days.
 * **Red**: one or more subdomains has a certificate that will expire within the next 30 days.
 
-    visual_alert2
+![](assets/visual_alert2.png)
 
 To get more details on a subdomain's certificates, click the **[!UICONTROL Certificate Details]** button.
 
-    certificate_details4
+![](assets/certificate_details4.png)
 
 The list of all related subdomains will be displayed on their certificates. It typically includes subdomains of landing pages, resource pages, etc.
 
-    monitoring_subdomains_details2
+![](assets/monitoring_subdomains_details2.png)
 
 If necessary, you can initiate a certificate renewal request from this window. For more on this, refer to the section below.
 
@@ -54,12 +54,12 @@ To initiate the SSL certificates renewal in the Control Panel, follow these step
 
 1. Open the **[!UICONTROL Subdomains & Certificates]** card, then click the **[!UICONTROL Certificate details]** icon of the subdomain with expiring certificates.
 
-    renewal1
+    ![](assets/renewal1.png)
 
 1. The list of related subdomains displays. It usually includes subdomains of landing pages, resource pages, etc.
     Click the **[!UICONTROL Ticket Details]** button to initiate the certificates renewal process.
 
-    renewal2
+    ![](assets/renewal2.png)
 
 1. A form displays, with all the details required to renew your SSL certificate. Make sure you fill in the requested information fully and accurately (contact your internal team, Security and IT teams if necessary). Otherwise, a Certificate Signing Request cannot be generated, and you will not be able to renew the certificate.
 
@@ -68,21 +68,21 @@ To initiate the SSL certificates renewal in the Control Panel, follow these step
     * **[!UICONTROL Common name]**: This is typically a tracking subdomain URL, associated with the subdomain with the expiring certificate.
     * **[!UICONTROL Subdomains]**: Subdomains that are linked to the subdomain with an expiring certificate. If you want to apply a single SSL certificate to other subdomains, you can add them to this list. In that case, make sure that those subdomains are associated with the same IMS Org and Instance URL.
 
->[!CAUTION]
->
->The **[!UICONTROL IMS Org]** and **[!UICONTROL Instance]** fields are filled in automatically by the Control Panel and should not be modified.
+    >[!CAUTION]
+    >
+    >The **[!UICONTROL IMS Org]** and **[!UICONTROL Instance]** fields are filled in automatically by the Control Panel and should not be modified.
 
-    renewal3
+    ![](assets/renewal3.png)
 
-    Once the form is completed, click the **[!UICONTROL Copy Details]** button to save the information to your Clipboard.
+1. Once the form is completed, click the **[!UICONTROL Copy Details]** button to save the information to your Clipboard.
 
->[!NOTE]
->
->If you do not clear your browser history, the information you entered will be saved, enabling you to use it  to renew the certificate later on.
+    >[!NOTE]
+    >
+    >If you do not clear your browser history, the information you entered will be saved, enabling you to use it  to renew the certificate later on.
 
 1. Click the **[!UICONTROL Log new ticket]** button. You are automatically redirected to Adobe Campaign Customer Care sign in page.
 
-    renewal4
+    ![](assets/renewal4.png)
 
 1. Sign in, then create a new Support ticket with the "SSL certificate CSR request" subject.
     Paste all information copied previously into the body of the ticket, then click Submit.

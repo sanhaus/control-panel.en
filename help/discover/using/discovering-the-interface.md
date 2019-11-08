@@ -9,24 +9,24 @@ The Control Panel home page gives you access to all actions that can be performe
 
 They are represented by cards that are organized into topics, for example **Storage & Database Management**.
 
-With upcoming Campaign releases, more topics and cards will be made available. For more on the current functions that are supported, refer to [this section]().
+With upcoming Campaign releases, more topics and cards will be made available.
 
-control_panel_interface
+![](assets/control_panel_interface.png)
 
 ## Job logs {#job-logs}
 
 The **[!UICONTROL Job Logs]** button in the upper-right corner lets you audit all the changes that have been made by users of your organization.
 
-control_panel_interface2
+![](assets/control_panel_interface2.png)
 
 Click an element of the list to get more details.
 
 The **[!UICONTROL Open]** button allows you to access directly the Control Panel tab where the change has been made.
 
-control_panel_logdetails2
+![](assets/control_panel_logdetails2.png)
 
 ## Help resources {#help-resources}
 
 The **[!UICONTROL Help Resources]** section provides useful documentation to help you in your use of Control Panel and Campaign products. Do not hesitate to explore them.
 
-helpresources2
+![](assets/helpresources2.png)

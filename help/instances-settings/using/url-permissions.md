@@ -11,7 +11,7 @@ The default list of URLs that can be called by JavaScript codes (workflows, etc.
 
 By default, instances are not allowed to connect to outside URLs. The Control Panel allows you to add some outside URLs to the list of authorized URLs, so that your instance can connect to them. This allows you to connect your Campaign instances to outside systems like, for example, SFTP servers or websites in order to enable file and/or data transfer.
 
-Once a URL is added, it is referenced in the configuration file of the instance (serverConf.xml). 
+Once a URL is added, it is referenced in the configuration file of the instance (serverConf.xml).
 
 **Related topics:**
 
@@ -39,21 +39,21 @@ To add a URL that your instance can connect to, follow these steps:
 
 1. Select in the left pane the desired instance, then click the **[!UICONTROL Add new URL]** button.
 
-    add_url1
+    ![](assets/add_url1.png)
 
     >[!NOTE]
     >
     >All your Campaign instances display in the left pane list.
     >
     >As URL Permissions management is dedicated to Campaign Classic instances only, the "Non-Applicable Instance" message displays if you select a Campaign Standard instance.  
-    
+
 1. Type the URL to authorize, with its associated protocol (http, https or sftp).
 
     >[!NOTE]
     >
     >It is possible to authorize multiple instances to connect to the URL. To do this, add them directly from the Instance(s) field by typing their first letter.
 
-    add_url2
+    ![](assets/add_url2.png)
 
 1. The URL is added to the list, you can now connect to it.
 
@@ -61,7 +61,7 @@ To add a URL that your instance can connect to, follow these steps:
     >
     >The "/.*" characters are automatically added to the end of the URL you enter after it has been validated, to cover all sub-pages of the entered page.
 
-    add_url_listnew
+    ![](assets/add_url_listnew.png)
 
 You can delete a URL at any time by selecting it and clicking the **[!UICONTROL Delete URL]** button.
 

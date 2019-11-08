@@ -9,7 +9,7 @@ Adobe recommends that all customers establish connection to their SFTP servers w
 
 The steps to generate a public SSH key and add it to access the SFTP server are decribed below, as well as recommendations regarding  authentication.
 
-Once access to the server is set up, remember to **whitelist the IP addresses** that will require access to the server so that you can connect to it. For more on this, refer to the [dedicated section]().
+Once access to the server is set up, remember to **whitelist the IP addresses** that will require access to the server so that you can connect to it. For more on this, refer to [this section](../../instances-settings/using/ip-whitelisting-instance-access.md).
 
 >[!NOTE]
 >
@@ -23,13 +23,13 @@ Make sure you always use the same authentication to connect to the server, and y
 
 **API integration with username and password**
 
-In very rare cases password based authentication is enabled on some SFTP servers. Adobe recommends that you use key based authentication, as this method is more efficient and secure. You can request to switch to key based authentication by contacting Customer Care. 
+In very rare cases password based authentication is enabled on some SFTP servers. Adobe recommends that you use key based authentication, as this method is more efficient and secure. You can request to switch to key based authentication by contacting Customer Care.
 
 >[!CAUTION]
 >
 >If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
 
-control_panel_passwordexpires
+![](assets/control_panel_passwordexpires.png)
 
 ## Installing the SSH key {#installing-ssh-key}
 
@@ -39,17 +39,17 @@ control_panel_passwordexpires
 
 1. Navigate to the **[!UICONTROL Key Management]** tab, then click the **[!UICONTROL Add public key]** button.
 
-    key0
+    ![](assets/key0.png)
 
 1. In the dialog box that opens, select the username that you want to create the public key for, and the server for which you want to activate the key.
 
->[!NOTE]
->
->The interface will check if a given username is active on a given instance and give you an option to activate the key on one or several instances.
->
->One or more public SSH keys can be added for each user.
+    >[!NOTE]
+    >
+    >The interface will check if a given username is active on a given instance and give you an option to activate the key on one or several instances.
+    >
+    >One or more public SSH keys can be added for each user.
 
-    key1
+    ![](assets/key1.png)
 
 1. Copy-paste the public SSH key. To generate a public key, follow the steps below corresponding to your operating system:
 
@@ -60,7 +60,7 @@ control_panel_passwordexpires
     **Linux and Mac:**
 
     Use the Terminal to generate a public and private key pair:
-    1. Enter the command: "ssh-keygen -t rsa -C <your_email@example.com>".
+    1. Enter this command: `ssh-keygen -t rsa -C <your_email@example.com>`.
     1. Provide a name to your key when prompted. If the .ssh directory does not exist, the system will create one for you.
     1. Enter, then re-enter, a passphrase when prompted. It can also be left blank.
     1. A key pair "name" and "name.pub" is created by the system. Search for the "name.pub" file, then open it. It should have alpha-numeric string ending with the email address that you specified.
@@ -71,14 +71,14 @@ control_panel_passwordexpires
 
 1. Open the .pub file, then copy-paste the whole string starting with "ssh..." into Control Panel.
 
-    publickey
+    ![](assets/publickey.png)
 
 1. Click the **[!UICONTROL Save]** button to create the key. Control Panel saves the Public key and its associated Fingerprint, encrypted with the SHA256 format.
 
 You can use fingerprints to match the Private keys that are saved on your computer with the corresponding Public keys saved in Control Panel.
 
-fingerprintNEW2
+![](assets/fingerprintNEW2.png)
 
 The "**...**" button allows you to delete an existing key, or to copy its associated fingerprint into your clipboard.
 
-key_options
+![](assets/key_options.png)

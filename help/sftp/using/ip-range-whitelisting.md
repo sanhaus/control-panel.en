@@ -33,15 +33,16 @@ To whitelist an IP range, follow these steps:
 1. Open the **[!UICONTROL SFTP]** card, then select the **[!UICONTROL IP Whistelisting]** tab.
 1. The list of whitelisted IP addresses displays for each instance. Select the desired instance from the left-hand side list, then click the **[!UICONTROL Add new IP range]** button.
 
-    control_panel_add_range
+    ![](assets/control_panel_add_range.png)
 
 1. Define the IP Range that you want to whitelist, in the CIDR format, then define the label that will display in the list.
 
     >[!NOTE]
     >
-    >These special characters are allowed in the Label field: . _ - : / ( ) # , @ [ ] + = & ; { } ! $
+    >These special characters are allowed in the Label field:
+    > `. _ - : / ( ) # , @ [ ] + = & ; { } ! $`
 
-    control_panel_add_range2
+    ![](assets/control_panel_add_range2.png)
 
     >[CAUTION]
     >
@@ -49,13 +50,13 @@ To whitelist an IP range, follow these steps:
 
     It is possible to whitelist a range for multiple instances. To do this, press the down arrow key or type the first letters of the desired instance, then select it from the suggestions list.
 
-    control_panel_add_range3
+    ![](assets/control_panel_add_range3.png)
 
 1. Click the **[!UICONTROL Save]** button. IP whitelist addition will be displayed as PENDING until the request is fully processed. This should only take a few seconds.
 
 To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete IP range]** button.
 
-    control_panel_delete_range2
+![](assets/control_panel_delete_range2.png)
 
 >[!NOTE]
 >
@@ -65,6 +66,6 @@ To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete
 
 The **[!UICONTROL Job Logs]** in Control Panel home page let you monitor all changes that have been made to whitelisted IP addresses.
 
-For more on the Control Panel interface, refer to [this section]().
+For more on the Control Panel interface, refer to [this section](../../discover/using/discovering-the-interface.md).
 
-    control_panel_ip_logNEW
+![](assets/control_panel_ip_logNEW.png)

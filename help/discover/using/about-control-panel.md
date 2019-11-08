@@ -15,11 +15,12 @@ Key benefits:
 * Configure settings based on your different business needs at different times.
 * Enhance security by controlling access settings on a need-by-need basis.
 
-For more detailed information, refer to the dedicated sections below.
-
-Tutorial videos are also available for [Campaign Standard](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html) to help you discover the Control Panel.
-
 >[!NOTE]
->The Control Panel is accessible to Admin users only, and available for all customers hosted on AWS. The steps to grant Admin access to a user are detailed in [this section](). To check if your instance is hosted on AWS, follow the steps detailed in [this section]().
+>The Control Panel is accessible to Admin users only, and available for all customers hosted on AWS. The steps to grant Admin access to a user are detailed in [this section](../../discover/using/managing-permissions.md). To check if your instance is hosted on AWS, follow the steps detailed in [this section](../../discover/using/managing-permissions.md).
 >
 >Please note that upgrading to the latest Campaign build is not required to access the Control Panel.
+
+**Related topics:**
+
+* [Campaign Standard tutorial videos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html)
+* [Campaign Classic tutorial videos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)

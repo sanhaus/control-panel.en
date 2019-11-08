@@ -38,7 +38,7 @@ To get information on the servers connected to your instances, follow these step
 
 1. The servers connected to the instance display.
 
-    instance_details
+   ![](assets/instance_details.png)
 
 Available information are:
 
@@ -46,7 +46,6 @@ Available information are:
 * **[!UICONTROL Name]**: the name of the server.
 * **[!UICONTROL Build:]** the build version installed on the server.
 * **[!UICONTROL Upgrade info]**: this column informs you if any update is required for the server.
-    
     * Green: your server is current, no upgrade is required.
     * Yellow: you should consider upgrading. You are missing the newest features and fixes.
     * Red: upgrade as soon as possible. You are missing new features and the server performance might not be optimal.
