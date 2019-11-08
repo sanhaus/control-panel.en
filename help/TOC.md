@@ -1,5 +1,5 @@
 ---
-product: control panel
+product: adobe campaign
 sub-product: control panel
 audience: end-user
 user-guide-title: Control Panel Help
