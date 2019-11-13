@@ -9,7 +9,6 @@ user-guide-title: Control Panel Help
 
 + [Control Panel documentation](control-panel-home.md)
 + Discover Control Panel {#discover-control-panel}
-  + [About Control Panel](discover/using/about-control-panel.md)  
   + [Accessing Control Panel](discover/using/accessing-control-panel.md)
   + [Managing permissions to Control Panel](discover/using/managing-permissions.md)
   + [Discovering Control Panel interface](discover/using/discovering-the-interface.md)

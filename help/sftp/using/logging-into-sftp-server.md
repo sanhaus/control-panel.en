@@ -3,7 +3,7 @@ title: Logging into your SFTP server
 description: Learn how to log into your SFTP server
 ---
 
-# Logging into your SFTP server {logging-into-sft-server}
+# Logging into your SFTP server {#logging-into-sft-server}
 
 The steps below detail how to connect your SFTP server through your SFTP client application.
 
@@ -46,4 +46,3 @@ To connect to your SFTP server, follow these steps:
 1. Once all the information filled in, click **[!UICONTROL Connect]** to log in to your SFTP server.
 
     ![](assets/sftpconnected.png)
-    
