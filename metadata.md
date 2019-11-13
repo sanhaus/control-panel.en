@@ -8,7 +8,7 @@ getting-started-url: https://forums.adobe.com/community/experience-cloud/marketi
 tutorials-title: Tutorials
 tutorials-url: https://helpx.adobe.com/campaign/kt/acs/index/acs-videos.html
 git-repo: https://github.com/AdobeDocs/control-panel.en
-index: yes
+index: no
 ---
 
 # Metadata for Control Panel
