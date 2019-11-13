@@ -46,3 +46,4 @@ To connect to your SFTP server, follow these steps:
 1. Once all the information filled in, click **[!UICONTROL Connect]** to log in to your SFTP server.
 
     ![](assets/sftpconnected.png)
+    
