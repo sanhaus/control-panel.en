@@ -78,8 +78,6 @@ To check if your instance is hosted on AWS, follow these steps:
 **What is the Control Panel?**
 The Control Panel empowers product admins to directly manage various settings and monitor capacity of SFTP servers connected to Adobe Campaign.
 
-Please find more detailed documentation on our Control Panel [overview page](discover/using/about-control-panel.md).
-
 **What are some of the current capabilities of the Control Panel?**
 Control Panel allows you to track storage, whitelist IPs, and manage SSH keys for your SFTP servers on your own based on your needs, and other actions.
 
