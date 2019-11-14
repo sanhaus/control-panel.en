@@ -4,7 +4,7 @@ title: Control Panel product documentation
 
 # Help Center {#control-panel-documentation}
 
-![](assets/banner.png) 
+![](assets/banner.jpeg) 
 
 ## About Control Panel {#about-control-panel
 
@@ -28,9 +28,9 @@ Key benefits:
         <div><a href="discover/using/accessing-control-panel.md"><strong>Discover Control Panel</strong></a></div>
         <em>Learn more on Control Panel and how to access it.</em>
     </td>
-    <td width="10%"><a href="sftp/using/about-sft-management.md"><img alt="conditions" src="assets/sftp_icon.svg"/></a></td>
+    <td width="10%"><a href="sftp/using/about-sftp-management.md"><img alt="conditions" src="assets/sftp_icon.svg"/></a></td>
     <td width="40%">
-        <div><a href="sftp/using/about-sft-management.md"><strong>Monitor your SFTP servers</strong></a></div>
+        <div><a href="sftp/using/about-sftp-management.md"><strong>Monitor your SFTP servers</strong></a></div>
         <em>Learn more on how to manage your SFTP servers.</em>
     </td>
 </tr>
