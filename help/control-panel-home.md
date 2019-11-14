@@ -4,9 +4,11 @@ title: Control Panel product documentation
 
 # Help Center {#control-panel-documentation}
 
-The Campaign Control Panel helps you increase efficiency in your work as a product admin of Adobe Campaign Standard and/or Classic, by allowing you to manage settings and track usages for each of your instances.
+![](using/assets/bannerjourney.png) 
 
-Its intuitive interface lets you easily monitor usage of key assets, as well as perform administrative tasks such as IP addresses whitelisting, SFTP storage monitoring, key management, and more.
+## About Control Panel {#about-control-panel
+
+Control Panel helps you increase efficiency in your work as a product admin of Adobe Campaign Standard and/or Classic, by allowing you to manage settings and track usages for each of your instances. Its intuitive interface lets you easily monitor usage of key assets, as well as perform administrative tasks such as IP addresses whitelisting, SFTP storage monitoring, key management, and more.
 
 Key benefits:
 
@@ -19,7 +21,35 @@ Key benefits:
 >
 >Please note that upgrading to the latest Campaign build is not required to access the Control Panel.
 
-**Related topics:**
+<table>
+<tr>
+    <td width="10%"><a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/discover_icon.svg"/></a></td>
+    <td width="40%">
+        <div><a href="discover/using/accessing-control-panel.md"><strong>Discover Control Panel</strong></a></div>
+        <em>Learn more on Control Panel and how to access it.</em>
+    </td>
+    <td width="10%"><a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/sftp_icon.svg"/></a></td>
+    <td width="40%">
+        <div><a href="discover/using/accessing-control-panel.md"><strong>Monitor your SFTP servers</strong></a></div>
+        <em>Learn more on how to manage your SFTP servers.</em>
+    </td>
+</tr>
+<tr>
+    <td width="10%"><a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/subdomains_icon.svg"/></a></td>
+    <td width="40%">
+        <div><a href="discover/using/accessing-control-panel.md"><strong>Monitor your subdomains</strong></a></div>
+        <em>Learn more on how to monitor your subdomains and their certificates.</em>
+    </td>
+    <td width="10%"><a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/instance_settings_icon.svg"/></a></td>
+    <td width="40%">
+        <div><a href="discover/using/accessing-control-panel.md"><strong>Manage your instance settings</strong></a></div>
+        <em>Learn more on how to manage your instances settings (Campaign Classic only)</em>
+    </td>
+</tr>
+</table>
 
-* [Campaign Standard tutorial videos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html)
-* [Campaign Classic tutorial videos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)
+## Additional Resources {#additional-resources}
+
+* Control Panel tutorial videos for [Campaign Standard)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)
+* [Campaign Standard product documentation](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html)
+* [Campaign Classic product documentation](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html)
