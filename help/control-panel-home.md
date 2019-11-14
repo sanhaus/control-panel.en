@@ -4,7 +4,7 @@ title: Control Panel product documentation
 
 # Help Center {#control-panel-documentation}
 
-![](using/assets/banner.png) 
+![](assets/banner.png) 
 
 ## About Control Panel {#about-control-panel
 
