@@ -39,15 +39,14 @@ Key benefits:
         <em>Learn more on how to monitor your subdomains and their certificates.</em>
     </td>
     <td>
-        <a href="instances-settings/using/instance-details.md"><img alt="conditions" src="assets/instance_settings.png"/></a>
-        <div><a href="instances-settings/using/instance-details.md"><strong>Manage your instance settings</strong></a></div>
-        <em>Learn more on how to manage your instances settings (Campaign Classic only)</em>
+        <a href="instances-settings/using/ip-whitelisting-instance-access.md"><img alt="conditions" src="assets/instance_settings.png"/></a>
+        <div><a href="instances-settings/using/ip-whitelisting-instance-access.md"><strong>Manage your instance settings</strong></a></div>
+        <br/><em>Learn more on how to manage your instances settings (Campaign Classic only)</em>
     </td>
 </tr>
 </table>
 
 ## Additional Resources {#additional-resources}
 
-* Control Panel tutorial videos for [Campaign Standard)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)
-* [Campaign Standard product documentation](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html)
-* [Campaign Classic product documentation](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html)
+* Control Panel tutorial videos for [Campaign Standard](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)
+* [Campaign Standard](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html) product documentations.

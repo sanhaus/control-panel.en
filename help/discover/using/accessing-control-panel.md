@@ -14,7 +14,7 @@ The Campaign Control Panel is accessible directly from the Experience Cloud, or 
 
 To access the Control Panel from the Experience Cloud Platform,  navigate to the [Experience Cloud Platform homepage](https://amc.experiencecloud.adobe.com/), then click the dedicated link in the **Quick Access** section.
 
-![](assets/control_panel_access2_quickNEW.png)
+![](assets/quickaccess.png)
 
 The Control Panel is also accessible from the Experience Cloud Platform **solution picker**:
 
@@ -30,7 +30,7 @@ The Control Panel is also accessible from the Experience Cloud Platform **soluti
 
 >[!NOTE]
 >
->For **Campaign Classic** instances, access from within the product will be available after upgrade to the 19.1 version.
+>For **Campaign Classic** instances, access from within the product is available from Campaign Classic 19.1 version onwards.
 
 1. Open your Campaign Standard product, then select the **[!UICONTROL Administration]** menu from the **[!UICONTROL Navigation]** pane.
 

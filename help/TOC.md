@@ -13,6 +13,7 @@ user-guide-title: Control Panel Help
   + [Managing permissions to Control Panel](discover/using/managing-permissions.md)
   + [Discovering Control Panel interface](discover/using/discovering-the-interface.md)
 + SFTP management {#sftp-management}
+  + [About SFTP management](sftp/using/about-sftp-management.md)
   + [SFTP storage management](sftp/using/sftp-storage-management.md)
   + [IP range whitelisting](sftp/using/ip-range-whitelisting.md)
   + [Key management](sftp/using/key-management.md)

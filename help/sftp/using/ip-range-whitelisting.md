@@ -7,8 +7,6 @@ description: Learn how to whitelist IP ranges for SFTP servers access
 
 SFTP servers are protected. In order to be able to access them in order to view files or write new ones, you need to whitelist the public IP address of the system or client that accesses the servers.
 
-The steps to manage IP addresses whitelisting are described in the section below.
-
 ## About the CIDR format {#about-cidr-format}
 
 CIDR (Classless Inter-Domain Routing) is the supported format when adding IP ranges with the Control Panel interface.
@@ -26,7 +24,7 @@ Make sure you follow the recommendations and limitations below when whitelisting
 * Only **public IP addresses** can be whitelisted.
 * Make sure to **regularly delete whitelisted IP addresses** that you don't need anymore.
 
-## Whitelisting IP addresses #whitelisting-ip-addresses}
+## Whitelisting IP addresses {#whitelisting-ip-addresses}
 
 To whitelist an IP range, follow these steps:
 

@@ -5,7 +5,7 @@ description: Learn how to manage permissions to Control Panel
 
 # Managing permsissions to Control Panel {#managing-permissions-control-panel}
 
-The Control Panel is available to all Admin users of a Campaign instance. Follow the steps below to assign users to Administrators group and grant them an access to the Control Panel.
+The Control Panel is available to all Admin users of a Campaign instance. Follow the steps below to assign users to the Administrators group and grant them an access to the Control Panel.
 
 1. Navigate to the [Adobe Experience Cloud](https://amc.experiencecloud.adobe.com/exc-content/login.html), then select the **[!UICONTROL Administration]** tab.
 
@@ -15,7 +15,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
     ![](assets/control_panel_add_user1.png)
 
-1. Launch the **Admin Console** by clicking on the available links.
+1. Launch the **Admin Console** by clicking the available links.
 
     ![](assets/control_panel_admin1.png)
 
@@ -39,7 +39,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
     >[!NOTE]
     >
-    >By default, Admin users belong to the "Administrators" Product Profile. According to your organization configuration, the Product Profile can be named differentely ("admin", "admins", ...).
+    >By default, Admin users belong to the "Administrators" Product Profile. According to your organization configuration, the Product Profile can be named differently ("admin", "admins", ...).
 
     ![](assets/control_panel_add_user_5.png)
 
