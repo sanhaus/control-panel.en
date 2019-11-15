@@ -5,6 +5,10 @@ description: Learn more about IP whitelisting in Control Panel for instance acce
 
 # IP whitelisting {#ip-whitelisting}
 
+>[!CAUTION]
+>
+>This feature is available for Campaign Classic instances only.
+
 ## About IP whitelisting {#about-ip-whitelisting}
 
 By default, your Adobe Campaign Classic instance is not accessible from various IP addresses.

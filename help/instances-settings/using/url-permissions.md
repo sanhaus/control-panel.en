@@ -5,6 +5,10 @@ description: Learn how to manage URL permissions in Control Panel
 
 # URL permissions {#url-permissions}
 
+>[!CAUTION]
+>
+>This feature is available for Campaign Classic instances only.
+
 ## About URL permissions {#about-url-permissions}
 
 The default list of URLs that can be called by JavaScript codes (workflows, etc.) by your Campaign Classic instances is limited. These are URLs that allow your instances to function properly.

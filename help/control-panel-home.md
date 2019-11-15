@@ -1,10 +1,10 @@
 ---
-title: Control Panel product documentation
+title: Product documentation
 ---
 
 # Help Center {#control-panel-documentation}
 
-![](assets/banner.jpeg)
+![](assets/banner.png)
 
 ## About Control Panel {#about-control-panel}
 
