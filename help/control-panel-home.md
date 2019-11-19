@@ -53,7 +53,7 @@ Key benefits:
         <td><b>Campaign Standard</b><br/>
         <ul>
             <li><a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html">Control Panel tutorial videos for Campaign Standard</a></li>
-            <li><a href=""><a href="https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html">Campaign Standard product documentation</a></li>
+            <li><a href="https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html">Campaign Standard product documentation</a></li>
         </ul>
         </td>
         <td><b>Campaign Classic</b><br/>
