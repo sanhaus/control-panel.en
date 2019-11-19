@@ -6,9 +6,9 @@ title: Product documentation
 
 ![](assets/banner.png)
 
-## About Control Panel {#about-control-panel}
+## About the Control Panel {#about-control-panel}
 
-Control Panel helps you increase efficiency in your work as a product admin of Adobe Campaign Standard and/or Classic, by allowing you to manage settings and track usages for each of your instances. Its intuitive interface lets you easily monitor usage of key assets, as well as perform administrative tasks such as IP addresses whitelisting, SFTP storage monitoring, key management, and more.
+The Control Panel helps you increase efficiency in your work as a product admin of Adobe Campaign Standard and/or Classic, by allowing you to manage settings and track usages for each of your instances. Its intuitive interface lets you easily monitor usage of key assets, as well as perform administrative tasks such as IP addresses whitelisting, SFTP storage monitoring, key management, and more.
 
 Key benefits:
 
@@ -47,6 +47,23 @@ Key benefits:
 </table>
 
 ## Additional Resources {#additional-resources}
+
+<table>
+    <tr>
+        <td><b>Campaign Standard</b><br/>
+        <ul>
+            <li>Control Panel tutorial videos for Campaign Standard</li>
+            <li>Campaign Standard product documentation</li>
+        </ul>
+        </td>
+        <td><b>Campaign Classic</b><br/>
+        <ul>
+            <li>Control Panel tutorial videos for Campaign Classic</li>
+            <li>Campaign Classic product documentation</li>
+        </ul>
+        </td>
+    </tr>
+</table>
 
 * Control Panel tutorial videos for [Campaign Standard](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/control-panel-overview.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html)
 * [Campaign Standard](https://docs.adobe.com/content/help/en/campaign-standard/using/campaign-standard-home.html) and [Campaign Classic](https://docs.adobe.com/content/help/en/campaign-classic/using/campaign-classic-home.html) product documentations.
