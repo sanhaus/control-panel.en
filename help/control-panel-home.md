@@ -6,7 +6,7 @@ title: Product documentation
 
 ![](assets/banner.png)
 
-## About the Control Panel {#about-control-panel}
+## About Control Panel {#about-control-panel}
 
 The Control Panel helps you increase efficiency in your work as a product admin of Adobe Campaign Standard and/or Classic, by allowing you to manage settings and track usages for each of your instances. Its intuitive interface lets you easily monitor usage of key assets, as well as perform administrative tasks such as IP addresses whitelisting, SFTP storage monitoring, key management, and more.
 

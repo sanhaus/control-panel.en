@@ -1,9 +1,9 @@
 ---
-title: Accessing the Control Panel
+title: Accessing Control Panel
 description: Learn how to access the Control Panel
 ---
 
-# Accessing the Control Panel {#accessing-control-panel}
+# Accessing Control Panel {#accessing-control-panel}
 
 The Control Panel is available directly from the Experience Cloud, or from the product itself.
 

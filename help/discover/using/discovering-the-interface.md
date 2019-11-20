@@ -1,9 +1,9 @@
 ---
-title: Discovering the Control Panel interface
+title: Discovering Control Panel interface
 description: Learn more about the Control Panel interface
 ---
 
-# Discovering the Control Panel interface {#discovering-interface}
+# Discovering Control Panel interface {#discovering-interface}
 
 The Control Panel home page gives you access to all actions that can be performed on your Campaign instances.
 
