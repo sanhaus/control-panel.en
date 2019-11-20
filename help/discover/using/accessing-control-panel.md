@@ -1,14 +1,13 @@
 ---
-title: Accessing Control Panel
-description: Learn how to access Control Panel
+title: Accessing the Control Panel
+description: Learn how to access the Control Panel
 ---
 
-# Accessing Control Panel {#accessing-control-panel}
+# Accessing the Control Panel {#accessing-control-panel}
 
->[!NOTE]
->The Control Panel is available to Admin users only. For more on how to assign users to the Administrators group, refer to [this section](../../discover/using/managing-permissions.md).
+The Control Panel is available directly from the Experience Cloud, or from the product itself.
 
-The Campaign Control Panel is accessible directly from the Experience Cloud, or from the product itself.
+It is accessible to **Admin users** only. For more on how to assign users to the Administrators group, refer to [this section](../../discover/using/managing-permissions.md).
 
 ## Access from the Experience Cloud Platform {#access-experience-cloud-platform}
 
@@ -36,6 +35,6 @@ The Control Panel is also accessible from the Experience Cloud Platform **soluti
 
     ![](assets/control_panel_access3.png)
 
-1. Click the Control Panel icon to launch it.
+1. Click the **[!UICONTROL Control Panel]** icon.
 
     ![](assets/control_panel_access4new.png)

@@ -1,19 +1,19 @@
 ---
-title: Managing permissions to Control Panel
-description: Learn how to manage permissions to Control Panel
+title: Managing permissions to the Control Panel
+description: Learn how to manage permissions to the Control Panel
 ---
 
-# Managing permsissions to Control Panel {#managing-permissions-control-panel}
+# Managing permsissions to the Control Panel {#managing-permissions-control-panel}
 
 The Control Panel is available to all Admin users of a Campaign instance. Follow the steps below to assign users to the Administrators group and grant them an access to the Control Panel.
 
 1. Navigate to the [Adobe Experience Cloud](https://amc.experiencecloud.adobe.com/exc-content/login.html), then select the **[!UICONTROL Administration]** tab.
 
+    ![](assets/control_panel_add_user1.png)
+
     >[!NOTE]
     >
-    >If the Administration tab is not visible, this means that you don't have Admin rights for your organization. Contact your Organization Administrators to complete the steps with them.
-
-    ![](assets/control_panel_add_user1.png)
+    >If the <b>Administration</b> tab is not visible, this means that you don't have Admin rights for your organization. Contact your Organization Administrators to perform the steps with them.
 
 1. Launch the **Admin Console** by clicking the available links.
 
@@ -37,12 +37,12 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. The list of Product Profiles for the selected instance displays. Click the **[!UICONTROL Administrators]** product profile to access the list of Admin users.
 
-    >[!NOTE]
-    >
-    >By default, Admin users belong to the "Administrators" Product Profile. According to your organization configuration, the Product Profile can be named differently ("admin", "admins", ...).
-
     ![](assets/control_panel_add_user_5.png)
 
-1. The list of Admin users displays. Click the **[!UICONTROL Add User]** button to add a new user.
+    >[!NOTE]
+    >
+    >By default, Admin users belong to the "Administrators" Product Profile. According to your organization configuration, the Product Profile can be named differently ("admin", "admins", etc.).
+
+1. The list of Admin users displays. Click the **[!UICONTROL Add User]** button to add the desired user.
 
     ![](assets/control_panel_add_user_6.png)

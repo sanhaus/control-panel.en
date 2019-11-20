@@ -1,6 +1,6 @@
 ---
 title: IP whitelisting
-description: Learn more about IP whitelisting in Control Panel for instance access
+description: Learn more about IP whitelisting in the Control Panel for instance access
 ---
 
 # IP whitelisting {#ip-whitelisting}

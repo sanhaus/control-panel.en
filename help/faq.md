@@ -1,6 +1,6 @@
 ---
 title: Control Panel FAQ
-description: Common questions related to Control Panel
+description: Common questions related to the Control Panel
 ---
 
 # FAQ {#faq}
@@ -101,7 +101,7 @@ If you're not an admin, but would like access, please contact your product admin
 
 **How can I access the Control Panel?**
 
-Please follow the detailed instructions in the Accessing Control Panel documentation.
+Please follow the detailed instructions in the Accessing the Control Panel documentation.
 
 **Is there an extra fee to use the Control Panel?**
 

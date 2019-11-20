@@ -8,10 +8,10 @@ user-guide-title: Control Panel Help
 # Control Panel Help {#using}
 
 + [Product documentation](control-panel-home.md)
-+ Discover Control Panel {#discover-control-panel}
-  + [Accessing Control Panel](discover/using/accessing-control-panel.md)
-  + [Managing permissions to Control Panel](discover/using/managing-permissions.md)
-  + [Discovering Control Panel interface](discover/using/discovering-the-interface.md)
++ Discover the Control Panel {#discover-control-panel}
+  + [Accessing the Control Panel](discover/using/accessing-control-panel.md)
+  + [Managing permissions to the Control Panel](discover/using/managing-permissions.md)
+  + [Discovering the Control Panel interface](discover/using/discovering-the-interface.md)
 + SFTP management {#sftp-management}
   + [About SFTP management](sftp/using/about-sftp-management.md)
   + [SFTP storage management](sftp/using/sftp-storage-management.md)

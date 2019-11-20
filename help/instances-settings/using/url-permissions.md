@@ -1,6 +1,6 @@
 ---
 title: URL permissions
-description: Learn how to manage URL permissions in Control Panel
+description: Learn how to manage URL permissions in the Control Panel
 ---
 
 # URL permissions {#url-permissions}

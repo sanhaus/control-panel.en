@@ -62,7 +62,7 @@ To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete
 
 ## Monitoring changes {#monitoring-changes}
 
-The **[!UICONTROL Job Logs]** in Control Panel home page let you monitor all changes that have been made to whitelisted IP addresses.
+The **[!UICONTROL Job Logs]** in the Control Panel home page let you monitor all changes that have been made to whitelisted IP addresses.
 
 For more on the Control Panel interface, refer to [this section](../../discover/using/discovering-the-interface.md).
 

@@ -1,11 +1,11 @@
 ---
 title: About SFTP management
-description: Learn more about SFTP management in Control Panel
+description: Learn more about SFTP management in the Control Panel
 ---
 
 # About SFTP management {#about-sftp-management}
 
-In Campaign Control Panel, you can interact with all SFTP servers that are connected to Campaign instances that you have access to. Most instances have connected SFTP servers (in some cases, development and stage instances may not be connected to any SFTP servers).
+In the Control Panel, you can interact with all SFTP servers that are connected to Campaign instances that you have access to. Most instances have connected SFTP servers (in some cases, development and stage instances may not be connected to any SFTP servers).
 
 Access to SFTP servers is made using a SFTP client software, which you can find and download online. In order to connect to a server, either through such client application or an API, you must set up public SSH key and whitelist the IP address that connects to your SFTP server.
 

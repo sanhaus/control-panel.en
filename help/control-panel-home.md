@@ -26,22 +26,22 @@ Key benefits:
     <td>
         <a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/discover.png"/></a>
         <div><a href="discover/using/accessing-control-panel.md"><strong>Discover Control Panel</strong></a></div>
-        <em>Learn more on Control Panel and how to access it.</em>
+        <em>Learn more on the Control Panel and how to access it.</em>
     </td>
     <td>
         <a href="sftp/using/about-sftp-management.md"><img alt="conditions" src="assets/sftp.png"/></a>
         <div><a href="sftp/using/about-sftp-management.md"><strong>Monitor your SFTP servers</strong></a></div>
-        <em>Learn more on how to manage your SFTP servers.</em>
+        <em>Learn how to manage your SFTP servers.</em>
     </td>
     <td>
         <a href="subdomains-certificates/using/about-ssl-certificates.md"><img alt="conditions" src="assets/subdomains.png"/></a>
         <div><a href="subdomains-certificates/using/about-ssl-certificates.md"><strong>Monitor your subdomains</strong></a></div>
-        <em>Learn more on how to monitor your subdomains and their certificates.</em>
+        <em>Learn how to monitor your subdomains and their certificates.</em>
     </td>
     <td>
         <a href="instances-settings/using/ip-whitelisting-instance-access.md"><img alt="conditions" src="assets/instance_settings.png"/></a>
         <div><a href="instances-settings/using/ip-whitelisting-instance-access.md"><strong>Manage your instance settings</strong></a></div>
-        <br/><em>Learn more on how to manage your instances settings (Campaign Classic only)</em>
+        <br/><em>Learn how to manage your instances settings (Campaign Classic only)</em>
     </td>
 </tr>
 </table>

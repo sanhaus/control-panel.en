@@ -1,6 +1,6 @@
 ---
 title: Instance details
-description: Learn how to monitor your instance details in Control Panel
+description: Learn how to monitor your instance details in the Control Panel
 ---
 
 # Instance Details {#instance-details}
