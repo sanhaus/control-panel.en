@@ -177,6 +177,4 @@ GET href dans
 
 
 
-How to delete a service?
-------------------------
 -->
