@@ -28,4 +28,17 @@ user-guide-title: Control Panel Help
   + [Instance details](instances-settings/using/instance-details.md)
 + [FAQ](faq.md)
 + Working with Campaign Standard APIs {#working-with-campaign-standard-apis}
-  + [Global concepts](api/using/global-concepts.md)
+  + [About Campaign Standard APIs](api/using/about-campaign-standard-apis.md)
+  + [Why using Campaign Standard APIs](api/using/why-using-campaign-standard-apis.md)
+  + [Setting up API access](api/using/setting-up-api-access.md)
+  + [Global concepts](api/using/global-concepts.md)  
+  + Use cases {#use-cases}
+    + [Managing profiles](api/using/managing-profiles.md)
+    + [Managing services and subscriptions](api/using/managing-services-and-subscriptions.md)
+    + [Interacting with marketing history](api/using/interacting-with-marketing-history.md)  
+    + [Privacy management](api/using/privacy-management.md)
+    + [Managing transactional messages](api/using/managing-transactional-messages.md)
+    + [Managing workflows](api/using/managing-workflows.md)  
+    + [Managing organizational units](api/using/managing-organizational-units.md)
+    + [Managing geographical units](api/using/managing-geographical-units.md)
+  + [Troubleshooting](api/using/troubleshooting.md)
