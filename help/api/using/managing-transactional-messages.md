@@ -18,10 +18,9 @@ snippet: y
 
 ## About transactional messaging
 
-
 Once you have created an event, you will have to integrate the triggering of this event into your website.
 
-<aside class="notice">Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html">the Campaign documentation</a>.</aside>
+<aside class="notice">Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html">the Campaign documentation</a>.
 
 For example, you want a "Cart abandonment" event to be triggered whenever one of your clients leaves your website before purchasing the products in their cart. To do this, your web developer must use the REST Transactional Messages API.
 
@@ -33,8 +32,10 @@ For example, you want a "Cart abandonment" event to be triggered whenever one of
 
 >URL example for an Adobe instance and a cart abandonment type event.
 
-```shell
+```
+
 https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment
+
 ```
 
 The transactional event is sent through a POST request with the following URL structure:
@@ -59,8 +60,8 @@ The transactional event is sent through a POST request with the following URL st
 
 >Perform a POST request to send the event.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -79,11 +80,13 @@ $curl
     "firstName": "Jack"
   }
 }
+
 ```
 
 >Response to the POST request.
 
-```shell
+```
+
 {
   "PKey":"<PKEY>",
   "ctx":
@@ -100,6 +103,7 @@ $curl
   "status":"pending",
   "type":""
 }
+
 ```
 
 <br/><br/>
@@ -129,7 +133,7 @@ The following optional parameters can be added to the event content to manage th
 
 <aside class="notice">
 The values of the "expiration" and "scheduled" parameters follow the ISO 8601 format. ISO 8601 specifies the use of the uppercase letter "T" to separate the date and time. It can however be removed from the input or output for better readability.
-</aside>
+
 
 
 **Response to the POST request**
@@ -142,7 +146,7 @@ To get its current status (event data, event status...), use the Primary Key ret
 
 <aside class:"notice">
 &lt;PKey&gt; corresponds to the Primary Key returned by the POST response.
-</aside>
+
 
 ## Transactional event status
 

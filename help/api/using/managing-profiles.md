@@ -20,18 +20,20 @@ snippet: y
 
 >Sample GET request to retrieve all profiles.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >Response to the request.
 
-```shell
+```
+
 {
     "content": [
         {
@@ -54,6 +56,7 @@ $curl
     },
     "serverSidePagination": true
 }
+
 ```
 
 Retrieving profiles is performed with a GET request.
@@ -66,22 +69,24 @@ For more information on the **metadata** of the profile API, refer to [this sect
 
 <aside class="notice">
 Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with your <b>personal organization ID</b>.
-</aside>
+
 
 >Sample GET request to retrieve the first 10 email values.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the following values.
 
-```shell
+```
+
 {
   "content": [
     "amy.dakota@mail.com",
@@ -100,6 +105,7 @@ $curl
     lineStart=@Qy2MRJCS67PFf8soTf4BzF7BXsq1Gbkp_e5lLj1TbE7HJKqc"
   }
 }
+
 ```
 
 >The "next" node returns the URL that gives you access to the 10 next email values.
@@ -108,18 +114,20 @@ $curl
 
 > Sample GET request to retrieve the profile with the "amy.dakota@mail.com" email address.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byEmail?email=amy.dakota@mail.com \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >Response to the request.
 
-```shell
+```
+
 {
     "content": [
         {
@@ -143,12 +151,13 @@ $curl
     },
     "serverSidePagination": true
 }
+
 ```
 
 >Sample PATCH request to update the "phone" attribute.
 
-```shell
-$curl
+```
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -160,18 +169,20 @@ $curl
 
 >It returns the PKEY and URL to retrieve the updated profile.
 
-```shell
+```
+
 {
     "PKey": "<PKEY>",
     "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/@2v1dr3ZKJveMDhAdh0MPnh9hNQQ93qb7AW6BNVVKknjwXvTZRBAgUqz1SNcB4ZndgjqOofx3BwBZYBftlmObISoM3rs"
 }
+
 ```
 
 In this example, we want to **update the phone field** in a profile with the email value "amy.dakota@mail.com".
 
 1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
 
-1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.<aside class="notice">The Primary Key value of the profile must be integrated in the URL.</aside>
+1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.<aside class="notice">The Primary Key value of the profile must be integrated in the URL.
 
 The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
 
@@ -183,8 +194,8 @@ To check if the PATCH request has updated the profile, we can perform a final GE
 
 >Sample POST request to create a profile with the email "john.doe@mail.com".
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -192,11 +203,13 @@ $curl
 -H 'X-Api-Key: <API_KEY>' \
 -i
 -d '{"email":"john.doe@mail.com"}'
+
 ```
 
 >It returns the newly created profile, with the "john.doe@mail.com" email address.
 
-```shell
+```
+
 {
     ...
     "created": "2019-09-26 11:49:48.817Z",
@@ -211,11 +224,12 @@ $curl
     "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/>PKEY>",
     ...
 }
+
 ```
 
 This action can be done with a simple **POST request** on the **profile** resource.
 
-<aside class="warning">
-If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>profileAndServicesExt</b> endpoint.
+>[!CAUTION]
+>
+>If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>profileAndServicesExt</b> endpoint.
 For more on the profile's resource extension, refer to the <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign documentation</a>.
-</aside>

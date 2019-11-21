@@ -18,9 +18,11 @@ snippet: y
 
 The **geoUnitBase** endpoint lets you interact with Geographical units, enabling you, for example, to update their attributes or update a profile's Geographcal unit.
 
-<aside class="warning">The Geographical unit feature has been deprecated with the Campaign Standard 18.7 release.
+>[!CAUTION]
+>
+>The Geographical unit feature has been deprecated with the Campaign Standard 18.7 release.
 As a result, new Campaign Standard instances, as well as existing instances with no geographical units created, cannot have this capability implemented starting the 18.7 release.
-For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">Deprecated features</a> page.</aside>
+For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">Deprecated features</a> page.
 
 The <b>Geographcal unit</b> field is added to a profile when extending the profile resource. As a result, remember to always use the <b>profileAndServicesExt</b> endpoint to interact with Geographical units. For more on the profile's resource extension, refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles).
 
@@ -28,18 +30,20 @@ The <b>Geographcal unit</b> field is added to a profile when extending the profi
 
 >Retrieve the profile record.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the geoUnit URL for the profile.
 
-```shell
+```
+
 {
   ...
   "geoUnit": {
@@ -49,22 +53,25 @@ $curl
     },
   ...
 }
+
 ```
 
 >Perform a GET request on the URL to retrieve more information.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the details below.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "created": "2019-04-02 22:36:13.252Z",
@@ -75,6 +82,7 @@ $curl
   "parentTitle": "",
   "title": "All (all)"
 }
+
 ```
 
 1. Perform a GET request on the profile PKey to retrieve the **geoUnit** URL.<br/><br/>
@@ -87,18 +95,20 @@ $curl
 
 >Retrieve the list of Geographical units.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns all Geographical units. Retrieve the PKey of the unit to which you want to assign the profile.
 
-```shell
+```
+
 {
  "PKey": "<PKEY>",
  "created": "2019-04-06 22:36:19.089Z",
@@ -110,12 +120,13 @@ $curl
  "parentTitle": "All (all)",
  "title": "Europe (eu)"
 },
+
 ```
 
 >Perform a PATCH request on the profile, with the PKey of the desired Geographical unit in the payload.
 
-```shell
-$curl
+```
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -127,6 +138,7 @@ $curl
 -d    "PKey":"<PKEY>"
 -d  }
 -d }
+
 ```
 
 <!-- + réponse -->
@@ -146,18 +158,20 @@ $curl
 
 >Retrieve the list of Geographical units.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns all Geographical units. Retrieve the PKey of the desired unit.
 
-```shell
+```
+
 {
  "PKey": "<PKEY>",
  "created": "2019-04-06 22:36:19.089Z",
@@ -169,12 +183,13 @@ $curl
  "parentTitle": "All (all)",
  "title": "Europe (eu)"
 },
+
 ```
 
 >Perform a PATCH request on the Geographical unit, with the attributes to update in the payload.
 
-```shell
-$curl
+```
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -185,6 +200,7 @@ $curl
 -d "label":"Asia",
 -d "name":"asia"
 -d }
+
 ```
 
 <!-- + réponse -->

@@ -25,18 +25,20 @@ The <b>Organizational unit</b> field is added to a profile when extending the pr
 
 >Retrieve the profile record.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the orgUnit URL for the profile.
 
-```shell
+```
+
 {
   ...
   "orgUnit": {
@@ -46,22 +48,25 @@ $curl
     },
   ...
 }
+
 ```
 
 >Perform a GET request on the URL to retrieve more information.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the details below.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "created": "2019-04-02 22:36:13.252Z",
@@ -72,6 +77,7 @@ $curl
   "parentTitle": "All (all)",
   "title": "Brand 4 (brand4)"
 }
+
 ```
 
 1. Perform a GET request on the profile PKey to retrieve the **orgUnit** URL.<br/><br/>
@@ -84,18 +90,20 @@ $curl
 
 >Retrieve the list of Organizational units.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns all Organizational units. Retrieve the PKey of the unit to which you want to assign the profile.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "created": "2019-04-02 22:36:13.252Z",
@@ -107,12 +115,13 @@ $curl
   "parentTitle": "All (all)",
   "title": "Brand 4 (brand1)"
 },
+
 ```
 
 >Perform a PATCH request on the profile, with the PKey of the desired Organizational unit in the payload.
 
-```shell
-$curl
+```
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -124,6 +133,7 @@ $curl
 -d    "PKey":"<PKEY>"
 -d  }
 -d }
+
 ```
 
 <!-- + réponse -->
@@ -143,18 +153,20 @@ $curl
 
 >Retrieve the list of Organizational units.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns all Organizational units. Retrieve the PKey of the desired unit.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "created": "2019-04-02 22:36:13.252Z",
@@ -166,12 +178,14 @@ $curl
   "parentTitle": "All (all)",
   "title": "Brand 4 (brand1)"
 },
+
 ```
 
 >Perform a PATCH request on the Organizational unit, with the attributes to update in the payload.
 
-```shell
-$curl
+```
+
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -182,6 +196,7 @@ $curl
 -d "label":"brand1",
 -d "name":"brand1"
 -d }
+
 ```
 
 <!-- + réponse -->

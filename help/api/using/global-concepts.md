@@ -42,11 +42,12 @@ All API resources are available in **JSON** with an URL extension or inside an H
 >
 >Without extension in the URL, the **json format is the default one** for the content-type.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile.json \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```

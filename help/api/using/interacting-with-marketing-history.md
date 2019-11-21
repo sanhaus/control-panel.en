@@ -33,19 +33,20 @@ This way, you can, for example, easily retrieve the mirror page for a delivery t
 
 >Retrieve the profile's marketing history with a GET request.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/History/"<PKEY>" \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >The "events" node returns the URL that gives you access to the events on the profile.
 
-```shell
-$curl
+```
+
 {
     "PKey": "<PKEY>",
     "age": 45,
@@ -71,22 +72,24 @@ $curl
     "gender": "female",
     "isExternal": false,
 }
+
 ```
 
 >Perform a GET request on the events href returned.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/history/<PKEY>/events \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the list of events for the profile with links to mirror pages in the "mirrorPage" node.
 
-```shell
+```
 
     {
       "PKey": "<PKEY>",
@@ -100,4 +103,5 @@ $curl
       },
       "type": "outbound"
     }
+    
 ```

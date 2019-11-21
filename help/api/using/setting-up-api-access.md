@@ -16,18 +16,19 @@ snippet: y
 
 # Setting up API access {#setting-up-api-access}
 
-```shell
-$curl  
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 In all the code examples, you must replace variables with your personal identifiers. For more information on the API access configuration and how to retrieve these identifiers, refer to [this section](#setting-up-api-access).
 
-<aside class="notice">One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><br>To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).</aside>
+<aside class="notice">One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><br>To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
 
 Each request must contain the **&lt;ORGANIZATION&gt;** element. It is your personal ORGANIZATION ID and is provided by Adobe. This parameter has an URL syntax, for example:
 `https://mc.adobe.io/myInstance.adobe.com/campaign/`
@@ -42,7 +43,9 @@ Each request must contain the parameters below:
 
 <br/>
 
-<aside class="warning">To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</a> in the Admin console.</aside>
+>[!CAUTION]
+>
+>To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</a> in the Admin console.
 
 Adobe Campaign Standard API access is set up through the steps below. Each of these steps is detailed in the [Adobe IO documentation](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
@@ -54,4 +57,4 @@ Adobe Campaign Standard API access is set up through the steps below. Each of th
 
 1. **Exchange your JWT for an Access Token** through a POST request. This Access Token will have to be used in each header of your API requests.
 
-<aside class="notice">To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.</aside>
+<aside class="notice">To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.

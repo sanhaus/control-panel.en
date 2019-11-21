@@ -16,8 +16,8 @@ snippet: y
 
 # Troubleshooting {#troubleshooting}
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/{ORGANIZATION}/campaign/profileAndServices/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -28,24 +28,28 @@ $curl
 
 >It returns the following error.
 
-```shell
+```
+
 {"error_code":"403023","message":"Profile is not valid"}
+
 ```
 
 >Check your IMS profile with this request.
 
-```shell
-$curl
+```
+
 -X GET https://ims-na1.adobelogin.com/ims/profile/v1 \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >In the response, the ORGANIZATION_ID value must be the same in your first GET request.
 
-```json
+```
+
 {
   "countryCode": "FR",
   "mrktPermEmail": null,
@@ -66,6 +70,7 @@ $curl
     }
   ]
 }
+
 ```
 
 * **When going to the Adobe.io Console you get the following error: "The Adobe I/O console is only available to select members of enterprise accounts. If you believe you should have access, please contact your System Administrator."**

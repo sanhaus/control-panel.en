@@ -45,6 +45,7 @@ To check if your instance is hosted on AWS, follow these steps:
 1. The response returns information on your instance.
 
     ```
+
     doe-macOS% nslookup myinstance.campaign.adobe.com
     Server:     12.34.5.678
     Address:    12.34.5.678#99
@@ -56,6 +57,7 @@ To check if your instance is hosted on AWS, follow these steps:
     canonical name = myinstance-mkt-prod1-1.campaign.adobe.com.
     Name: myinstance-mkt-prod1-1.campaign.adobe.com
     Address: 12.34.567.89
+
     ```
 
 1. Execute a **nslookup** operation on the returned IP address.
@@ -65,12 +67,14 @@ To check if your instance is hosted on AWS, follow these steps:
 1. Check the "name" value in the returned result. If it contains "amazonaws.com", this means your instance is hosted on AWS.
 
     ```
+    
     doe-macOS% nslookup 12.34.567.89
     Server:     12.34.5.678
     Address:    12.34.5.678#99
 
     Non-authoritative answer:
     89.567.34.12.in-addr.arpa   name = ec2-12-34-567-89.address.amazonaws.com.
+
     ```
 
 >[!NOTE]

@@ -35,8 +35,8 @@ For more on Adobe Campaign Standard and privacy compliance, refer to the [dedica
 
 >This POST request creates a privacy request based on a email reconciliation key defined in the namespace AMCDS2:
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -51,11 +51,13 @@ $curl
 "label":"Delete customers",
 "type":"delete"
 }
+
 ```
 
 >Response to the POST request.
 
-```shell
+```
+
 {
     "PKey": "<PKEY>",
     "audit": "",
@@ -83,7 +85,9 @@ $curl
 
 ```
 
-<aside class="warning">The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.</aside>
+>[!CAUTION]
+>
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.
 
 Privacy requests are created using a POST request.
 
@@ -100,18 +104,20 @@ The payload must contain the following parameters:
 
 ## Monitoring a privacy request
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>' \
 -H 'Content-Type: application/json;charset=utf-8'
+
 ```
 
 >Response to the GET request.
 
-```shell
+```
+
 {
             "PKey": "<PKEY>",
             "audit": "",
@@ -136,6 +142,7 @@ $curl
             "title": "Delete customer profile (GDPR6)",
             "type": "delete"
         }
+
 ```
 
 You can monitor information about a created privacy request using a GET request.
@@ -146,8 +153,8 @@ The status list description is available in the [Privacy management documentatio
 
 >Create a privacy request with the type="access" attribute.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -162,24 +169,27 @@ $curl
 "label":"Delete customers",
 "type":"access"
 }
+
 ```
 
 <!-- + réponse -->
 
 >Perform a GET request to retrieve information about the request.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>' \
 -H 'Content-Type: application/json;charset=utf-8'
+
 ```
 
 >It returns the privacyRequestData attribute with an associated URL.
 
-```shell
+```
+
 {
     ...
     "name": "PR2",
@@ -196,27 +206,33 @@ $curl
     "type": "access"
     ...
 },
+
 ```
 
 >Perform a POST request on the privacyRequestData URL, with the request internal name inside the payload.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool/<PKEY>/privacyRequestData \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>' \
 -H 'Content-Type: application/json;charset=utf-8'
 -d '{"name": "PR1"}'
+
 ```
 
 >It returns the file content.
 
-```shell
-"{data:<gdprRequestData _cs=\" ()\" id=\"8565163\" reconciliationValue=\"'customer@adobe.com'\">\n  <table name=\"nms:recipient\">\n    <row>id='8569152'\n\t\tlastName='customer'\n\t\tfirstName='customer'\n\t\tgender='1'\n\t\temail='customer@adobe.com'\n\t\tcreatedBy-id='8565162'\n\t\tmodifiedBy-id='8565162'\n\t\tlastModified='2018-03-15 13:54:28.708Z'\n\t\tcreated='2018-03-15 13:54:28.708Z'\n\t\tthumbnail='/nl/img/thumbnails/defaultProfil.png'\n\t\temailFormat='2'</row>\n  </table>\n  <table name=\"nms:broadLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\tid='8003'\n\t\taddress='customer@adobe.com'\n\t\tstatus='1'\n\t\tmsg-id='1194'\n\t\teventDate='2018-03-15 13:58:34.726Z'\n\t\tlastModified='2018-03-15 13:59:02.008Z'\n\t\tvariant='default'\n\t\tdelivery-id='8569153'\n\t\tpublicId='1'\n\t\tprofile-id='8569152'</row>\n  </table>\n  <table name=\"nms:trackingLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='-1178080215'\n\t\ttrackedDevice='pc'\n\t\tid='5000'\n\t\tlogDate='2018-03-15 14:00:51.650Z'\n\t\tsourceType='html'\n\t\tuserAgent='-1178080215'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='0'\n\t\ttrackedDevice=''\n\t\tid='6000'\n\t\tlogDate='2018-03-15 16:00:41.110Z'\n\t\tsourceType='html'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n  </table>\n</gdprRequestData>}"
 ```
 
-<aside class="warning">The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.</aside>
+"{data:<gdprRequestData _cs=\" ()\" id=\"8565163\" reconciliationValue=\"'customer@adobe.com'\">\n  <table name=\"nms:recipient\">\n    <row>id='8569152'\n\t\tlastName='customer'\n\t\tfirstName='customer'\n\t\tgender='1'\n\t\temail='customer@adobe.com'\n\t\tcreatedBy-id='8565162'\n\t\tmodifiedBy-id='8565162'\n\t\tlastModified='2018-03-15 13:54:28.708Z'\n\t\tcreated='2018-03-15 13:54:28.708Z'\n\t\tthumbnail='/nl/img/thumbnails/defaultProfil.png'\n\t\temailFormat='2'</row>\n  </table>\n  <table name=\"nms:broadLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\tid='8003'\n\t\taddress='customer@adobe.com'\n\t\tstatus='1'\n\t\tmsg-id='1194'\n\t\teventDate='2018-03-15 13:58:34.726Z'\n\t\tlastModified='2018-03-15 13:59:02.008Z'\n\t\tvariant='default'\n\t\tdelivery-id='8569153'\n\t\tpublicId='1'\n\t\tprofile-id='8569152'</row>\n  </table>\n  <table name=\"nms:trackingLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='-1178080215'\n\t\ttrackedDevice='pc'\n\t\tid='5000'\n\t\tlogDate='2018-03-15 14:00:51.650Z'\n\t\tsourceType='html'\n\t\tuserAgent='-1178080215'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='0'\n\t\ttrackedDevice=''\n\t\tid='6000'\n\t\tlogDate='2018-03-15 16:00:41.110Z'\n\t\tsourceType='html'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n  </table>\n</gdprRequestData>}"
+
+```
+
+>[!CAUTION]
+>
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.
 
 To retrieve the file that contains all the information associated to a reconciliation value, follow this three-steps procedure:
 
@@ -230,18 +246,20 @@ To retrieve the file that contains all the information associated to a reconcili
 
 >Sample GET request to retrieve a profile's CCPA opt-out status.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>' \
 -H 'Content-Type: application/json;charset=utf-8'
+
 ```
 
 >Response to the GET request.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "ccpaOptOut": false,
@@ -249,12 +267,13 @@ $curl
   "lastName": "Doe",
   ...
 }
+
 ```
 
 >Sample POST request to mark a profile for CCPA opt-out.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/ \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -267,11 +286,13 @@ $curl
 -d  "email": "jdoe@mail.com",
 -d  "ccpaOptOut": true
 -d }'
+
 ```
 
 >Response to the GET request.
 
-```shell
+```
+
 {
     ...
     "email": "john.doe@mail.com",
@@ -280,12 +301,13 @@ $curl
     "ccpaOptOut": true,
     ...
 }
+
 ```
 
 >Sample PATCH request to update a profile for CCPA opt-out.
 
-```shell
-$curl
+```
+
 -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
@@ -295,11 +317,13 @@ $curl
 -d {
 -d  "ccpaOptOut": true
 -d }'
+
 ```
 
 >Response to the GET request.
 
-```shell
+```
+
 {
     ...
     "email": "john.doe@mail.com",
@@ -308,6 +332,7 @@ $curl
     "ccpaOptOut": true,
     ...
 }
+
 ```
 
 A profile's CCPA opt-out status can be monitored and managed using the **ccpaOptOut** profile attribute and the "true" or "false" values:
@@ -317,5 +342,6 @@ A profile's CCPA opt-out status can be monitored and managed using the **ccpaOpt
 * **true**:  forbids the sale of personal information.
 * **false**: authorizes the sale of personal information.
 
-<aside class="warning">The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa">Privacy management documentation</a></aside>
-
+>[!CAUTION]
+>
+>The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa">Privacy management documentation</a>

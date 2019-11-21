@@ -101,7 +101,7 @@ A collection of requests is available to help you familiarize yourself with Camp
 
 The steps below describe a step-by-step use case to import and use the collection to create a profile in Campaign Standard database.
 
-<aside class="notice">Our example uses Postman. However, feel free to use your favorite REST client.</aside>
+<aside class="notice">Our example uses Postman. However, feel free to use your favorite REST client.
 
 1. Download the JSON collection by clicking [here](https://helpx.adobe.com/content/dam/help/en/campaign/kb/working-with-acs-api/_jcr_content/main-pars/download_section/download-1/KB_postman_collection.json.zip).
 

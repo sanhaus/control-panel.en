@@ -20,8 +20,8 @@ snippet: y
 
 > Sample POST request to create a service with specific attributes.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -34,11 +34,13 @@ $curl
 -d "name": "email_newsletter",
 -d "start": "2019-10-06"
 -d }
+
 ```
 
 > It returns the newly created service with the updates attributes.
 
-```shell
+```
+
 {
     "PKey": "<PKEY>",
     "builtIn": false,
@@ -68,6 +70,7 @@ $curl
     "unsubScenarioEventType": "",
     "validityDuration": "P10D"
 }
+
 ```
 
 Services creation is performed with a POST request on the **service** resource.
@@ -81,18 +84,20 @@ If you want to create the service with specific attributes, add them into the pa
 >The sample payloads below show how to retrieve the profiles that subscribed to a specific service.
 <br/>First perform a GET request to retrieve the service.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the service.
 
-```shell
+```
+
   {
     ...
     "messageType": "email",
@@ -102,22 +107,25 @@ $curl
     },
     ...
   },
+
 ```
 
 >Perform a GET request on the subscriptions URL.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >The list of subscriptions for the service displays, with each associated profile.
 
-```shell
+```
+
   {
     ...
     "service": {...},
@@ -130,6 +138,7 @@ $curl
         "lastName": "Doe",
     },
   }
+
 ```
 
 This is a two-steps procedure.
@@ -137,9 +146,10 @@ This is a two-steps procedure.
 1. Retrieve the subscriptions URL for the desired service.
 1. Perform a GET request on the subscriptions URL. It returns the list of subscriptions for the service, with each associated profile.
 
-<aside class="warning">
-  The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
-</aside>
+>[!CAUTION]
+>
+>The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
+
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
@@ -148,19 +158,20 @@ This is a two-steps procedure.
 >The sample payloads below show how to retrieve a profile and all its subscribed services.
 <br/>First perform a GET request to retrieve the profile.
 
+```
 
-```shell
-$curl
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the profile.
 
-```shell
+```
+
   {
     ...
     "postalAddress":{...},
@@ -170,22 +181,25 @@ $curl
     },
     ...
   }
+
 ```
 
 >Perform a GET request on the subscriptions URL.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the list of services to which the profile subscribed.
 
-```shell
+```
+
   {
     ...
     "PKey": "<PKEY>",
@@ -199,6 +213,7 @@ $curl
     },
     ...
   }
+
 ```
 
 This is a two-steps procedure.
@@ -213,18 +228,20 @@ This is a two-steps procedure.
 >The sample payloads below show how to subscribe a profile to a service.
 <br/>First perform a GET request to retrieve the profile.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the profile.
 
-```shell
+```
+
   {
     ...
     "postalAddress":{...},
@@ -234,12 +251,13 @@ $curl
     },
     ...
   }
+
 ```
 
 >Perform a POST request on the subscriptions URL with the desired service Primary Key inside the payload.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -247,11 +265,13 @@ $curl
 -H 'X-Api-Key: <API_KEY>' \
 -i
 -d '{"service":{"PKey":"<PKEY>"}}'
+
 ```
 
 >It returns the updated profile with the service node completed.
 
-```shell
+```
+
 {
   ...
   "service": {
@@ -262,6 +282,7 @@ $curl
   "subscriber": {...},
   ...
 }
+
 ```
 
 The first method starts from a Profile and the action consists to add a subscription to this profile for a given service.
@@ -276,18 +297,20 @@ The first method starts from a Profile and the action consists to add a subscrip
 
 First perform a GET request to retrieve the service.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the service.
 
-```shell
+```
+
   {
     ...
     "messageType": "email",
@@ -297,12 +320,13 @@ $curl
     },
     ...
   },
+
 ```
 
 >Make a POST request on the subscriptions URL with the desired profile Primary Key inside the payload.
 
-```shell
-$curl
+```
+
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign//profileAndServices/service/<PKEY>/subscriptions/ \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -310,11 +334,13 @@ $curl
 -H 'X-Api-Key: <API_KEY>' \
 -i
 -d '{"subscriber":{"PKey":"<PKEY>"}}'
+
 ```
 
 >It returns the updated service with the subscribers node completed.
 
-```shell
+```
+
 {
   ...
   "service": {...},
@@ -324,6 +350,7 @@ $curl
     ...
   },
 }
+
 ```
 
 The second method is to add a profile to a service's subscribers.
@@ -336,18 +363,20 @@ You can follow the steps in the right panel to perform this action.
 >The sample payloads below show how to unsubscribe a profil from a service.
 <br/>First perform a GET request to retrieve the profile.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the profile.
 
-```shell
+```
+
   {
     ...
     "postalAddress":{...},
@@ -356,22 +385,25 @@ $curl
       "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions/"
     },
   }
+
 ```
 
 >Perform a GET request on the subscriptions URL.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the list of subscriptions for the selected profile, with a URL for each subscribed service.
 
-```shell
+```
+
 ...
 "service": {
   "PKey": "<PKEY>",
@@ -381,17 +413,19 @@ $curl
   "title": "Sport Newsletter (SVC1)"
 },
 ...
+
 ```
 
 >Perform a DELETE request on the desired service URL.
 
-```shell
-$curl
+```
+
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 <!-- + réponse -->
@@ -410,18 +444,20 @@ If the delete request is successful, the response status is 204 No Content.
 
 >Retrieve the service record.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the subscriptions URL for the service.
 
-```shell
+```
+
 {
   ...
   "messageType": "email",
@@ -434,22 +470,25 @@ $curl
   "targetResource": "profile",
   ...
 },
+
 ```
 
 >Perform a GET request on the subscriptions URL.
 
-```shell
-$curl
+```
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 >It returns the list of subscriptions for the selected service, with a URL (href) for each profile subscription.
 
-```shell
+```
+
 {
   "PKey": "<PKEY>",
   "created": "2019-03-26 08:58:04.764Z",
@@ -462,17 +501,19 @@ $curl
   "subscriber": {...},
   ...
 }
+
 ```
 
 >Perform a DELETE request on the desired profile subscription URL.
 
-```shell
-$curl
+```
+
 -X DELETE https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions/<PKEY> \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>'
+
 ```
 
 <!-- + réponse -->
