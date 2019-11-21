@@ -27,3 +27,5 @@ user-guide-title: Control Panel Help
   + [URL permissions](instances-settings/using/url-permissions.md)
   + [Instance details](instances-settings/using/instance-details.md)
 + [FAQ](faq.md)
++ Working with Campaign Standard APIs {#working-with-campaign-standard-apis}
+  + [Global concepts](api/using/global-concepts.md)
