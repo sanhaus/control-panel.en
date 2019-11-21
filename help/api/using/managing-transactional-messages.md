@@ -20,7 +20,9 @@ snippet: y
 
 Once you have created an event, you will have to integrate the triggering of this event into your website.
 
-<aside class="notice">Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html">the Campaign documentation</a>.
+>[!NOTE]
+>
+>Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html">the Campaign documentation</a>.
 
 For example, you want a "Cart abandonment" event to be triggered whenever one of your clients leaves your website before purchasing the products in their cart. To do this, your web developer must use the REST Transactional Messages API.
 
@@ -131,7 +133,9 @@ The following optional parameters can be added to the event content to manage th
 
 * **scheduled** (optional): from this date, the transactional event will be processed and the transactional message will be sent.
 
-<aside class="notice">
+>[!NOTE]
+>
+>
 The values of the "expiration" and "scheduled" parameters follow the ISO 8601 format. ISO 8601 specifies the use of the uppercase letter "T" to separate the date and time. It can however be removed from the input or output for better readability.
 
 

@@ -28,7 +28,9 @@ snippet: y
 
 In all the code examples, you must replace variables with your personal identifiers. For more information on the API access configuration and how to retrieve these identifiers, refer to [this section](#setting-up-api-access).
 
-<aside class="notice">One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><br>To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
+>[!NOTE]
+>
+>One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><br>To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
 
 Each request must contain the **&lt;ORGANIZATION&gt;** element. It is your personal ORGANIZATION ID and is provided by Adobe. This parameter has an URL syntax, for example:
 `https://mc.adobe.io/myInstance.adobe.com/campaign/`
@@ -57,4 +59,6 @@ Adobe Campaign Standard API access is set up through the steps below. Each of th
 
 1. **Exchange your JWT for an Access Token** through a POST request. This Access Token will have to be used in each header of your API requests.
 
-<aside class="notice">To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.
+>[!NOTE]
+>
+>To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.

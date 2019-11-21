@@ -84,8 +84,6 @@ This means that there is an issue with the IMS provisioning of your specific Cam
 To get more details you can call the IMS API with your token to see what your IMS profile looks like: You need to have a prodCtx where the organization_id is the same as the one you put in you URL for Adobe.io to be able to route your request.
 If it is missing the IMS provisioning needs to be fixed.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
 * **When doing a request to Adobe.io you get {"code":500, "message":"Oops. Something went wrong. Check your URI and try again."}**
 
 Adobe.io declares your unvalid URI: most likely the URI you are requesting is not valid. On Adobe.io when you select the Campaign service you get a picker with a list of possible organization_ids. You need to check that the one you choose is the one you put in your URL.
@@ -97,84 +95,3 @@ Either your token is invalid (improper IMS call used to generate a token) or you
 * **I don't see my profile after creation**
 
 Depending on the instance configuration, the created profile needs to be associated to an **orgUnit**. To understand how to add this field in your creation, consult [this section](#creating-profiles).
-
-<!-- +++++++++++++++++++++++++
-
-* (error duplicate key : quand tu crées un profile qui existe déjà , il faut faire un patch pour updater le profile plutôt qu’un POST)
-
-With Curl
-List all profiles
-
-Create a profile
-
-Update the mobilePhone attribute of a profile
-
-
-
-
-API Calls on Service
-
-GET the list of services
-
--->
-
-<!--
-
-How to find and use a filter?
------------------------------
-Error codes:
-
-* PAtch sur Age = message d'erreur :
-500
-Cannot update the 'age' property that is read-only
-'age' property is not valid for the 'profile' resource.
--->
-
-
-
-<!--
-How to filter a list of subscribed profiles with available profile filters ? by date (by les filtres dispo sur la ressource) ?
-------------------------------------------------
-
-Pattern classique :
-
-recupérer la liste des subscriptions filtrées d'un profile
-1) get sur profile
-2) recup PKey
-3) get sur PKey
-4) get sur href des subscriptions
-
-Comment savoir quel filtre appliquer ?
-
-1) get sur metadata de profile
-2) retourne description de la collection subscription
-3) get sur la valeur du champ resTarget
-4) get sur le href dans filters
-5) retourne les filtres applicables sur l'url des data.
--->
-
-
-<!--
-How to unsubscribe a profile from a service?
---------------------------------------------
-
-GET the active subscriptions for a given profile
-https://mc.adobe.io<TENANT>/campaign/profileAndServices/service/<PROFILE_PKEY>/subscriptions/
-
-To unsubscribe a profile from a service, get first the url of that specific subscription (see above), answer contains each profile subscriptions, select the one that corresponds to your service, then run a DELETE on it
-https://mc.adobe.io/<TENANT>/campaign/profileAndServices/profile/<LINK_IDENTIFIER>/subscriptions/<KEY>
-
-symetrique
-GET sur profile + pKey
-GET href dans
- "subscriptions": {
-        "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/@ErI2qvtJeKgoTt8sgCkkX6NGhjiOSnX4REgvkGU08oNvMsHe-tw314YvJa3R9JEMQvCy1J0Al0W34vRva6iRWoeUte0/subscriptions/"
-
- => renvoie la liste des subscriptions
-
- Ensuite
- DELETE sur href
-
-
-
--->

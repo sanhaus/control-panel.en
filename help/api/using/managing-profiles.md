@@ -67,7 +67,9 @@ To read more information on these parameters, consult the respective sections: [
 Fore more information on the **GET** request, refer to [this section](#get-post-patch-delete).
 For more information on the **metadata** of the profile API, refer to [this section](#metadata-mechanism).
 
-<aside class="notice">
+>[!NOTE]
+>
+>
 Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with your <b>personal organization ID</b>.
 
 
@@ -182,7 +184,9 @@ In this example, we want to **update the phone field** in a profile with the ema
 
 1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
 
-1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.<aside class="notice">The Primary Key value of the profile must be integrated in the URL.
+1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.>[!NOTE]
+>
+>The Primary Key value of the profile must be integrated in the URL.
 
 The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
 
