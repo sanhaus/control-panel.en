@@ -14,7 +14,7 @@ internal: n
 snippet: y
 ---
 
-# Why using Campaign Standard APIs {# why-using-campaign-standard-apis}
+# Why using Campaign Standard APIs {#why-using-campaign-standard-apis}
 
 >Sign up landing pages provide a way for customers or prospects to register their name and email address. Once ACS captures the profile information and preferences, Campaign Standard can send personalized messages based on the person’s interests. They are built with the elements below:
 
