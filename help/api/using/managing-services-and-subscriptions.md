@@ -79,7 +79,7 @@ If you want to create the service with specific attributes, add them into the pa
 
 ## Retrieving subscriptions
 
-**Retrieving the profiles that subscribed to a service**
+### Retrieving the profiles that subscribed to a service
 
 >The sample payloads below show how to retrieve the profiles that subscribed to a specific service.
 <br/>First perform a GET request to retrieve the service.
@@ -150,10 +150,7 @@ This is a two-steps procedure.
 >
 >The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
 
-
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-**Retrieving the services to which a profile subscribed**
+### Retrieving the services to which a profile subscribed
 
 >The sample payloads below show how to retrieve a profile and all its subscribed services.
 <br/>First perform a GET request to retrieve the profile.
@@ -223,7 +220,7 @@ This is a two-steps procedure.
 
 ## Performing Subscriptions
 
-**Method 1**
+### Method 1
 
 >The sample payloads below show how to subscribe a profile to a service.
 <br/>First perform a GET request to retrieve the profile.
@@ -287,9 +284,7 @@ This is a two-steps procedure.
 
 The first method starts from a Profile and the action consists to add a subscription to this profile for a given service.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-**Method 2**
+### Method 2
 
 >The sample payloads below show how to add a profile to a service's subscribers.
 
@@ -358,7 +353,7 @@ You can follow the steps in the right panel to perform this action.
 
 ## Deleting Subscriptions
 
-**Deleting a service subscription for a specific profile**
+### Deleting a service subscription for a specific profile
 
 >The sample payloads below show how to unsubscribe a profil from a service.
 <br/>First perform a GET request to retrieve the profile.
@@ -438,9 +433,7 @@ This is a three-steps procedure.
 
 If the delete request is successful, the response status is 204 No Content.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-**Deleting a service subscription for a specific profile**
+### Deleting a service subscription for a specific profile
 
 >Retrieve the service record.
 

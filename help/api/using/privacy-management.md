@@ -107,7 +107,7 @@ The payload must contain the following parameters:
 ```
 
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
+-H 'Authorization: Bearer <ACCESS_TOKEN>' 
 -H 'Cache-Control: no-cache' \
 -H 'X-Api-Key: <API_KEY>' \
 -H 'Content-Type: application/json;charset=utf-8'

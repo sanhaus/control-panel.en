@@ -77,7 +77,7 @@ Below are examples of operations you can carry out using Campaign Standard APIs.
 * Retrieving the file containing privacy data
   [Details](#retrieve-a-privacy-data-file)
 * Managing CCPA opt-out
-  [Details](managing-ccpa-opt-out)
+  [Details](#managing-ccpa-opt-out)
 
 **Transactional messaging**
 

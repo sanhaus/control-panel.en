@@ -148,8 +148,9 @@ To get its current status (event data, event status...), use the Primary Key ret
 
 `GET https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>/`
 
-<aside class:"notice">
-&lt;PKey&gt; corresponds to the Primary Key returned by the POST response.
+>[!NOTE]
+>
+>&lt;PKey&gt; corresponds to the Primary Key returned by the POST response.
 
 
 ## Transactional event status
