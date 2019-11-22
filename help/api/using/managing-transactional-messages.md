@@ -45,7 +45,7 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 
   The name of the Transactional Messages API endpoint depends on your instance configuration. It corresponds to the value "mc" followed by your personal organization ID. Let's take the example of the Geometrixx company, with "geometrixx" as its organization ID. In that case, the POST request would be as follows:
 
-  'POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>'
+  `POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>`
 
   (Note that the transactional messages API endpoint is also visible during the API preview)
 
