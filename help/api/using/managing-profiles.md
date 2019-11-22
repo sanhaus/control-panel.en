@@ -29,85 +29,87 @@ For more information on the **metadata** of the profile API, refer to [this sect
 >
 >Reminder : you must replace <b>&lt;ORGANIZATION&gt;</b> in the URL with your <b>Personal organization ID</b>.
 
-Sample GET request to retrieve all profiles.
+***Sample requests***
 
-```
+* Sample GET request to retrieve all profiles.
 
--X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>'
+    ```
 
-```
+    -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>'
 
-Response to the request.
+    ```
 
-```
+    Response to the request.
 
-{
-    "content": [
-        {
-            "PKey": "<PKEY>",
-            "age": 85,
-            "birthDate": "1933-10-24",
-            "blackList": false,
-            "blackListAllLastModified": "",
+    ```
+
+    {
+        "content": [
+            {
+                "PKey": "<PKEY>",
+                "age": 85,
+                "birthDate": "1933-10-24",
+                "blackList": false,
+                "blackListAllLastModified": "",
+                ...
+            },
+            ...,
+            ...,
             ...
+        ],
+        "count": {
+            "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile//_count?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
         },
-        ...,
-        ...,
-        ...
+        "next": {
+            "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
+        },
+        "serverSidePagination": true
+    }
+
+    ```
+
+* Sample GET request to retrieve the first 10 email values.
+
+    ```
+
+    -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>'
+
+    ```
+
+    It returns the following values.
+
+    ```
+
+    {
+    "content": [
+        "amy.dakota@mail.com",
+        "kristen.smith@mail.com",
+        "omalley@mail.com",
+        "xander.harrys@mail.com",
+        "jane.summer@mail.com",
+        "gloria.boston@mail.com",
+        "edward.snow@mail.com",
+        "dorian.simons@mail.com",
+        "peter.paolini@mail.com",
+        "mingam+test08@adobe.com"
     ],
-    "count": {
-        "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile//_count?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
-    },
     "next": {
-        "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
-    },
-    "serverSidePagination": true
-}
+        "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10&_
+        lineStart=@Qy2MRJCS67PFf8soTf4BzF7BXsq1Gbkp_e5lLj1TbE7HJKqc"
+    }
+    }
 
-```
+    ```
 
-Sample GET request to retrieve the first 10 email values.
-
-```
-
--X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>'
-
-```
-
-It returns the following values.
-
-```
-
-{
-  "content": [
-    "amy.dakota@mail.com",
-    "kristen.smith@mail.com",
-    "omalley@mail.com",
-    "xander.harrys@mail.com",
-    "jane.summer@mail.com",
-    "gloria.boston@mail.com",
-    "edward.snow@mail.com",
-    "dorian.simons@mail.com",
-    "peter.paolini@mail.com",
-    "mingam+test08@adobe.com"
-  ],
-  "next": {
-    "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10&_
-    lineStart=@Qy2MRJCS67PFf8soTf4BzF7BXsq1Gbkp_e5lLj1TbE7HJKqc"
-  }
-}
-
-```
-
-The "next" node returns the URL that gives you access to the 10 next email values.
+    The "next" node returns the URL that gives you access to the 10 next email values.
 
 ## Updating Profiles
 
@@ -126,6 +128,8 @@ The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<res
 To know more about PATCH requests, refer to [this section](#get-post-patch-delete).
 
 To check if the PATCH request has updated the profile, we can perform a final GET request.
+
+***Sample request***
 
 Sample GET request to retrieve the profile with the "amy.dakota@mail.com" email address.
 
@@ -169,7 +173,7 @@ Response to the request.
 
 ```
 
-Sample PATCH request to update the "phone" attribute.
+PATCH request to update the "phone" attribute.
 
 ```
 
@@ -201,6 +205,9 @@ This action can be done with a simple **POST request** on the **profile** resour
 >
 If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>ProfileAndServicesExt</b> endpoint.
 >For more on the profile's resource extension, refer to the <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign documentation</a>.
+
+
+***Sample request***
 
 Sample POST request to create a profile with the email "john.doe@mail.com".
 

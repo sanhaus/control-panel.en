@@ -31,6 +31,8 @@ This way, you can, for example, easily retrieve the mirror page for a delivery t
 
   `"mirrorPage": {"href": "<MIRROR_PAGE_URL"}`
 
+***Sample request***
+
 Retrieve the profile's marketing history with a GET request.
 
 ```

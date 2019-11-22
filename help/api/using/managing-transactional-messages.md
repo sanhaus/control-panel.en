@@ -99,7 +99,10 @@ To get its current status (event data, event status...), use the Primary Key ret
 >
 >&lt;PKey&gt; corresponds to the Primary Key returned by the POST response.
 
-Perform a POST request to send the event.
+
+***Sample request***
+
+POST request to send the event.
 
 ```
 

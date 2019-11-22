@@ -36,6 +36,8 @@ The **Geographcal unit** field is added to a profile when extending the profile 
 
   `GET <GEO_UNIT_URL>`
 
+***Sample request***
+
 Retrieve the profile record.
 
 ```
@@ -101,16 +103,18 @@ It returns the details below.
 
 1. Perform a PATCH request on the profile PKey, with the desired Geographical unit PKey in the payload.
 
-```
+  ```
 
-PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
-{
-  "geoUnit": {
-    "PKey": "<PKEY>"
+  PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
+  {
+    "geoUnit": {
+      "PKey": "<PKEY>"
+    }
   }
-}
 
-```
+  ```
+
+***Sample request***
 
 Retrieve the list of Geographical units.
 
@@ -167,17 +171,19 @@ Perform a PATCH request on the profile, with the PKey of the desired Geographica
 1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
 
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
-  
+
 1. Perform a PATCH request on the Geographical unit, with the attributes to update in the payload.
 
-```
+  ```
 
-PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/<PKEY>
-{
-  "<ATTRIBUTE_NAME>":"<ATTRIBUTE_VALUE>"
-}
+  PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/<PKEY>
+  {
+    "<ATTRIBUTE_NAME>":"<ATTRIBUTE_VALUE>"
+  }
 
-```
+  ```
+
+***Sample request***
 
 Retrieve the list of Geographical units.
 

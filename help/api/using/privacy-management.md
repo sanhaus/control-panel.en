@@ -50,6 +50,8 @@ The payload must contain the following parameters:
 * **type**: the request type. Accepted values are "access" or "delete".
 * **regulation**: the regulation type. Example: "GDPR", "CCPA". This parameter is mandatory, and available starting Campaign Standard 19.4 release. If you are on an older build, you do not need to add it to your payload.
 
+***Sample request***
+
 This POST request creates a privacy request based on a email reconciliation key defined in the namespace AMCDS2:
 
 ```
@@ -108,6 +110,8 @@ You can monitor information about a created privacy request using a GET request.
 
 The status list description is available in the [Privacy management documentation](https://helpx.adobe.com/campaign/kb/acs-privacy.html#ManagingPrivacyRequests).
 
+***Sample request***
+
 ```
 
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool \
@@ -162,6 +166,8 @@ To retrieve the file that contains all the information associated to a reconcili
 1. Perform a **GET** request to retrieve information about the request.
 
 1. Retrieve the data file by performing a **POST** request on the returned **privacyRequestData** URL, with the privacy request internal name inside the payload. Example: {"name":"PT17"}. (See [Creating a new privacy request](#creating-a-privacy-request)).
+
+***Sample request***
 
 Create a privacy request with the type="access" attribute.
 
@@ -255,93 +261,95 @@ A profile's CCPA opt-out status can be monitored and managed using the **ccpaOpt
 >
 >The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>
 
-Sample GET request to retrieve a profile's CCPA opt-out status.
+***Sample requests***
 
-```
+* Sample GET request to retrieve a profile's CCPA opt-out status.
 
--X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>' \
--H 'Content-Type: application/json;charset=utf-8'
+    ```
 
-```
+    -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>' \
+    -H 'Content-Type: application/json;charset=utf-8'
 
-Response to the GET request.
+    ```
 
-```
+    Response to the GET request.
 
-{
-  "PKey": "<PKEY>",
-  "ccpaOptOut": false,
-  "firstName": "John",
-  "lastName": "Doe",
-  ...
-}
+    ```
 
-```
-
-Sample POST request to mark a profile for CCPA opt-out.
-
-```
-
--X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/ \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>' \
--H 'Content-Type: application/json;charset=utf-8'
--i
--d {
--d  "firstName": "John",
--d  "lastName": "Doe",
--d  "email": "jdoe@mail.com",
--d  "ccpaOptOut": true
--d }'
-
-```
-
-Response to the GET request.
-
-```
-
-{
+    {
+    "PKey": "<PKEY>",
+      "ccpaOptOut": false,
+      "firstName": "John",
+      "lastName": "Doe",
     ...
-    "email": "john.doe@mail.com",
-    "firstName": "John",
-    "lastName": "Doe",
-    "ccpaOptOut": true,
-    ...
-}
+    }
 
-```
+    ```
 
-Sample PATCH request to update a profile for CCPA opt-out.
+* Sample POST request to mark a profile for CCPA opt-out.
 
-```
+    ```
 
--X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>' \
--H 'Content-Type: application/json;charset=utf-8'
--i
--d {
--d  "ccpaOptOut": true
--d }'
+    -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/ \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>' \
+    -H 'Content-Type: application/json;charset=utf-8'
+    -i
+    -d {
+    -d  "firstName": "John",
+    -d  "lastName": "Doe",
+    -d  "email": "jdoe@mail.com",
+    -d  "ccpaOptOut": true
+    -d }'
 
-```
+    ```
 
-Response to the GET request.
+    Response to the GET request.
 
-```
+    ```
 
-{
-    ...
-    "email": "john.doe@mail.com",
-    "firstName": "John",
-    "lastName": "Doe",
-    "ccpaOptOut": true,
-    ...
-}
+    {
+        ...
+        "email": "john.doe@mail.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "ccpaOptOut": true,
+        ...
+    }
 
-```
+    ```
+
+* Sample PATCH request to update a profile for CCPA opt-out.
+
+    ```
+
+    -X PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profilesAndServices/profile/<PKEY> \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>' \
+    -H 'Content-Type: application/json;charset=utf-8'
+    -i
+    -d {
+    -d  "ccpaOptOut": true
+    -d }'
+
+    ```
+
+    Response to the GET request.
+
+    ```
+
+    {
+        ...
+        "email": "john.doe@mail.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "ccpaOptOut": true,
+        ...
+    }
+
+    ```

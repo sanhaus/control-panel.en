@@ -107,20 +107,20 @@ The steps below describe a step-by-step use case to import and use the collectio
 
 1. Drag and drop the downloaded file into the window. Pre-designed API requests display, ready to be used.
 
-![alt text](/images/postman_collection.png)
+    ![alt text](/images/postman_collection.png)
 
 1. Select the **Creating a profile** request, then update the POST request and the **Headers** tab with your own information (&lt;ORGANIZATION&gt;, &lt;API_KEY&gt;, &lt;ACCESS_TOKEN&gt;). For more on this, refer to [this section](#api-identifiers).
 
-![alt text](/images/postman_uc1.png)
+    ![alt text](/images/postman_uc1.png)
 
 1. Fill in the **Body** tab with the information you want to add to the new profile, then click the **Send** button to execute the request.
 
-![alt text](/images/postman_uc2.png)
+    ![alt text](/images/postman_uc2.png)
 
 1. Once an object created, a primary key (PKey) is associated to it. It is visible in the resquest response, as well as other attributes.
 
-![alt text](/images/postman_uc3.png)
+    ![alt text](/images/postman_uc3.png)
 
 1. Open your Campaign Standard instance, then check that the profile is created, with all the information from the payload.
 
-![alt text](/images/postman_uc4.png)
+    ![alt text](/images/postman_uc4.png)

@@ -35,37 +35,39 @@ Four execution commands are available to control a workflow:
 
 For more information on the execution commands, refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/automating/using/executing-a-workflow.html).
 
-Start a workflow.
+***Sample requests***
 
-```
+* Start a workflow.
 
--X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>' \
--i
--d '{"method":"start"}'
+  ```
 
-```
+  -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+  -H 'Cache-Control: no-cache' \
+  -H 'X-Api-Key: <API_KEY>' \
+  -i
+  -d '{"method":"start"}'
 
-<!-- + réponse -->
+  ```
 
-Stop a workflow.
+  <!-- + réponse -->
 
-```
+* Stop a workflow.
 
--X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
--H 'Content-Type: application/json' \
--H 'Authorization: Bearer <ACCESS_TOKEN>' \
--H 'Cache-Control: no-cache' \
--H 'X-Api-Key: <API_KEY>' \
--i
--d '{"method":"stop"}'
+    ```
 
-```
+    -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>/commands \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>' \
+    -i
+    -d '{"method":"stop"}'
 
-<!-- + réponse -->
+    ```
+
+    <!-- + réponse -->
 
 ## Triggering a Signal activity
 
@@ -85,34 +87,34 @@ To trigger a workflow, follow the steps below:
 
 1. Perform a **POST** request on the returned URL to trigger the signal activity, with the **"source"** parameter in the payload. This attribute is mandatory, it lets you indicate the triggering request source.
 
-  If you want to call the workflow with parameters, add them into the payload with the **"parameters"** attribute. The syntax consists of the parameter's name followed by its value (the following  types are supported: **string**, **number**, **boolean** and **date/time**).
+If you want to call the workflow with parameters, add them into the payload with the **"parameters"** attribute. The syntax consists of the parameter's name followed by its value (the following  types are supported: **string**, **number**, **boolean** and **date/time**).
 
-```
+  ```
 
-  -X POST <TRIGGER_URL>
-  -H 'Authorization: Bearer <ACCESS_TOKEN>' \
-  -H 'Cache-Control: no-cache' \
-  -H 'X-Api-Key: <API_KEY>' \
-  -H 'Content-Type: application/json;charset=utf-8' \
-  -H 'Content-Length:79' \
-  -i
-  -d {
-  -d    "source":"<SOURCE>",
-  -d    "parameters":{
-  -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",
-  -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",
-  -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",  
-  -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>"
-  -d    }
-  -d }
+    -X POST <TRIGGER_URL>
+    -H 'Authorization: Bearer <ACCESS_TOKEN>' \
+    -H 'Cache-Control: no-cache' \
+    -H 'X-Api-Key: <API_KEY>' \
+    -H 'Content-Type: application/json;charset=utf-8' \
+    -H 'Content-Length:79' \
+    -i
+    -d {
+    -d    "source":"<SOURCE>",
+    -d    "parameters":{
+    -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",
+    -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",
+    -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>",  
+    -d      "<PARAMETER_NAME":"<PARAMETER_VALUE>"
+    -d    }
+    -d }
 
-```
+  ```
 
->[!NOTE]
->
->When adding a parameter to the payload, make sure that its **name** and **type** values are consistent with the information declared in the External signal activity. Moreover, the payload size should not exceed 64Ko.
+  >[!NOTE]
+  >
+  >When adding a parameter to the payload, make sure that its **name** and **type** values are consistent with the information declared in the External signal activity. Moreover, the payload size should not exceed 64Ko.
 
-To trigger a signal activity, perform a POST request on the trigger url with the "source". Add the "parameters" attributes if you want to call the workflow with parameters.
+***Sample request***
 
 Perform a GET request on the workflow.
 
@@ -146,6 +148,8 @@ It returns the workflow signal activity and the associated trigger url.
 }
 
 ```
+
+To trigger a signal activity, perform a POST request on the trigger url with the "source". Add the "parameters" attributes if you want to call the workflow with parameters.
 
 ```
 
