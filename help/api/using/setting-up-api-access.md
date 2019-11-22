@@ -47,7 +47,7 @@ Each request must contain the parameters below:
 
 >[!CAUTION]
 >
-To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</aIn the Admin console.
+To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</a> in the Admin console.
 
 Adobe Campaign Standard API access is set up through the steps below. Each of these steps is detailed in the [Adobe IO documentation](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 

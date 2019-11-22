@@ -17,17 +17,19 @@ snippet: y
 # Managing organizational units {#managing-organizational-units}
 
 The **orgUnitBase** endpoint lets you interact with Organizational units, enabling you, for example, to update their attributes or update a profile's Organizational unit.
+
 For more on Organizational units in Campaign, refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html).
 
-The **Organizational unit** field is added to a profile when extending the profile resource. As a result, remember to always use the **profileAndServicesExt** endpoint to interact with Geographical units. For more on the profile's resource extension, refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles).
+The **Organizational unit** field is added to a profile when extending the profile resource. As a result, remember to always use the **profileAndServicesExt** endpoint to interact with Geographical units.
+
+For more on the profile's resource extension, refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles).
 
 ## Retrieving a profile's Organization unit
 
-1. Perform a GET request on the profile PKey to retrieve the **orgUnit** URL.<br/><br/>
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
-
+1. Perform a GET request on the profile PKey to retrieve the **orgUnit** URL.
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
 1. Perform a GET request on the URL to retrieve more details about the Organizational unit.<br/><br/>
-`GET <ORG_UNIT_URL>`
+  `GET <ORG_UNIT_URL>`
 
 Retrieve the profile record.
 
@@ -88,16 +90,20 @@ It returns the details below.
 
 ## Updating a profile's Organizational unit
 
-1. Perform a GET request on the **orgUnitBase** resource to retrieve the Organizational unit PKey.<br/><br/>
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
-
+1. Perform a GET request on the **orgUnitBase** resource to retrieve the Organizational unit PKey.
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
 1. Perform a PATCH request on the profile PKey, with the desired Organizational unit PKey in the payload.<br/><br/>
-`PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`<br/>
-`{`<br/>
-`"orgUnit": {`<br/>
-`       "PKey": "<PKEY>"`<br/>
-`   }`<br/>
-`}`
+
+```
+
+PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
+{
+"orgUnit": {
+       "PKey": "<PKEY>"
+   }
+}
+
+```
 
 Retrieve the list of Organizational units.
 
@@ -152,15 +158,17 @@ Perform a PATCH request on the profile, with the PKey of the desired Organizatio
 ## Updating an Organizational unit attributes
 
 1. Perform a GET request on the **orgUnitBase** resource to retrieve the Organizational unit PKey.
-
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
-
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
 1. Perform a PATCH request on the Organizational unit, with the attributes to update in the payload.
 
-`PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/<PKEY>
+```
+
+PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/<PKEY>
   {
     "<ATTRIBUTE_NAME>":"<ATTRIBUTE_VALUE>"
-  }`
+  }
+  
+```
 
 Retrieve the list of Organizational units.
 

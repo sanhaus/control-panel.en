@@ -87,7 +87,7 @@ Response to the POST request.
 
 >[!CAUTION]
 >
-The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</aIntegration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
 
 Privacy requests are created using a POST request.
 
@@ -232,7 +232,7 @@ It returns the file content.
 
 >[!CAUTION]
 >
-The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</aIntegration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
 
 To retrieve the file that contains all the information associated to a reconciliation value, follow this three-steps procedure:
 
@@ -344,4 +344,4 @@ A profile's CCPA opt-out status can be monitored and managed using the **ccpaOpt
 
 >[!CAUTION]
 >
-The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>
+>The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>

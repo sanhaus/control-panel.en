@@ -88,10 +88,9 @@ This is a two-steps procedure.
 
 >[!CAUTION]
 >
-The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
+>The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request</b>.
 
-The sample payloads below show how to retrieve the profiles that subscribed to a specific service.
->First perform a GET request to retrieve the service.
+The sample payloads below show how to retrieve the profiles that subscribed to a specific service. First perform a GET request to retrieve the service.
 
 ```
 
@@ -285,7 +284,6 @@ It returns the updated profile with the service node completed.
 ### Method 2
 
 The second method is to add a profile to a service's subscribers.
-You can follow the steps in the right panel to perform this action.
 
 The sample payloads below show how to add a profile to a service's subscribers. First perform a GET request to retrieve the service.
 
@@ -315,7 +313,7 @@ It returns the subscriptions URL for the service.
 
 ```
 
->Make a POST request on the subscriptions URL with the desired profile Primary Key inside the payload.
+Make a POST request on the subscriptions URL with the desired profile Primary Key inside the payload.
 
 ```
 
