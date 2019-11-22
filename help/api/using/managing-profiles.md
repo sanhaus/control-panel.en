@@ -114,6 +114,7 @@ The "next" node returns the URL that gives you access to the 10 next email value
 In this example, we want to **update the phone field** in a profile with the email value "amy.dakota@mail.com".
 
 1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
+
 1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.
 
 >[!NOTE]

@@ -33,6 +33,23 @@ For more on Adobe Campaign Standard and privacy compliance, refer to the [dedica
 
 ## Creating a privacy request
 
+>[!CAUTION]
+>
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
+
+Privacy requests are created using a POST request.
+
+Before creating requests, you need to define the namespace you will use. For more on this, refer the [Privacy management documentation](https://helpx.adobe.com/campaign/kb/acs-privacy.html#ManagingPrivacyRequests).
+
+The payload must contain the following parameters:
+
+* **name**: a unique internal name
+* **namespace**: the namespace name configured in Campaign Standard interface
+* **reconciliationValue**: the reconciliation value based on the reconciliation key defined in the namespace
+* **label**: the request label
+* **type**: the request type. Accepted values are "access" or "delete".
+* **regulation**: the regulation type. Example: "GDPR", "CCPA". This parameter is mandatory, and available starting Campaign Standard 19.4 release. If you are on an older build, you do not need to add it to your payload.
+
 This POST request creates a privacy request based on a email reconciliation key defined in the namespace AMCDS2:
 
 ```
@@ -85,24 +102,11 @@ Response to the POST request.
 
 ```
 
->[!CAUTION]
->
->The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
-
-Privacy requests are created using a POST request.
-
-Before creating requests, you need to define the namespace you will use. For more on this, refer the [Privacy management documentation](https://helpx.adobe.com/campaign/kb/acs-privacy.html#ManagingPrivacyRequests).
-
-The payload must contain the following parameters:
-
-* **name**: a unique internal name
-* **namespace**: the namespace name configured in Campaign Standard interface
-* **reconciliationValue**: the reconciliation value based on the reconciliation key defined in the namespace
-* **label**: the request label
-* **type**: the request type. Accepted values are "access" or "delete".
-* **regulation**: the regulation type. Example: "GDPR", "CCPA". This parameter is mandatory, and available starting Campaign Standard 19.4 release. If you are on an older build, you do not need to add it to your payload.
-
 ## Monitoring a privacy request
+
+You can monitor information about a created privacy request using a GET request.
+
+The status list description is available in the [Privacy management documentation](https://helpx.adobe.com/campaign/kb/acs-privacy.html#ManagingPrivacyRequests).
 
 ```
 
@@ -145,13 +149,21 @@ Response to the GET request.
 
 ```
 
-You can monitor information about a created privacy request using a GET request.
-
-The status list description is available in the [Privacy management documentation](https://helpx.adobe.com/campaign/kb/acs-privacy.html#ManagingPrivacyRequests).
-
 ## Retrieving a privacy data file
 
->Create a privacy request with the type="access" attribute.
+>[!CAUTION]
+>
+>The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
+
+To retrieve the file that contains all the information associated to a reconciliation value, follow this three-steps procedure:
+
+1. Perform a **POST** request to create a new request with the attribute type="access", see [Creating a new privacy request](#creating-a-privacy-request).
+
+1. Perform a **GET** request to retrieve information about the request.
+
+1. Retrieve the data file by performing a **POST** request on the returned **privacyRequestData** URL, with the privacy request internal name inside the payload. Example: {"name":"PT17"}. (See [Creating a new privacy request](#creating-a-privacy-request)).
+
+Create a privacy request with the type="access" attribute.
 
 ```
 
@@ -230,19 +242,18 @@ It returns the file content.
 
 ```
 
+## Managing CCPA opt-out
+
+A profile's CCPA opt-out status can be monitored and managed using the **ccpaOptOut** profile attribute and the "true" or "false" values:
+
+`"ccpaOptOut": <value>`
+
+* **true**:  forbids the sale of personal information.
+* **false**: authorizes the sale of personal information.
+
 >[!CAUTION]
 >
->The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</a> Integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
-
-To retrieve the file that contains all the information associated to a reconciliation value, follow this three-steps procedure:
-
-1. Perform a **POST** request to create a new request with the attribute type="access", see [Creating a new privacy request](#creating-a-privacy-request).
-
-1. Perform a **GET** request to retrieve information about the request.
-
-1. Retrieve the data file by performing a **POST** request on the returned **privacyRequestData** URL, with the privacy request internal name inside the payload. Example: {"name":"PT17"}. (See [Creating a new privacy request](#creating-a-privacy-request)).
-
-## Managing CCPA opt-out
+>The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>
 
 Sample GET request to retrieve a profile's CCPA opt-out status.
 
@@ -334,14 +345,3 @@ Response to the GET request.
 }
 
 ```
-
-A profile's CCPA opt-out status can be monitored and managed using the **ccpaOptOut** profile attribute and the "true" or "false" values:
-
-`"ccpaOptOut": <value>`
-
-* **true**:  forbids the sale of personal information.
-* **false**: authorizes the sale of personal information.
-
->[!CAUTION]
->
->The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>

@@ -20,7 +20,7 @@ The **geoUnitBase** endpoint lets you interact with Geographical units, enabling
 
 >[!CAUTION]
 >
-The Geographical unit feature has been deprecated with the Campaign Standard 18.7 release.
+>The Geographical unit feature has been deprecated with the Campaign Standard 18.7 release.
 As a result, new Campaign Standard instances, as well as existing instances with no geographical units created, cannot have this capability implemented starting the 18.7 release.
 For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">Deprecated features</a> page.
 
@@ -29,8 +29,11 @@ The **Geographcal unit** field is added to a profile when extending the profile 
 ## Retrieving a profile's Geographical unit
 
 1. Perform a GET request on the profile PKey to retrieve the **geoUnit** URL.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
+
 1. Perform a GET request on the URL to retrieve more details about the Geographical unit.
+
   `GET <GEO_UNIT_URL>`
 
 Retrieve the profile record.
@@ -93,7 +96,9 @@ It returns the details below.
 ## Updating a profile's Geographical unit
 
 1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/`
+
 1. Perform a PATCH request on the profile PKey, with the desired Geographical unit PKey in the payload.
 
 ```
@@ -160,7 +165,9 @@ Perform a PATCH request on the profile, with the PKey of the desired Geographica
 ## Updating a Geographical unit attributes
 
 1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
+  
 1. Perform a PATCH request on the Geographical unit, with the attributes to update in the payload.
 
 ```

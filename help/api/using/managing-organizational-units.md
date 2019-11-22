@@ -27,8 +27,11 @@ For more on the profile's resource extension, refer to the [Campaign documentati
 ## Retrieving a profile's Organization unit
 
 1. Perform a GET request on the profile PKey to retrieve the **orgUnit** URL.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
-1. Perform a GET request on the URL to retrieve more details about the Organizational unit.<br/><br/>
+
+1. Perform a GET request on the URL to retrieve more details about the Organizational unit.
+
   `GET <ORG_UNIT_URL>`
 
 Retrieve the profile record.
@@ -91,8 +94,10 @@ It returns the details below.
 ## Updating a profile's Organizational unit
 
 1. Perform a GET request on the **orgUnitBase** resource to retrieve the Organizational unit PKey.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
-1. Perform a PATCH request on the profile PKey, with the desired Organizational unit PKey in the payload.<br/><br/>
+
+1. Perform a PATCH request on the profile PKey, with the desired Organizational unit PKey in the payload.
 
 ```
 
@@ -158,7 +163,9 @@ Perform a PATCH request on the profile, with the PKey of the desired Organizatio
 ## Updating an Organizational unit attributes
 
 1. Perform a GET request on the **orgUnitBase** resource to retrieve the Organizational unit PKey.
+
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
+  
 1. Perform a PATCH request on the Organizational unit, with the attributes to update in the payload.
 
 ```
