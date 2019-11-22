@@ -95,7 +95,7 @@ It returns the details below.
 1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
   `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/`
 1. Perform a PATCH request on the profile PKey, with the desired Geographical unit PKey in the payload.
-  
+
 ```
 
 PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
