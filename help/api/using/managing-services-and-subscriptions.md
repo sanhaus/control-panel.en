@@ -128,7 +128,7 @@ If you want to create the service with specific attributes, add them into the pa
 
   {
     ...
-    "service": {...},
+    "service": ...,
     "serviceName": "SVC3",
     "subscriber": {
         "PKey": "<PKEY>",
@@ -171,7 +171,7 @@ This is a two-steps procedure.
 
   {
     ...
-    "postalAddress":{...},
+    "postalAddress":...,
     "preferredLanguage": "none",
     "subscriptions": {
       "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions/"
@@ -241,7 +241,7 @@ This is a two-steps procedure.
 
   {
     ...
-    "postalAddress":{...},
+    "postalAddress":...,
     "preferredLanguage": "none",
     "subscriptions": {
       "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions/"
@@ -276,7 +276,7 @@ This is a two-steps procedure.
     "title": "Sport Newsletter (SVC1)"
   },
   "serviceName": "",
-  "subscriber": {...},
+  "subscriber": ...,
   ...
 }
 
@@ -338,7 +338,7 @@ First perform a GET request to retrieve the service.
 
 {
   ...
-  "service": {...},
+  "service": ...,
   "serviceName": "",
   "subscriber": {
     "PKey": "<PKEY>",
@@ -374,7 +374,7 @@ You can follow the steps in the right panel to perform this action.
 
   {
     ...
-    "postalAddress":{...},
+    "postalAddress":...,
     "preferredLanguage": "none",
     "subscriptions": {
       "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions/"
@@ -489,9 +489,9 @@ If the delete request is successful, the response status is 204 No Content.
   "expirationDate": "",
   "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions/<PKEY>",
   "metadata": "subscriptionRcp",
-  "service": {...},
+  "service": ...,
   "serviceName": "SVC3",
-  "subscriber": {...},
+  "subscriber": ...,
   ...
 }
 

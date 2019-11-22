@@ -193,7 +193,7 @@ The status list description is available in the [Privacy management documentatio
 {
     ...
     "name": "PR2",
-    "namespace": {...},
+    "namespace": ...,
     "namespaceName": "defaultNamespace1",
     "privacyRequestData": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/privacy/privacyTool/<PKEY>/privacyRequestData/"

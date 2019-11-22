@@ -44,9 +44,9 @@ snippet: y
             "blackListAllLastModified": "",
             ...
         },
-        {...},
-        {...},
-        {...}
+        ...,
+        ...,
+        ...
     ],
     "count": {
         "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile//_count?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
