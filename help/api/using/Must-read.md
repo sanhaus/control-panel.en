@@ -32,7 +32,7 @@ snippet: y
 
 All API resources are available in **JSON** with an URL extension or inside an HTTP Accept Header.
 
-`GET /profileAndServices/<resourceName>.json`
+`GET /profileAndServices/<resourceName>.json` 
 
 ```
 
