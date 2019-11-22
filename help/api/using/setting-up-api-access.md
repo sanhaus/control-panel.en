@@ -31,8 +31,8 @@ In all the code examples, you must replace variables with your personal identifi
 >[!NOTE]
 >
 >One ORGANIZATION ID is provided for each of your instances :
-> - <b>&lt;ORGANIZATION&gt;</b> : your production instance
-> - <b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance
+> * <b>&lt;ORGANIZATION&gt;</b> : your production instance
+> * <b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance
 >
 > To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
 
