@@ -28,10 +28,17 @@ user-guide-title: Control Panel Help
   + [Instance details](instances-settings/using/instance-details.md)
 + [FAQ](faq.md)
 + Working with Campaign Standard APIs {#working-with-campaign-standard-apis}
-  + [About Campaign Standard APIs](api/using/about-campaign-standard-apis.md)
-  + [Why using Campaign Standard APIs](api/using/why-using-campaign-standard-apis.md)
+  + About Campaign Standard APIs {#about-campaign-standard-apis}
+    + [Overview](api/using/about-campaign-standard-apis.md)
+    + [Why using Campaign Standard APIs](api/using/why-using-campaign-standard-apis.md)
   + [Setting up API access](api/using/setting-up-api-access.md)
-  + [Global concepts](api/using/global-concepts.md)  
+  + Global concepts {#global-concepts}
+    + [Must-read](api/using/must-read.md)
+    + [Endpoints](api/using/endpoints.md)
+    + [Metadata mechanism](api/using/metadata-mechanism.md)
+    + [Verbs](api/using/verbs.md)
+    + [Additional operations](api/using/additional-operations.md)
+    + [Custom resources](api/using/custom-resources.md)
   + Use cases {#use-cases}
     + [Managing profiles](api/using/managing-profiles.md)
     + [Managing services and subscriptions](api/using/managing-services-and-subscriptions.md)

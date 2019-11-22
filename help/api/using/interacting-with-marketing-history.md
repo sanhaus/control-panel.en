@@ -20,16 +20,8 @@ The **history** endpoint lets you interact with a profile's marketing history.
 This way, you can, for example, easily retrieve the mirror page for a delivery that was sent to a profile. To do this, follow the steps below:
 
 1. Perform a GET  with the **history** endpoint and the profile's primary key.
-
-  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/history/<PROFILE_PKEY>`
-
 1. Perform a GET request on the **events** href returned.
-
-  `GET <EVENT_URL>`
-
 1. It returns the list of events for the profile with links to mirror pages in the **mirrorPage** node.
-
-  `"mirrorPage": {"href": "<MIRROR_PAGE_URL"}`
 
 ***Sample request***
 

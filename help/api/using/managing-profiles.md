@@ -18,16 +18,9 @@ snippet: y
 
 ## Retrieving Profiles
 
-Retrieving profiles is performed with a GET request.
+Retrieving profiles is performed with a **GET** request.
 
-You can add some filters, ordering and pagination. To read more information on these parameters, consult the respective sections: [Filtering](#filtering), [Sorting](#sorting) and [Pagination](#pagination).
-
-Fore more information on the **GET** request, refer to [this section](#get-post-patch-delete).
-For more information on the **metadata** of the profile API, refer to [this section](#metadata-mechanism).
-
->[!NOTE]
->
->Reminder : you must replace <b>&lt;ORGANIZATION&gt;</b> in the URL with your <b>Personal organization ID</b>.
+You can then refine your search by using filters, ordering and pagination. For more on this, refer to these sections: [Filtering](#filtering), [Sorting](#sorting) and [Pagination](#pagination).
 
 ***Sample requests***
 
@@ -57,17 +50,7 @@ For more information on the **metadata** of the profile API, refer to [this sect
                 "blackListAllLastModified": "",
                 ...
             },
-            ...,
-            ...,
             ...
-        ],
-        "count": {
-            "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile//_count?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
-        },
-        "next": {
-            "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/?_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl"
-        },
-        "serverSidePagination": true
     }
 
     ```
@@ -84,7 +67,7 @@ For more information on the **metadata** of the profile API, refer to [this sect
 
     ```
 
-    It returns the following values.
+    Response to the request. The "next" node returns the URL that gives you access to the 10 next email values.
 
     ```
 
@@ -109,25 +92,17 @@ For more information on the **metadata** of the profile API, refer to [this sect
 
     ```
 
-    The "next" node returns the URL that gives you access to the 10 next email values.
-
 ## Updating Profiles
 
-In this example, we want to **update the phone field** in a profile with the email value "amy.dakota@mail.com".
+Updating profiles is performed with a **PATCH** request.
 
-1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
+ `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
 
-1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.
+1. The first step is to **retrieve the profile**.
 
->[!NOTE]
->
->The Primary Key value of the profile must be integrated in the URL.
+1. In a second request, we will perform a **PATCH request** on the profile with the completed information in the payload.
 
-The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
-
-To know more about PATCH requests, refer to [this section](#get-post-patch-delete).
-
-To check if the PATCH request has updated the profile, we can perform a final GET request.
+1. To check if the PATCH request has updated the profile, we can perform a final GET request.
 
 ***Sample request***
 
@@ -157,18 +132,9 @@ Response to the request.
             "externalId": "",
             "fax": "",
             "firstName": "",
-            "gender": "unknown",
-            "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/@2v1dr3ZKJveMDhAdh0MPnh9hNQQ93qb7AW6BNVVKknjwXvTZRBAgUqz1SNcB4ZndgjqOofx3BwBZYBftlmObISoM3rs",
-            "isExternal": false,
-            "lastModified": "2019-09-26 11:49:48.817Z",
             ...
         }
-    ],
-    "count": {
-        "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile//byEmail/_count?email=john.doe@mail.com&_lineStart=@sL3AJfHiOJZzn9Ytm0OSduPdEz_kYoaflOEfSS1N2-ttAfLl",
-        "value": 1
-    },
-    "serverSidePagination": true
+    ]
 }
 
 ```
@@ -199,13 +165,13 @@ It returns the PKEY and URL to retrieve the updated profile.
 
 ## Creating Profiles
 
-This action can be done with a simple **POST request** on the **profile** resource.
+Creating profiles is performed with a **POST** request on the profile resource.
 
 >[!CAUTION]
 >
-If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>ProfileAndServicesExt</b> endpoint.
+>If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>ProfileAndServicesExt</b> endpoint.
+>
 >For more on the profile's resource extension, refer to the <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign documentation</a>.
-
 
 ***Sample request***
 
@@ -233,12 +199,6 @@ It returns the newly created profile, with the "john.doe@mail.com" email address
     "cryptedId": "u5e+EEGhALYQwgQJpsEIZy+NYz5KFCHy++ckfwZ+okq05UpQ6mWOP+U/KUh2slJFcwqarw==",
     "domain": "mail.com",
     "email": "john.doe@mail.com",
-    "emailFormat": "unknown",
-    "externalId": "",
-    "fax": "",
-    "firstName": "",
-    "gender": "unknown",
-    "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/PKEY>",
     ...
 }
 

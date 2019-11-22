@@ -33,29 +33,23 @@ For example, you want a "Cart abandonment" event to be triggered whenever one of
 
 The transactional event is sent through a POST request with the following URL structure:
 
-`POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>`
+```
+
+POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
+
+```
 
 * **&lt;ORGANIZATION&gt;**: your personal ORGANIZATION ID. Refer to [this section](#must-read).
 
 * **&lt;transactionalAPI&gt;**: the Transactional Messages API endPoints.
 
-  The name of the Transactional Messages API endpoint depends on your instance configuration. It corresponds to the value **"mc"** followed by your **personal organization ID**.
+  The name of the Transactional Messages API endpoint depends on your instance configuration. It corresponds to the value "mc" followed by your personal organization ID. Let's take the example of the Geometrixx company, with "geometrixx" as its organization ID. In that case, the POST request would be as follows:
 
-  Let's take the example of the Geometrixx company, with "geometrixx" as its organization ID. In that case, the POST request would be:
+  POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>
 
-  `POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>`
-
-  The transactional messages API endpoint is also visible during the API preview.
+  (Note that the transactional messages API endpoint is also visible during the API preview)
 
 * **&lt;eventID&gt;**: the type of event you want to send. This ID is generated when creating the event definition. Refer to the [Campaign documentation](https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html).
-
-URL example for an Adobe instance and a cart abandonment type event.
-
-```
-
-https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment
-
-```
 
 **POST request header**
 

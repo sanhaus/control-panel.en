@@ -18,7 +18,7 @@ snippet: y
 
 ## Creating a service
 
-Services creation is performed with a POST request on the **service** resource.
+Services creation is performed with a **POST** request on the service resource.
 
 If you want to create the service with specific attributes, add them into the payload. Otherwise, the new service will be created with default ones.
 
@@ -51,30 +51,9 @@ It returns the newly created service with the updates attributes.
     "PKey": "<PKEY>",
     "builtIn": false,
     "created": "2019-09-26 12:00:37.005Z",
-    "desc": "",
-    "end": "",
     "href": "https://mc.adobe.io/<ORGANIZATION>/profileAndServices/service/@NLscZuVHxdVu9rPftvrMWFfR1zRIxQGswSOmGLrK09JTF_iWhB0JCUHEndA_vvy__k9mzOYa5NVkcWDcrK8qGh0wygahX9kRcD44kiWWSEceShn3",
-    "isExternal": false,
-    "isTemplate": false,
     "label": "My newsletter",
-    "lastModified": "2019-09-26 12:00:37.005Z",
-    "limitedDuration": false,
-    "mainDate": "2019-10-06",
-    "messageType": "email",
-    "mode": "newsletter",
-    "name": "email_newsletter",
-    "publicLabel": "",
-    "start": "2019-10-06",
-    "subScenarioEventType": "",
-    "subscriptions": {
-        "href": "https://mc.adobe.io/<ORGANIZATION>/profileAndServices/service/@NLscZuVHxdVu9rPftvrMWFfR1zRIxQGswSOmGLrK09JTF_iWhB0JCUHEndA_vvy__k9mzOYa5NVkcWDcrK8qGh0wygahX9kRcD44kiWWSEceShn3/subscriptions/"
-    },
-    "targetResource": "profile",
-    "template": null,
-    "thumbnail": "/nl/img/thumbnails/defaultService.png",
-    "title": "My newsletter (email_newsletter)",
-    "unsubScenarioEventType": "",
-    "validityDuration": "P10D"
+    ...
 }
 
 ```
@@ -94,7 +73,7 @@ This is a two-steps procedure.
 
 ***Sample request***
 
-The sample payloads below show how to retrieve the profiles that subscribed to a specific service. First perform a GET request to retrieve the service.
+Perform a GET request to retrieve the service.
 
 ```
 
@@ -162,7 +141,7 @@ This is a two-steps procedure.
 
 ***Sample request***
 
-The sample payloads below show how to retrieve a profile and all its subscribed services. First perform a GET request to retrieve the profile.
+Perform a GET request to retrieve the profile.
 
 ```
 
@@ -224,9 +203,9 @@ It returns the list of services to which the profile subscribed.
 
 ## Performing Subscriptions
 
-* Method 1: The first method starts from a Profile and the action consists to add a subscription to this profile for a given service.
+### Method 1: Subscribing a profile to a service
 
-The sample payloads below show how to subscribe a profile to a service. First perform a GET request to retrieve the profile.
+Perform a GET request to retrieve the profile.
 
 ```
 
@@ -285,9 +264,9 @@ It returns the updated profile with the service node completed.
 
 ```
 
-* Method 2: The second method is to add a profile to a service's subscribers.
+### Method 2: Adding a profile to a service's subscribers
 
-The sample payloads below show how to add a profile to a service's subscribers. First perform a GET request to retrieve the service.
+Perform a GET request to retrieve the service.
 
 ```
 
