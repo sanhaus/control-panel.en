@@ -933,7 +933,8 @@ It is possible to combine **multiple filters** in a single request:
 <!--
 >Response to the request.
 
-```shell
+```
+
 {
     "content": [
         {
@@ -949,7 +950,9 @@ It is possible to combine **multiple filters** in a single request:
     "count": ...,
     "serverSidePagination": true
 }
+
 ```
+
 -->
 
 <!-- exemple à vérifier de bout en bout-->
