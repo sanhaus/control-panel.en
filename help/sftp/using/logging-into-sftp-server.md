@@ -39,7 +39,7 @@ To connect to your SFTP server, follow these steps:
 
     >[!NOTE]
     >
-    >If you are using a Mac computer, you can view the fingerprint of the private key stored in your computer by running this command:
+    If you are using a Mac computer, you can view the fingerprint of the private key stored in your computer by running this command:
     >
     >`ssh-keygen -lf <path of the privatekey>`
 

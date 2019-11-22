@@ -18,7 +18,11 @@ snippet: y
 
 ## Creating a service
 
-> Sample POST request to create a service with specific attributes.
+Services creation is performed with a POST request on the **service** resource.
+
+If you want to create the service with specific attributes, add them into the payload. Otherwise, the new service will be created with default ones.
+
+Sample POST request to create a service with specific attributes.
 
 ```
 
@@ -37,7 +41,7 @@ snippet: y
 
 ```
 
-> It returns the newly created service with the updates attributes.
+It returns the newly created service with the updates attributes.
 
 ```
 
@@ -73,16 +77,21 @@ snippet: y
 
 ```
 
-Services creation is performed with a POST request on the **service** resource.
-
-If you want to create the service with specific attributes, add them into the payload. Otherwise, the new service will be created with default ones.
-
 ## Retrieving subscriptions
 
 ### Retrieving the profiles that subscribed to a service
 
->The sample payloads below show how to retrieve the profiles that subscribed to a specific service.
-<br/>First perform a GET request to retrieve the service.
+This is a two-steps procedure.
+
+1. Retrieve the subscriptions URL for the desired service.
+1. Perform a GET request on the subscriptions URL. It returns the list of subscriptions for the service, with each associated profile.
+
+>[!CAUTION]
+>
+The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
+
+The sample payloads below show how to retrieve the profiles that subscribed to a specific service.
+>First perform a GET request to retrieve the service.
 
 ```
 
@@ -94,7 +103,7 @@ If you want to create the service with specific attributes, add them into the pa
 
 ```
 
->It returns the subscriptions URL for the service.
+It returns the subscriptions URL for the service.
 
 ```
 
@@ -110,7 +119,7 @@ If you want to create the service with specific attributes, add them into the pa
 
 ```
 
->Perform a GET request on the subscriptions URL.
+Perform a GET request on the subscriptions URL.
 
 ```
 
@@ -122,7 +131,7 @@ If you want to create the service with specific attributes, add them into the pa
 
 ```
 
->The list of subscriptions for the service displays, with each associated profile.
+The list of subscriptions for the service displays, with each associated profile.
 
 ```
 
@@ -141,19 +150,14 @@ If you want to create the service with specific attributes, add them into the pa
 
 ```
 
-This is a two-steps procedure.
-
-1. Retrieve the subscriptions URL for the desired service.
-1. Perform a GET request on the subscriptions URL. It returns the list of subscriptions for the service, with each associated profile.
-
->[!CAUTION]
->
->The REST API returns the "href" property, which contains the URL to use. <b>Always use the URL contained in the response to make the subsequent API request.</b>
-
 ### Retrieving the services to which a profile subscribed
 
->The sample payloads below show how to retrieve a profile and all its subscribed services.
-<br/>First perform a GET request to retrieve the profile.
+This is a two-steps procedure.
+
+1. Retrieve the subscriptions URL for a given profile.
+1. Perform a GET request on the URL. It returns the list of subscriptions for the profile, with each associated service.
+
+The sample payloads below show how to retrieve a profile and all its subscribed services. First perform a GET request to retrieve the profile.
 
 ```
 
@@ -165,7 +169,7 @@ This is a two-steps procedure.
 
 ```
 
->It returns the subscriptions URL for the profile.
+It returns the subscriptions URL for the profile.
 
 ```
 
@@ -181,7 +185,7 @@ This is a two-steps procedure.
 
 ```
 
->Perform a GET request on the subscriptions URL.
+Perform a GET request on the subscriptions URL.
 
 ```
 
@@ -193,7 +197,7 @@ This is a two-steps procedure.
 
 ```
 
->It returns the list of services to which the profile subscribed.
+It returns the list of services to which the profile subscribed.
 
 ```
 
@@ -213,17 +217,13 @@ This is a two-steps procedure.
 
 ```
 
-This is a two-steps procedure.
-
-1. Retrieve the subscriptions URL for a given profile.
-1. Perform a GET request on the URL. It returns the list of subscriptions for the profile, with each associated service.
-
 ## Performing Subscriptions
 
 ### Method 1
 
->The sample payloads below show how to subscribe a profile to a service.
-<br/>First perform a GET request to retrieve the profile.
+The first method starts from a Profile and the action consists to add a subscription to this profile for a given service.
+
+The sample payloads below show how to subscribe a profile to a service. First perform a GET request to retrieve the profile.
 
 ```
 
@@ -235,7 +235,7 @@ This is a two-steps procedure.
 
 ```
 
->It returns the subscriptions URL for the profile.
+It returns the subscriptions URL for the profile.
 
 ```
 
@@ -251,7 +251,7 @@ This is a two-steps procedure.
 
 ```
 
->Perform a POST request on the subscriptions URL with the desired service Primary Key inside the payload.
+Perform a POST request on the subscriptions URL with the desired service Primary Key inside the payload.
 
 ```
 
@@ -265,7 +265,7 @@ This is a two-steps procedure.
 
 ```
 
->It returns the updated profile with the service node completed.
+It returns the updated profile with the service node completed.
 
 ```
 
@@ -282,15 +282,12 @@ This is a two-steps procedure.
 
 ```
 
-The first method starts from a Profile and the action consists to add a subscription to this profile for a given service.
-
 ### Method 2
 
->The sample payloads below show how to add a profile to a service's subscribers.
+The second method is to add a profile to a service's subscribers.
+You can follow the steps in the right panel to perform this action.
 
-<br/>
-
-First perform a GET request to retrieve the service.
+The sample payloads below show how to add a profile to a service's subscribers. First perform a GET request to retrieve the service.
 
 ```
 
@@ -302,7 +299,7 @@ First perform a GET request to retrieve the service.
 
 ```
 
->It returns the subscriptions URL for the service.
+It returns the subscriptions URL for the service.
 
 ```
 
@@ -332,7 +329,7 @@ First perform a GET request to retrieve the service.
 
 ```
 
->It returns the updated service with the subscribers node completed.
+It returns the updated service with the subscribers node completed.
 
 ```
 
@@ -348,15 +345,19 @@ First perform a GET request to retrieve the service.
 
 ```
 
-The second method is to add a profile to a service's subscribers.
-You can follow the steps in the right panel to perform this action.
-
 ## Deleting Subscriptions
 
 ### Deleting a service subscription for a specific profile
 
->The sample payloads below show how to unsubscribe a profil from a service.
-<br/>First perform a GET request to retrieve the profile.
+This is a three-steps procedure.
+
+1. Retrieve the subscriptions URL for the desired profile.
+1. Perform a GET request on the subscriptions URL.
+1. Perform a DELETE request on the desired service URL.
+
+If the delete request is successful, the response status is 204 No Content.
+
+The sample payloads below show how to unsubscribe a profil from a service. First perform a GET request to retrieve the profile.
 
 ```
 
@@ -368,7 +369,7 @@ You can follow the steps in the right panel to perform this action.
 
 ```
 
->It returns the subscriptions URL for the profile.
+It returns the subscriptions URL for the profile.
 
 ```
 
@@ -383,7 +384,7 @@ You can follow the steps in the right panel to perform this action.
 
 ```
 
->Perform a GET request on the subscriptions URL.
+Perform a GET request on the subscriptions URL.
 
 ```
 
@@ -395,7 +396,7 @@ You can follow the steps in the right panel to perform this action.
 
 ```
 
->It returns the list of subscriptions for the selected profile, with a URL for each subscribed service.
+It returns the list of subscriptions for the selected profile, with a URL for each subscribed service.
 
 ```
 
@@ -411,7 +412,7 @@ You can follow the steps in the right panel to perform this action.
 
 ```
 
->Perform a DELETE request on the desired service URL.
+Perform a DELETE request on the desired service URL.
 
 ```
 
@@ -425,17 +426,17 @@ You can follow the steps in the right panel to perform this action.
 
 <!-- + réponse -->
 
+### Deleting a service subscription for a specific profile
+
 This is a three-steps procedure.
 
-1. Retrieve the subscriptions URL for the desired profile.
-1. Perform a GET request on the subscriptions URL.
-1. Perform a DELETE request on the desired service URL.
+1. Retrieve the desired service and its subscription URL.
+1. Perform a GET request on the subscriptions URL to retrieve all profiles subscriptions.
+1. Perform a DELETE request on the desired profile subscription URL.
 
 If the delete request is successful, the response status is 204 No Content.
 
-### Deleting a service subscription for a specific profile
-
->Retrieve the service record.
+Retrieve the service record.
 
 ```
 
@@ -447,7 +448,7 @@ If the delete request is successful, the response status is 204 No Content.
 
 ```
 
->It returns the subscriptions URL for the service.
+It returns the subscriptions URL for the service.
 
 ```
 
@@ -466,7 +467,7 @@ If the delete request is successful, the response status is 204 No Content.
 
 ```
 
->Perform a GET request on the subscriptions URL.
+Perform a GET request on the subscriptions URL.
 
 ```
 
@@ -478,7 +479,7 @@ If the delete request is successful, the response status is 204 No Content.
 
 ```
 
->It returns the list of subscriptions for the selected service, with a URL (href) for each profile subscription.
+It returns the list of subscriptions for the selected service, with a URL (href) for each profile subscription.
 
 ```
 
@@ -497,7 +498,7 @@ If the delete request is successful, the response status is 204 No Content.
 
 ```
 
->Perform a DELETE request on the desired profile subscription URL.
+Perform a DELETE request on the desired profile subscription URL.
 
 ```
 
@@ -510,11 +511,3 @@ If the delete request is successful, the response status is 204 No Content.
 ```
 
 <!-- + réponse -->
-
-This is a three-steps procedure.
-
-1. Retrieve the desired service and its subscription URL.
-1. Perform a GET request on the subscriptions URL to retrieve all profiles subscriptions.
-1. Perform a DELETE request on the desired profile subscription URL.
-
-If the delete request is successful, the response status is 204 No Content.

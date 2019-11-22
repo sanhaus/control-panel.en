@@ -33,7 +33,7 @@ For more on Adobe Campaign Standard and privacy compliance, refer to the [dedica
 
 ## Creating a privacy request
 
->This POST request creates a privacy request based on a email reconciliation key defined in the namespace AMCDS2:
+This POST request creates a privacy request based on a email reconciliation key defined in the namespace AMCDS2:
 
 ```
 
@@ -54,7 +54,7 @@ For more on Adobe Campaign Standard and privacy compliance, refer to the [dedica
 
 ```
 
->Response to the POST request.
+Response to the POST request.
 
 ```
 
@@ -87,7 +87,7 @@ For more on Adobe Campaign Standard and privacy compliance, refer to the [dedica
 
 >[!CAUTION]
 >
->The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.
+The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</aIntegration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
 
 Privacy requests are created using a POST request.
 
@@ -114,7 +114,7 @@ The payload must contain the following parameters:
 
 ```
 
->Response to the GET request.
+Response to the GET request.
 
 ```
 
@@ -174,7 +174,7 @@ The status list description is available in the [Privacy management documentatio
 
 <!-- + réponse -->
 
->Perform a GET request to retrieve information about the request.
+Perform a GET request to retrieve information about the request.
 
 ```
 
@@ -186,7 +186,7 @@ The status list description is available in the [Privacy management documentatio
 
 ```
 
->It returns the privacyRequestData attribute with an associated URL.
+It returns the privacyRequestData attribute with an associated URL.
 
 ```
 
@@ -209,7 +209,7 @@ The status list description is available in the [Privacy management documentatio
 
 ```
 
->Perform a POST request on the privacyRequestData URL, with the request internal name inside the payload.
+Perform a POST request on the privacyRequestData URL, with the request internal name inside the payload.
 
 ```
 
@@ -222,17 +222,17 @@ The status list description is available in the [Privacy management documentatio
 
 ```
 
->It returns the file content.
+It returns the file content.
 
 ```
 
-"{data:<gdprRequestData _cs=\" ()\" id=\"8565163\" reconciliationValue=\"'customer@adobe.com'\">\n  <table name=\"nms:recipient\">\n    <row>id='8569152'\n\t\tlastName='customer'\n\t\tfirstName='customer'\n\t\tgender='1'\n\t\temail='customer@adobe.com'\n\t\tcreatedBy-id='8565162'\n\t\tmodifiedBy-id='8565162'\n\t\tlastModified='2018-03-15 13:54:28.708Z'\n\t\tcreated='2018-03-15 13:54:28.708Z'\n\t\tthumbnail='/nl/img/thumbnails/defaultProfil.png'\n\t\temailFormat='2'</row>\n  </table>\n  <table name=\"nms:broadLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\tid='8003'\n\t\taddress='customer@adobe.com'\n\t\tstatus='1'\n\t\tmsg-id='1194'\n\t\teventDate='2018-03-15 13:58:34.726Z'\n\t\tlastModified='2018-03-15 13:59:02.008Z'\n\t\tvariant='default'\n\t\tdelivery-id='8569153'\n\t\tpublicId='1'\n\t\tprofile-id='8569152'</row>\n  </table>\n  <table name=\"nms:trackingLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='-1178080215'\n\t\ttrackedDevice='pc'\n\t\tid='5000'\n\t\tlogDate='2018-03-15 14:00:51.650Z'\n\t\tsourceType='html'\n\t\tuserAgent='-1178080215'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='0'\n\t\ttrackedDevice=''\n\t\tid='6000'\n\t\tlogDate='2018-03-15 16:00:41.110Z'\n\t\tsourceType='html'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n  </table>\n</gdprRequestData>}"
+"{data:<gdprRequestData _cs=\" ()\" id=\"8565163\" reconciliationValue=\"'customer@adobe.com'\">\n  <table name=\"nms:recipient\">\n    <rowId='8569152'\n\t\tlastName='customer'\n\t\tfirstName='customer'\n\t\tgender='1'\n\t\temail='customer@adobe.com'\n\t\tcreatedBy-id='8565162'\n\t\tmodifiedBy-id='8565162'\n\t\tlastModified='2018-03-15 13:54:28.708Z'\n\t\tcreated='2018-03-15 13:54:28.708Z'\n\t\tthumbnail='/nl/img/thumbnails/defaultProfil.png'\n\t\temailFormat='2'</row>\n  </table>\n  <table name=\"nms:broadLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\tid='8003'\n\t\taddress='customer@adobe.com'\n\t\tstatus='1'\n\t\tmsg-id='1194'\n\t\teventDate='2018-03-15 13:58:34.726Z'\n\t\tlastModified='2018-03-15 13:59:02.008Z'\n\t\tvariant='default'\n\t\tdelivery-id='8569153'\n\t\tpublicId='1'\n\t\tprofile-id='8569152'</row>\n  </table>\n  <table name=\"nms:trackingLogRcp\">\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='-1178080215'\n\t\ttrackedDevice='pc'\n\t\tid='5000'\n\t\tlogDate='2018-03-15 14:00:51.650Z'\n\t\tsourceType='html'\n\t\tuserAgent='-1178080215'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n    <row>deliveryLabel='Send via email'\n\t\tdeliveryType='0'\n\t\tcontactDate='2018-03-15 13:58:31.667Z'\n\t\turlLabel='Open'\n\t\turlSource=''\n\t\tuserAgent='0'\n\t\ttrackedDevice=''\n\t\tid='6000'\n\t\tlogDate='2018-03-15 16:00:41.110Z'\n\t\tsourceType='html'\n\t\turl-id='1'\n\t\tdelivery-id='8569153'\n\t\tbroadLog-id='8003'\n\t\trecipient-id='8569152'</row>\n  </table>\n</gdprRequestData>}"
 
 ```
 
 >[!CAUTION]
 >
->The <a href="https://adobe.io/apis/cloudplatform/gdpr.html">Privacy Core Service</a> integration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html">this page</a>.
+The <a href="https://adobe.io/apis/cloudplatform/gdpr.html"Privacy Core Service</aIntegration is the method you should use for all access and delete requests. Starting 19.4, the use of the Campaign API and interface for access and delete requests is deprecated. For more on Campaign Standard deprecated and removed features, refer to <a href="https://helpx.adobe.com/campaign/kb/acs-deprecated-and-removed-features.html"This page</a>.
 
 To retrieve the file that contains all the information associated to a reconciliation value, follow this three-steps procedure:
 
@@ -244,7 +244,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ## Managing CCPA opt-out
 
->Sample GET request to retrieve a profile's CCPA opt-out status.
+Sample GET request to retrieve a profile's CCPA opt-out status.
 
 ```
 
@@ -256,7 +256,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ```
 
->Response to the GET request.
+Response to the GET request.
 
 ```
 
@@ -270,7 +270,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ```
 
->Sample POST request to mark a profile for CCPA opt-out.
+Sample POST request to mark a profile for CCPA opt-out.
 
 ```
 
@@ -289,7 +289,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ```
 
->Response to the GET request.
+Response to the GET request.
 
 ```
 
@@ -304,7 +304,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ```
 
->Sample PATCH request to update a profile for CCPA opt-out.
+Sample PATCH request to update a profile for CCPA opt-out.
 
 ```
 
@@ -320,7 +320,7 @@ To retrieve the file that contains all the information associated to a reconcili
 
 ```
 
->Response to the GET request.
+Response to the GET request.
 
 ```
 
@@ -344,4 +344,4 @@ A profile's CCPA opt-out status can be monitored and managed using the **ccpaOpt
 
 >[!CAUTION]
 >
->The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa">Privacy management documentation</a>
+The “CCPA Opt-Out” attribute is only available starting 19.4. For 19.3 environments, you need to extend the Profiles resource and add a boolean field. This field will be added to the API with the chosen label. We suggest you use “Opt-Out for CCPA”. For more on this, refer to the <a href="https://helpx.adobe.com/campaign/kb/acs-privacy.html#ccpa"Privacy management documentation</a>

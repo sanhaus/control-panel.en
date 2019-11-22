@@ -18,7 +18,19 @@ snippet: y
 
 ## Retrieving Profiles
 
->Sample GET request to retrieve all profiles.
+Retrieving profiles is performed with a GET request.
+
+You can add some filters, ordering and pagination.
+To read more information on these parameters, consult the respective sections: [Filtering](#filtering), [Sorting](#sorting) and [Pagination](#pagination).
+
+Fore more information on the **GET** request, refer to [this section](#get-post-patch-delete).
+For more information on the **metadata** of the profile API, refer to [this section](#metadata-mechanism).
+
+>[!NOTE]
+>
+Reminder : you must replace <code>&lt;ORGANIZATION&gt;</codeIn the URL with your <bPersonal organization ID</b>.
+
+Sample GET request to retrieve all profiles.
 
 ```
 
@@ -30,7 +42,7 @@ snippet: y
 
 ```
 
->Response to the request.
+Response to the request.
 
 ```
 
@@ -59,21 +71,7 @@ snippet: y
 
 ```
 
-Retrieving profiles is performed with a GET request.
-
-You can add some filters, ordering and pagination.
-To read more information on these parameters, consult the respective sections: [Filtering](#filtering), [Sorting](#sorting) and [Pagination](#pagination).
-
-Fore more information on the **GET** request, refer to [this section](#get-post-patch-delete).
-For more information on the **metadata** of the profile API, refer to [this section](#metadata-mechanism).
-
->[!NOTE]
->
->
-Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with your <b>personal organization ID</b>.
-
-
->Sample GET request to retrieve the first 10 email values.
+Sample GET request to retrieve the first 10 email values.
 
 ```
 
@@ -85,7 +83,7 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
->It returns the following values.
+It returns the following values.
 
 ```
 
@@ -110,11 +108,27 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
->The "next" node returns the URL that gives you access to the 10 next email values.
+The "next" node returns the URL that gives you access to the 10 next email values.
 
 ## Updating Profiles
 
-> Sample GET request to retrieve the profile with the "amy.dakota@mail.com" email address.
+In this example, we want to **update the phone field** in a profile with the email value "amy.dakota@mail.com".
+
+1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
+
+1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.
+
+>[!NOTE]
+>
+The Primary Key value of the profile must be integrated in the URL.
+
+The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
+
+To know more about PATCH requests, refer to [this section](#get-post-patch-delete).
+
+To check if the PATCH request has updated the profile, we can perform a final GET request.
+
+Sample GET request to retrieve the profile with the "amy.dakota@mail.com" email address.
 
 ```
 
@@ -126,7 +140,7 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
->Response to the request.
+Response to the request.
 
 ```
 
@@ -156,7 +170,7 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
->Sample PATCH request to update the "phone" attribute.
+Sample PATCH request to update the "phone" attribute.
 
 ```
 
@@ -169,7 +183,7 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
->It returns the PKEY and URL to retrieve the updated profile.
+It returns the PKEY and URL to retrieve the updated profile.
 
 ```
 
@@ -180,23 +194,16 @@ Reminder : you must replace <code>&lt;ORGANIZATION&gt;</code> in the URL with yo
 
 ```
 
-In this example, we want to **update the phone field** in a profile with the email value "amy.dakota@mail.com".
-
-1. The first step is to **retrieve the profile**. To accomplish this GET request, we use the **filter** "byEmail". To know more about filters and how to use them, refer to [this section](#filtering).
-
-1. Then, in a second request, we will apply the **PATCH request** on the profile with the completed phone number in the payload.>[!NOTE]
->
->The Primary Key value of the profile must be integrated in the URL.
-
-The PATCH pattern is `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
-
-<br/>To know more about PATCH requests, refer to [this section](#get-post-patch-delete).
-
-To check if the PATCH request has updated the profile, we can perform a final GET request.
-
 ## Creating Profiles
 
->Sample POST request to create a profile with the email "john.doe@mail.com".
+This action can be done with a simple **POST request** on the **profile** resource.
+
+>[!CAUTION]
+>
+If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <bProfileAndServicesExt</b> endpoint.
+>For more on the profile's resource extension, refer to the <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign documentation</a>.
+
+Sample POST request to create a profile with the email "john.doe@mail.com".
 
 ```
 
@@ -210,7 +217,7 @@ To check if the PATCH request has updated the profile, we can perform a final GE
 
 ```
 
->It returns the newly created profile, with the "john.doe@mail.com" email address.
+It returns the newly created profile, with the "john.doe@mail.com" email address.
 
 ```
 
@@ -225,15 +232,8 @@ To check if the PATCH request has updated the profile, we can perform a final GE
     "fax": "",
     "firstName": "",
     "gender": "unknown",
-    "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/>PKEY>",
+    "href": "https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/PKEY>",
     ...
 }
 
 ```
-
-This action can be done with a simple **POST request** on the **profile** resource.
-
->[!CAUTION]
->
->If you want to associate an <b>orgUnit</b> to the created profile, you need to extend the profile resource with this field and, after the publication of the extension, perform a POST request on the <b>profileAndServicesExt</b> endpoint.
-For more on the profile's resource extension, refer to the <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Campaign documentation</a>.

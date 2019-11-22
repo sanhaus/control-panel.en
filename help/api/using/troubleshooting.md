@@ -26,7 +26,7 @@ snippet: y
 
 ```
 
->It returns the following error.
+It returns the following error.
 
 ```
 
@@ -46,7 +46,7 @@ snippet: y
 
 ```
 
->In the response, the ORGANIZATION_ID value must be the same in your first GET request.
+In the response, the ORGANIZATION_ID value must be the same in your first GET request.
 
 ```
 

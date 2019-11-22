@@ -13,7 +13,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
     >[!NOTE]
     >
-    >If the <b>Administration</b> tab is not visible, this means that you don't have Admin rights for your organization. Contact your Organization Administrators to perform the steps with them.
+    If the <b>Administration</b> tab is not visible, this means that you don't have Admin rights for your organization. Contact your Organization Administrators to perform the steps with them.
 
 1. Launch the **Admin Console** by clicking the available links.
 
@@ -25,7 +25,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
     >[!NOTE]
     >
-    >If you do not see your product, contact your Organization Administrators so that they give you access to it.
+    If you do not see your product, contact your Organization Administrators so that they give you access to it.
 
 1. The list of instances for your Campaign product displays. Select the instance to which you want to add an Admin user.
 

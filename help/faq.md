@@ -29,9 +29,9 @@ You may have more than one IMS Org ID if you have access to multiple Adobe solut
 
 >[!NOTE]
 >
->If you have the same IMS Org ID for Adobe Campaign and Adobe Analytics, this is great. Having one IMS Org ID between Analytics and Campaign is a requirement if you plan to integrate the solutions to take advantage of complex use cases such as shopping cart abandonment (for AA + AC).
+If you have the same IMS Org ID for Adobe Campaign and Adobe Analytics, this is great. Having one IMS Org ID between Analytics and Campaign is a requirement if you plan to integrate the solutions to take advantage of complex use cases such as shopping cart abandonment (for AA + AC).
 >
->If you have different IMS Org IDs for Adobe Campaign and Adobe Analytics, please reach out to Customer Care to get them aligned.
+If you have different IMS Org IDs for Adobe Campaign and Adobe Analytics, please reach out to Customer Care to get them aligned.
 
 **How can I know that my Adobe Campaign instance is hosted on AWS or not?**
 
@@ -67,7 +67,7 @@ To check if your instance is hosted on AWS, follow these steps:
 1. Check the "name" value in the returned result. If it contains "amazonaws.com", this means your instance is hosted on AWS.
 
     ```
-    
+
     doe-macOS% nslookup 12.34.567.89
     Server:     12.34.5.678
     Address:    12.34.5.678#99
@@ -79,7 +79,7 @@ To check if your instance is hosted on AWS, follow these steps:
 
 >[!NOTE]
 >
->If you would like to be migrated to AWS, please start the process by contacting your Customer Success Manager.
+If you would like to be migrated to AWS, please start the process by contacting your Customer Success Manager.
 
 ## Control Panel {#control-panel}
 

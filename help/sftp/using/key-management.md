@@ -13,7 +13,7 @@ Once access to the server is set up, remember to **whitelist the IP addresses** 
 
 >[!NOTE]
 >
->It is currently not possible to delete a SSH public key.
+It is currently not possible to delete a SSH public key.
 
 ## Best practices {#best-practices}
 
@@ -27,7 +27,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 
 >[!CAUTION]
 >
->If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
+If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
 
 ![](assets/control_panel_passwordexpires.png)
 
@@ -35,7 +35,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 
 >[!CAUTION]
 >
->The steps below are an example of SSH key creation only, please follow your organization guidelines with respect to SSH keys. The example below is just one example of how this can be done and serves as a helpful point of reference for communicating requirements to your team or internal network group.
+The steps below are an example of SSH key creation only, please follow your organization guidelines with respect to SSH keys. The example below is just one example of how this can be done and serves as a helpful point of reference for communicating requirements to your team or internal network group.
 
 1. Navigate to the **[!UICONTROL Key Management]** tab, then click the **[!UICONTROL Add public key]** button.
 
@@ -45,7 +45,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 
     >[!NOTE]
     >
-    >The interface will check if a given username is active on a given instance and give you an option to activate the key on one or several instances.
+    The interface will check if a given username is active on a given instance and give you an option to activate the key on one or several instances.
     >
     >One or more public SSH keys can be added for each user.
 
@@ -55,7 +55,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 
     >[!NOTE]
     >
-    >The public SSH key size should be **2048 bits**.
+    The public SSH key size should be **2048 bits**.
 
     **Linux and Mac:**
 

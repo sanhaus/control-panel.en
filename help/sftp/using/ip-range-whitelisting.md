@@ -37,7 +37,7 @@ To whitelist an IP range, follow these steps:
 
     >[!NOTE]
     >
-    >These special characters are allowed in the Label field:
+    These special characters are allowed in the Label field:
     > `. _ - : / ( ) # , @ [ ] + = & ; { } ! $`
 
     ![](assets/control_panel_add_range2.png)
@@ -58,7 +58,7 @@ To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete
 
 >[!NOTE]
 >
->It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
+It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
 
 ## Monitoring changes {#monitoring-changes}
 

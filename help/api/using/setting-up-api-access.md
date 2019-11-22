@@ -30,7 +30,7 @@ In all the code examples, you must replace variables with your personal identifi
 
 >[!NOTE]
 >
->One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><br>To obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
+>One ORGANIZATION ID is provided for each of your instances :<br/><b>&lt;ORGANIZATION&gt;</b> : your production instance<br/><b>&lt;ORGANIZATION-mkt-stage1&gt;</b>: your stage instance<br/><brTo obtain your ORGANIZATION ID value, refer to your administrator or your Adobe technical contact. You can also retrieve it into Adobe I/O when creating a new integration, in the licenses list (see the <a href="https://www.adobe.io/authentication.html">Adobe IO documentation</a>).
 
 Each request must contain the **&lt;ORGANIZATION&gt;** element. It is your personal ORGANIZATION ID and is provided by Adobe. This parameter has an URL syntax, for example:
 `https://mc.adobe.io/myInstance.adobe.com/campaign/`
@@ -47,7 +47,7 @@ Each request must contain the parameters below:
 
 >[!CAUTION]
 >
->To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</a> in the Admin console.
+To manage certificates in Adobe IO, make sure you have <b>System administrator</b> rights on the organization or a <a href="https://helpx.adobe.com/enterprise/using/manage-developers.html">developer account</aIn the Admin console.
 
 Adobe Campaign Standard API access is set up through the steps below. Each of these steps is detailed in the [Adobe IO documentation](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
@@ -61,4 +61,4 @@ Adobe Campaign Standard API access is set up through the steps below. Each of th
 
 >[!NOTE]
 >
->To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.
+To establish a secure service-to-service Adobe I/O API session, you must create a JSON Web Token (JWT) that encapsulates the identity of your integration, and exchange it for an access token. Every request to an Adobe service must include the access token in the Authorization header, along with the API Key (Client ID) that was generated when you created the integration in the Adobe I/O Console.

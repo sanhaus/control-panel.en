@@ -56,7 +56,7 @@ You can control a workflow directly from the REST API, through a POST request co
 
 >[!CAUTION]
 >
->If the worfklow ID is changed in Adobe Campaign, the API request will not work anymore.
+If the worfklow ID is changed in Adobe Campaign, the API request will not work anymore.
 
 Four execution commands are available to control a workflow:
 
@@ -69,7 +69,7 @@ For more information on the execution commands, refer to the [Campaign documenta
 
 ## Triggering a Signal activity
 
->Perform a GET request on the workflow.
+Perform a GET request on the workflow.
 
 ```
 
@@ -81,7 +81,7 @@ For more information on the execution commands, refer to the [Campaign documenta
 
 ```
 
->It returns the workflow signal activity and the associated trigger url.
+It returns the workflow signal activity and the associated trigger url.
 
 ```
 
@@ -102,7 +102,7 @@ For more information on the execution commands, refer to the [Campaign documenta
 
 ```
 
->To trigger a signal activity, perform a POST request on the trigger url with the "source". Add the "parameters" attributes if you want to call the workflow with parameters.
+To trigger a signal activity, perform a POST request on the trigger url with the "source". Add the "parameters" attributes if you want to call the workflow with parameters.
 
 ```
 
@@ -128,7 +128,7 @@ For more information on the execution commands, refer to the [Campaign documenta
 
 <!-- + réponse -->
 
->If one of the parameters is not declared in the External signal activity, the POST request returns the error below, indicating which parameter is missing.
+If one of the parameters is not declared in the External signal activity, the POST request returns the error below, indicating which parameter is missing.
 
 ```
 

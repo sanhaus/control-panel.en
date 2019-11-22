@@ -22,7 +22,7 @@ Once you have created an event, you will have to integrate the triggering of thi
 
 >[!NOTE]
 >
->Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html">the Campaign documentation</a>.
+>Creating and publishing an event are presented in <a href="https://helpx.adobe.com/campaign/standard/administration/using/configuring-transactional-messaging.html"The Campaign documentation</a>.
 
 For example, you want a "Cart abandonment" event to be triggered whenever one of your clients leaves your website before purchasing the products in their cart. To do this, your web developer must use the REST Transactional Messages API.
 
@@ -60,7 +60,7 @@ The transactional event is sent through a POST request with the following URL st
 
 <br/><br/>
 
->Perform a POST request to send the event.
+Perform a POST request to send the event.
 
 ```
 
@@ -85,7 +85,7 @@ The transactional event is sent through a POST request with the following URL st
 
 ```
 
->Response to the POST request.
+Response to the POST request.
 
 ```
 
