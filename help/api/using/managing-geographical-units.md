@@ -28,11 +28,10 @@ The **Geographcal unit** field is added to a profile when extending the profile 
 
 ## Retrieving a profile's Geographical unit
 
-1. Perform a GET request on the profile PKey to retrieve the **geoUnit** URL.<br/><br/>
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
-
-1. Perform a GET request on the URL to retrieve more details about the Geographical unit.<br/><br/>
-`GET <GEO_UNIT_URL>`
+1. Perform a GET request on the profile PKey to retrieve the **geoUnit** URL.
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>`
+1. Perform a GET request on the URL to retrieve more details about the Geographical unit.
+  `GET <GEO_UNIT_URL>`
 
 Retrieve the profile record.
 
@@ -94,17 +93,19 @@ It returns the details below.
 ## Updating a profile's Geographical unit
 
 1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
-
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/`
-
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/`
 1. Perform a PATCH request on the profile PKey, with the desired Geographical unit PKey in the payload.
+  
+```
 
-`PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
+PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<PKEY>
 {
   "geoUnit": {
-  "PKey": "<PKEY>"
+    "PKey": "<PKEY>"
   }
-}`
+}
+
+```
 
 Retrieve the list of Geographical units.
 
@@ -158,14 +159,18 @@ Perform a PATCH request on the profile, with the PKey of the desired Geographica
 
 ## Updating a Geographical unit attributes
 
-1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.<br/><br/>
-`GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
+1. Perform a GET request on the **geoUnitBase** resource to retrieve the Geographical unit PKey.
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/orgUnitBase/`
+1. Perform a PATCH request on the Geographical unit, with the attributes to update in the payload.
 
-1. Perform a PATCH request on the Geographical unit, with the attributes to update in the payload.<br/><br/>
-`PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/<PKEY>`<br/>
-`{`<br/>
-`"<ATTRIBUTE_NAME>":"<ATTRIBUTE_VALUE>"`<br/>
-`}`
+```
+
+PATCH https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/geoUnitBase/<PKEY>
+{
+  "<ATTRIBUTE_NAME>":"<ATTRIBUTE_VALUE>"
+}
+
+```
 
 Retrieve the list of Geographical units.
 
