@@ -137,7 +137,7 @@ If the profile resource has been extended with a custom key field, you can use t
 ## Metadata mechanism
 
 ```
-$curl
+
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <ACCESS_TOKEN>' \
@@ -354,6 +354,7 @@ $curl
 -d '{"lastName":"Smith"}'
 
 ```
+
 <!-- mettre un 2ème champ à updater type prénom-->
 
 >It returns the PKEY and URL to retrieve the updated profile.
@@ -556,11 +557,13 @@ The Adobe Campaign REST API can count the number of records. Counting is often u
 -H 'X-Api-Key: <API_KEY>'
 
 ```
+
 <!-- dans l'exemple, avoir le node "next"-->
 
 >Response to the request.
 
-```shell
+```
+
 {
     "content": [
         {
@@ -578,6 +581,7 @@ The Adobe Campaign REST API can count the number of records. Counting is often u
     },
     "serverSidePagination": true
 }
+
 ```
 
 <!-- serverside pagination. quand table très longue (au delà de 100.000), on peut plus faire de next. doit utiliser à la place les trucs type lineStart etc. si false: voudra dirre que ça a atteint la limite-->
