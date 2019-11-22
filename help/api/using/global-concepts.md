@@ -513,7 +513,7 @@ When using the GET verb, you can perform additional operations in order to refin
 ```
 
 >Perform a GET request on the **count** URL.
- 
+
 ```
 
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/_count?channel=sms&_lineStart=@iKTZ2q3IiSEDqZ5Nw1vdoGnQCqF-8DAUJRaVwR9obqqTxhMy \
