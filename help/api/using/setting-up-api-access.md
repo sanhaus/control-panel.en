@@ -50,4 +50,4 @@ To establish a secure service-to-service Adobe I/O API session, every request to
 
 * **`<API_KEY>`**: your personal API Key. It is provided in Adobe I/O after creating a new integration to Adobe Campaign Service.
 
-    ![alt text](/images/tenant.png)
+    ![alt text](assets/tenant.png)

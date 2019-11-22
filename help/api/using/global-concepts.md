@@ -367,7 +367,7 @@ You can perform any operation with custom resources, as long as they are linked 
 
 For example, let's consider the tables structure below:
 
-![alt text](/images/cusresources.png)
+![alt text](assets/cusresources.png)
 
 In that case, all resources from the **Transaction**, **TransactionDetails** and **Product** tables are available as long as they are linked to the **Profile** table.
 
