@@ -7,7 +7,7 @@ description: Learn how to monitor your instance details in Control Panel
 
 ## About instance details {#about-instance-details}
 
-Your Adobe Campaign Classic instance architecture can contain several servers to enable the flexibility of marketing activities. For example, you can have Marketing, Real Time (or Message Center) and Mid Sourcing servers supporting your instance.
+Your Adobe Campaign Classic instance architecture can contain several servers to enable the flexibility of marketing activities. For example, you can have Marketing, Real Time (or Message Center) and Mid Sourcing servers supporting your instance. 
 
 The Instance Details functionality allows you to view flat architecture of your instance. In addition to server information, it also lets you know whether or not your instance build is current, as well as recommends upgrades when needed. 
 
