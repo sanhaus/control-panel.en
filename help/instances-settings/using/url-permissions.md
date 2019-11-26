@@ -21,7 +21,7 @@ Once a URL is added, it is referenced in the configuration file of the instance 
 
 * [Configuring Campaign server](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html)
 * [Outgoing connection protection](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Outgoing_connection_protection)
-* [Adding URL Permissions (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-url-permissions.html)
+* [Adding URL Permissions (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/adding-url-permissions.html)
 
 ## Best practices {#best-practices}
 
