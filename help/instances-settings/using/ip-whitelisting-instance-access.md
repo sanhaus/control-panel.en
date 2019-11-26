@@ -1,9 +1,13 @@
 ---
 title: IP whitelisting
-description: Learn more about IP whitelisting in Control Panel for instance access
+description: Learn more about IP whitelisting in the Control Panel for instance access
 ---
 
 # IP whitelisting {#ip-whitelisting}
+
+>[!CAUTION]
+>
+This feature is available for Campaign Classic instances only.
 
 ## About IP whitelisting {#about-ip-whitelisting}
 
@@ -31,7 +35,7 @@ To whitelist IP addresses, follow these steps:
 
     >[!NOTE]
     >
-    >If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
+    If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
 
     ![](assets/ip_whitelist_list1.png)
 

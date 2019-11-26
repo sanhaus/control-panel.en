@@ -7,8 +7,6 @@ description: Learn how to whitelist IP ranges for SFTP servers access
 
 SFTP servers are protected. In order to be able to access them in order to view files or write new ones, you need to whitelist the public IP address of the system or client that accesses the servers.
 
-The steps to manage IP addresses whitelisting are described in the section below.
-
 ## About the CIDR format {#about-cidr-format}
 
 CIDR (Classless Inter-Domain Routing) is the supported format when adding IP ranges with the Control Panel interface.
@@ -26,7 +24,7 @@ Make sure you follow the recommendations and limitations below when whitelisting
 * Only **public IP addresses** can be whitelisted.
 * Make sure to **regularly delete whitelisted IP addresses** that you don't need anymore.
 
-## Whitelisting IP addresses #whitelisting-ip-addresses}
+## Whitelisting IP addresses {#whitelisting-ip-addresses}
 
 To whitelist an IP range, follow these steps:
 
@@ -39,7 +37,7 @@ To whitelist an IP range, follow these steps:
 
     >[!NOTE]
     >
-    >These special characters are allowed in the Label field:
+    These special characters are allowed in the Label field:
     > `. _ - : / ( ) # , @ [ ] + = & ; { } ! $`
 
     ![](assets/control_panel_add_range2.png)
@@ -60,11 +58,11 @@ To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete
 
 >[!NOTE]
 >
->It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
+It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
 
 ## Monitoring changes {#monitoring-changes}
 
-The **[!UICONTROL Job Logs]** in Control Panel home page let you monitor all changes that have been made to whitelisted IP addresses.
+The **[!UICONTROL Job Logs]** in the Control Panel home page let you monitor all changes that have been made to whitelisted IP addresses.
 
 For more on the Control Panel interface, refer to [this section](../../discover/using/discovering-the-interface.md).
 

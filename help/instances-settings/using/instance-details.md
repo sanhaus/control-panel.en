@@ -1,9 +1,13 @@
 ---
 title: Instance details
-description: Learn how to monitor your instance details in Control Panel
+description: Learn how to monitor your instance details in the Control Panel
 ---
 
 # Instance Details {#instance-details}
+
+>[!CAUTION]
+>
+This feature is available for Campaign Classic instances only.
 
 ## About instance details {#about-instance-details}
 
@@ -28,7 +32,7 @@ To get information on the servers connected to your instances, follow these step
 
     >[!NOTE]
     >
-    >If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
+    If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
 
 1. Select in the left pane the desired Campaign Classic instance.
 

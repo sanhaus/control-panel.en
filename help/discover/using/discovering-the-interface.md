@@ -1,6 +1,6 @@
 ---
 title: Discovering Control Panel interface
-description: Learn more about Control Panel interface
+description: Learn more about the Control Panel interface
 ---
 
 # Discovering Control Panel interface {#discovering-interface}
@@ -27,6 +27,6 @@ The **[!UICONTROL Open]** button allows you to access directly the Control Panel
 
 ## Help resources {#help-resources}
 
-The **[!UICONTROL Help Resources]** section provides useful documentation to help you in your use of Control Panel and Campaign products. Do not hesitate to explore them.
+The **[!UICONTROL Help Resources]** section provides useful documentation to help you in your use of the Control Panel and Campaign products. Do not hesitate to explore them.
 
 ![](assets/helpresources2.png)

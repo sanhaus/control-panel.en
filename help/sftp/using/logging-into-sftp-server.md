@@ -10,18 +10,18 @@ The steps below detail how to connect your SFTP server through your SFTP client 
 Before logging in to the server, make sure that:
 
 * Your SFTP server is **hosted by Adobe**.
-* Your **username** has been setup for the server. You can check this information directly in Control Panel, in the **Key management** tab from the SFTP Card.
+* Your **username** has been setup for the server. You can check this information directly in the Control Panel, in the **Key management** tab from the SFTP Card.
 * You have a **private and public key pair** to login to the SFTP server. Refer to [this section](../../sftp/using/key-management.md) for more on how to add the SSH key.
 * Your **public IP address has been whitelisted** on the SFTP server. If not, refer to [this section](../../sftp/using/ip-range-whitelisting.md) for more on how to whitelist your IP range.
 * You have an access to a **SFTP client software**. You can consult your IT department for SFTP client application that they recommend to use, or search for one on the internet if this is allowed by your company policies.
 
 To connect to your SFTP server, follow these steps:
 
-1. Launch Control Panel, then select the **[!UICONTROL Key Management]** tab from the **[!UICONTROL SFTP]** card.
+1. Launch the Control Panel, then select the **[!UICONTROL Key Management]** tab from the **[!UICONTROL SFTP]** card.
 
     ![](assets/fingerprintNEW2.png)
 
-1. Launch your SFTP client application, then copy-paste the server address from Control Panel, followed by "campaign.adobe.com", then fill in your username.
+1. Launch your SFTP client application, then copy-paste the server address from the Control Panel, followed by "campaign.adobe.com", then fill in your username.
 
     ![](assets/connect1.png)
 
@@ -39,7 +39,7 @@ To connect to your SFTP server, follow these steps:
 
     >[!NOTE]
     >
-    >If you are using a Mac computer, you can view the fingerprint of the private key stored in your computer by running this command:
+    If you are using a Mac computer, you can view the fingerprint of the private key stored in your computer by running this command:
     >
     >`ssh-keygen -lf <path of the privatekey>`
 

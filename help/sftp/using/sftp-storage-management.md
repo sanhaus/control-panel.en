@@ -12,7 +12,7 @@ It is essential that you regularly monitor available space for each of your SFTP
 **Related topics:**
 
 * [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/managing-sftp-servers.html)
-* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/cp-managing-sftp-servers.html)
+* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/managing-sftp-servers.html)
 
 ## Accessing storage capacity information {#accessing-storage-capacity-information}
 

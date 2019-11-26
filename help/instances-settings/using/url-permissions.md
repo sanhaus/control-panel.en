@@ -1,9 +1,13 @@
 ---
 title: URL permissions
-description: Learn how to manage URL permissions in Control Panel
+description: Learn how to manage URL permissions in the Control Panel
 ---
 
 # URL permissions {#url-permissions}
+
+>[!CAUTION]
+>
+This feature is available for Campaign Classic instances only.
 
 ## About URL permissions {#about-url-permissions}
 
@@ -17,7 +21,7 @@ Once a URL is added, it is referenced in the configuration file of the instance 
 
 * [Configuring Campaign server](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html)
 * [Outgoing connection protection](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Outgoing_connection_protection)
-* [Adding URL Permissions (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-url-permissions.html)
+* [Adding URL Permissions (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/adding-url-permissions.html)
 
 ## Best practices {#best-practices}
 
@@ -33,9 +37,9 @@ To add a URL that your instance can connect to, follow these steps:
 
     >[!NOTE]
     >
-    >If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
+    If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
     >
-    >The <b><span class="uicontrol">URL permissions</span></b> tab lists all outside URLs that your instance can connect to. This list does not include URLs that are required for Campaign to work (e.g., connections between infrastructure pieces).
+    The <b><span class="uicontrol">URL permissions</span></b> tab lists all outside URLs that your instance can connect to. This list does not include URLs that are required for Campaign to work (e.g., connections between infrastructure pieces).
 
 1. Select in the left pane the desired instance, then click the **[!UICONTROL Add new URL]** button.
 
@@ -51,7 +55,7 @@ To add a URL that your instance can connect to, follow these steps:
 
     >[!NOTE]
     >
-    >It is possible to authorize multiple instances to connect to the URL. To do this, add them directly from the Instance(s) field by typing their first letter.
+    It is possible to authorize multiple instances to connect to the URL. To do this, add them directly from the Instance(s) field by typing their first letter.
 
     ![](assets/add_url2.png)
 
@@ -59,7 +63,7 @@ To add a URL that your instance can connect to, follow these steps:
 
     >[!NOTE]
     >
-    >The "/.*" characters are automatically added to the end of the URL you enter after it has been validated, to cover all sub-pages of the entered page.
+    The "/.*" characters are automatically added to the end of the URL you enter after it has been validated, to cover all sub-pages of the entered page.
 
     ![](assets/add_url_listnew.png)
 
