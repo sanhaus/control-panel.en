@@ -17,9 +17,9 @@ Key benefits:
 * Enhance security by controlling access settings on a need-by-need basis.
 
 >[!NOTE]
-The Control Panel is accessible to Admin users only, and available for all customers hosted on AWS. The steps to grant Admin access to a user are detailed in [this section](discover/using/managing-permissions.md). To check if your instance is hosted on AWS, follow the steps detailed in [this section](faq.md).
+>The Control Panel is accessible to Admin users only, and available for all customers hosted on AWS. The steps to grant Admin access to a user are detailed in [this section](discover/using/managing-permissions.md). To check if your instance is hosted on AWS, follow the steps detailed in [this section](faq.md).
 >
-Please note that upgrading to the latest Campaign build is not required to access the Control Panel.
+>Please note that upgrading to the latest Campaign build is not required to access the Control Panel.
 
 <table>
 <tr>
