@@ -11,7 +11,6 @@ You most likely need to get an access to the Stage/Dev instance in order to be a
 
 Reach out to your Organization Administrators so that they add you to the instance's admin users list for the desired stage/dev instance. Detailed information is available [here](../../discover/using/managing-permissions.md).
 
-
 **My organization would like to use FTP servers rather than SFTP servers, can we do that?**
 
 FTP servers won’t be hosted by Adobe.

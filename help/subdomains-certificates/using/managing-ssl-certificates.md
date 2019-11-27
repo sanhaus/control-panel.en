@@ -70,7 +70,7 @@ To initiate the SSL certificates renewal in the Control Panel, follow these step
 
     >[!CAUTION]
     >
-    The **[!UICONTROL IMS Org]** and **[!UICONTROL Instance]** fields are filled in automatically by the Control Panel and should not be modified.
+    >The **[!UICONTROL IMS Org]** and **[!UICONTROL Instance]** fields are filled in automatically by the Control Panel and should not be modified.
 
     ![](assets/renewal3.png)
 
@@ -78,7 +78,7 @@ To initiate the SSL certificates renewal in the Control Panel, follow these step
 
     >[!NOTE]
     >
-    If you do not clear your browser history, the information you entered will be saved, enabling you to use it  to renew the certificate later on.
+    >If you do not clear your browser history, the information you entered will be saved, enabling you to use it  to renew the certificate later on.
 
 1. Click the **[!UICONTROL Log new ticket]** button. You are automatically redirected to Adobe Campaign Customer Care sign in page.
 
@@ -89,7 +89,7 @@ To initiate the SSL certificates renewal in the Control Panel, follow these step
 
     >[!NOTE]
     >
-    If you do not have privileges to file support cases for your organization, please pass all information that you have copied to the Clipboard to your Support Contact and ask them to open a new Customer Care ticket for you.
+    >If you do not have privileges to file support cases for your organization, please pass all information that you have copied to the Clipboard to your Support Contact and ask them to open a new Customer Care ticket for you.
 
 **Related topics:**
 

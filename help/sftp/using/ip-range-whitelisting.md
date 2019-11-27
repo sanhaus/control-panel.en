@@ -37,16 +37,16 @@ To whitelist an IP range, follow these steps:
 
     >[!NOTE]
     >
-    These special characters are allowed in the Label field:
+    >These special characters are allowed in the Label field:
     > `. _ - : / ( ) # , @ [ ] + = & ; { } ! $`
 
     ![](assets/control_panel_add_range2.png)
 
-    >[CAUTION]
+    >[!CAUTION]
     >
     >An IP range cannot overlap an existing whitelisted range. In that case, first delete the range that contains the overlapping IP.
-
-    It is possible to whitelist a range for multiple instances. To do this, press the down arrow key or type the first letters of the desired instance, then select it from the suggestions list.
+    >
+    >It is possible to whitelist a range for multiple instances. To do this, press the down arrow key or type the first letters of the desired instance, then select it from the suggestions list.
 
     ![](assets/control_panel_add_range3.png)
 
@@ -58,7 +58,7 @@ To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete
 
 >[!NOTE]
 >
-It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
+>It is currently not possible to edit a whitelisted range. To modify an IP range, delete it, then create a one corresponding to your needs.
 
 ## Monitoring changes {#monitoring-changes}
 

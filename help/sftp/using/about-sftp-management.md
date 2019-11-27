@@ -16,6 +16,3 @@ The Control panel lets you perform the actions below to manage your SFTP servers
 * Manage **public SSH keys** to access your severs.
 
 Detailed information on each of these actions is available in the sections below.
-
-
-
