@@ -46,7 +46,7 @@ To whitelist an IP range, follow these steps:
     >
     >An IP range cannot overlap an existing whitelisted range. In that case, first delete the range that contains the overlapping IP.
     >
-    >It is possible to whitelist a range for multiple instances. To do this, press the down arrow key or type the first letters of the desired instance, then select it from the suggestions list.
+    >It is possible to whitelist a range for multiple instances. To do this, press the down arrow key or type the first letters of the desired instance, then select it from the suggestions list. 
 
     ![](assets/control_panel_add_range3.png)
 
