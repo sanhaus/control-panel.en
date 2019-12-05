@@ -22,7 +22,7 @@ user-guide-title: Control Panel Help
 + Subdomains and certificates {#subdomains-and-certificates}
   + [About SSL certificates](subdomains-certificates/using/about-ssl-certificates.md)
   + [Monitoring subdomains' SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
-  + [Renewing a subdomain's SSL certificate](subdomains-certificates/using/renewing-subdomain-certificates.md)
+  + [Renewing a subdomain's SSL certificate](subdomains-certificates/using/renewing-subdomain-certificate.md)
   + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
 + Instances settings (Campaign Classic) {#instances-settings}
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
