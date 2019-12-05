@@ -21,7 +21,9 @@ user-guide-title: Control Panel Help
   + [Common questions](sftp/using/common-questions.md)
 + Subdomains and certificates {#subdomains-and-certificates}
   + [About SSL certificates](subdomains-certificates/using/about-ssl-certificates.md)
-  + [Managing subdomains' SSL certificates](subdomains-certificates/using/managing-ssl-certificates.md)
+  + [Monitoring subdomains' SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
+  + [Renewing a subdomain's SSL certificate](subdomains-certificates/using/renewing-subdomain-ssl-certificates.md)
+  + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
 + Instances settings (Campaign Classic) {#instances-settings}
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
