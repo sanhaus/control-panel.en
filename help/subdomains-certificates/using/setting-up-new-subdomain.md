@@ -43,7 +43,7 @@ To set up a new subdomain to delegate to Adobe, follow these steps:
 
     ![](assets/subdomain6.png)
 
-1. Once the subdomain is submitted, the Control Panel will configure it and validate that it correctly points to Adobe Campaign.
+1. Once the subdomain is submitted, the Control Panel will configure it and check that it correctly points to Adobe Campaign.
 
     For more details on the various checks that are performed, click the **[!UICONTROL Process details]** button.
 
