@@ -31,5 +31,3 @@ To get more details on a subdomain's certificates, click the **[!UICONTROL Certi
 The list of all related subdomains will be displayed on their certificates. It typically includes subdomains of landing pages, resource pages, etc.
 
 ![](assets/monitoring_subdomains_details2.png)
-
-If necessary, you can initiate a certificate renewal request from this window. For more on this, refer to the section below.

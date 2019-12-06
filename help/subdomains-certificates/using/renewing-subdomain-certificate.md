@@ -24,7 +24,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
     ![](assets/renewal1.png)
 
-1. Click **[!UICONTROL Generate a CSR]**, then **[!UICONTROL Next]** to launch the wizard that will guide you through the CSR generation process.
+1. Select **[!UICONTROL Generate a CSR]**, then click **[!UICONTROL Next]** to launch the wizard that will guide you through the CSR generation process.
 
     ![](assets/renewal2.png)
 
@@ -34,10 +34,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
     * **[!UICONTROL Organization]**:
     * **[!UICONTROL Organization Unit]**:
-    * **[!UICONTROL Instance]**: URL of the selected Campaign instance.
-    * **[!UICONTROL Country / Region]**
-    * **[!UICONTROL State / Province]**
-    * **[!UICONTROL City]**
+    * **[!UICONTROL Instance]**: URL of the Campaign instance associated to the subdomain.
 
     ![](assets/renewal3.png)
 
@@ -57,7 +54,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
 ## Installing an SSL certificate {#installing-ssl-certificate}
 
-Once an SSL certificazte has been purchased, follow the steps below to install it on your instance.
+Once an SSL certificate has been purchased, follow these steps to install it on your instance.
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired instance, then click the **[!UICONTROL Manage Certificate]** button.
 
@@ -67,17 +64,6 @@ Once an SSL certificazte has been purchased, follow the steps below to install i
 
     ![](assets/install1.png)
 
-1. Select the .zip file that contains the certificate to install, then click **[!UICONTORL Submit]**.
+1. Select the .zip file that contains the certificate to install, then click **[!UICONTROL Submit]**.
 
     ![](assets/install2.png)
-
-1. Once the certificate is submitted, the installation process begins. You can follow its progression in the **[!UICONTROL Processing]** section from the subdomains list.
-
-    To retrieve more details, click the **[!UICONTROL Process details]** button.
-
-    ![](assets/install3.png)
-
-**Related topics:**
-
-* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/managing-ssl-certificates.html)
-* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/managing-ssl-certificates.html)

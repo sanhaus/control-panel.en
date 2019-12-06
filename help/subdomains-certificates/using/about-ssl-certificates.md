@@ -1,9 +1,9 @@
 ---
-title: About SSL certificates
-description: Learn more about SSL certificates
+title: About subdomains' SSL certificates
+description: Learn more about subdomains and SSL certificates
 ---
 
-# About SSL certificates {#about-ssl-certificates}
+# About subdomains' SSL certificates {#about-ssl-certificates}
 
 Adobe Campaign recommends that you secure the subdomains that host your landing pages, especially those that are gathering sensitive information of your customers.
 
