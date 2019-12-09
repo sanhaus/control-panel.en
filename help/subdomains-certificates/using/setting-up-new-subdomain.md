@@ -5,13 +5,15 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a subdomain {#setting-up-subdomain}
 
-Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps detailed below.
-
 >[!NOTE]
 >
->The use of CNAMEs for subdomain delegation is not supported through the Control Panel. For more on this method, refer to [this page](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+>The section below describes how to fully delegate a subdomain to Adobe Campaign.
+>
+>The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel. For more on this method, refer to [this page](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
-1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired instance, then click the **[!UICONTROL Setup new subdomain]** button.
+Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps detailed below.
+
+1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired instance, then click **[!UICONTROL Setup new subdomain]**.
 
     ![](assets/subdomain1.png)
 
@@ -19,7 +21,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     >
     >The **[!UICONTROL Setup new subdomain]** button is available for Production instances only.
 
-1. Select the **[!UICONTROL Delegation to Adobe]** method, then click **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL (Recommended) Delegate your subdomain to Adobe]** method, then click **[!UICONTROL Next]**.
 
     ![](assets/subdomain3.png)
 
@@ -36,15 +38,13 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     * **Marketing communications**: communications that are intended for a commercial purpose. Example: sales email campaign.
     * **Transactional & operational communications**: transactional communications contains information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email. Organizational communications relates to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
 
-    Breaking down your subdomains according this way is a best practice for deliverability. By doing so, the reputation of each subdomain is isolated and protected. For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
+    >[!NOTE]
+    >
+    >Breaking down your subdomains according this way is a best practice for deliverability. By doing so, the reputation of each subdomain is isolated and protected. For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
 
     ![](assets/subdomain5.png)
 
-    >[!NOTE]
-    >
-    >You can only select a use case that has been configured for your instance. If the instance has been configured for "Marketing communications" only, you will not be able to select the "Transactional & operation communications" use case.
-
-1. Enter the subdomain that you created into your hosting solution with the Adobe Nameserver information, then click **[Submit]**.
+1. Enter the subdomain that you created into your hosting solution with the Adobe Nameserver information, then click **[!UICONTROL Submit]**.
 
     >[!NOTE]
     >
@@ -57,9 +57,3 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     You can get more details on the configuration progress at any time by clicking the **[!UICONTROL Process details]** button.
 
     ![](assets/subdomain7.png)
-
-What do you get in the end of the process?
-* Subdomain with the following DNS records - SOA, MX, CNAME(s), DKIM, SPF, TXT. 
-* Additional subdomains to host mirror, resource, tracking pages and domainkey
-* Inboxes - Sender, Error, Reply-to
-* Ultimately the subdomains will be configured to work with your Adobe Campaign instance
