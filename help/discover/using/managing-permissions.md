@@ -3,7 +3,7 @@ title: Managing permissions to the Control Panel
 description: Learn how to manage permissions to the Control Panel
 ---
 
-# Managing permsissions to Control Panel {#managing-permissions-control-panel}
+# Managing permissions to Control Panel {#managing-permissions-control-panel}
 
 The Control Panel is available to all Admin users of a Campaign instance. Follow the steps below to assign users to the Administrators group and grant them an access to the Control Panel.
 
