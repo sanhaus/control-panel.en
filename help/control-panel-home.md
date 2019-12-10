@@ -34,8 +34,8 @@ Key benefits:
         <em>Learn how to manage your SFTP servers.</em>
     </td>
     <td>
-        <a href="subdomains-certificates/using/s.md"><img alt="conditions" src="assets/subdomains.png"/></a>
-        <div><a href="subdomains-certificates/using/about-subdomains.md"><strong>Monitor your subdomains</strong></a></div>
+        <a href="subdomains-certificates/using/subdomains-branding.md"><img alt="conditions" src="assets/subdomains.png"/></a>
+        <div><a href="subdomains-certificates/using/subdomains-branding.md"><strong>Monitor your subdomains</strong></a></div>
         <em>Learn how to monitor your subdomains and their certificates.</em>
     </td>
     <td>
