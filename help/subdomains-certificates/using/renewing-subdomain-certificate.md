@@ -5,7 +5,7 @@ description: Learn how to renew your subdomains' SSL certificates
 
 # Renewing a subdomain's SSL certificate {#renewing-subdomains-ssl-certificates}
 
-## About the certificates renewal process {#about-certificate-renewal-process}
+## About certificates renewal {#about-certificate-renewal-process}
 
 The SSL certificate renewal process includes 3 steps, which are all performed directly from the Control Panel:
 
@@ -16,7 +16,7 @@ The SSL certificate renewal process includes 3 steps, which are all performed di
 1. **Installation of the SSL certificate**
     Once you purchase the SSL certificate, you can install it on the desired subdomain.
 
-### Generating a Certificate Signing Request (CSR) {#generating-csr}
+## Generating a Certificate Signing Request (CSR) {#generating-csr}
 
 To generate a Certificate Signing Request (CSR), follow these steps:
 
@@ -52,7 +52,11 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
 1. The .csr file corresponding to your selection is automatically generated and downloaded. You can now use it to purchase the SSL certificate from the Certificate Authority that your company approves.
 
-## Installing an SSL certificate {#installing-ssl-certificate}
+## Purchasing a certificate with the CSR {#purchasing-certificate}
+
+
+
+## Installing the SSL certificate {#installing-ssl-certificate}
 
 Once an SSL certificate has been purchased, follow these steps to install it on your instance.
 

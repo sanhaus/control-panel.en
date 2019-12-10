@@ -3,13 +3,15 @@ title: Setting up a new subdomain
 description: Learn how to set up a new subdomain for your campaign instances
 ---
 
-# Setting up a subdomain {#setting-up-subdomain}
+# Setting up a new subdomain {#setting-up-subdomain}
 
 >[!NOTE]
 >
 >The section below describes how to fully delegate a subdomain to Adobe Campaign.
 >
 >The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel. For more on this method, refer to [this page](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+
+## Full subdomain delegation {#full-subdomain-delegation}
 
 Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps detailed below.
 
@@ -57,3 +59,6 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     You can get more details on the configuration progress at any time by clicking the **[!UICONTROL Process details]** button.
 
     ![](assets/subdomain7.png)
+
+## Use of CNAMEs {#use-cnames}
+
