@@ -1,9 +1,9 @@
 ---
-title: About subdomains
-description: Learn more about subdomains
+title: Subdomains branding
+description: Learn more about subdomains branding
 ---
 
-# About subdomains {#about-subdomains}
+# Subdomains branding {#subdomains-branding}
 
 ## Why setting up subdomains? {#why-setting-up-subdomains}
 
