@@ -7,14 +7,14 @@ description: Learn more about subdomains branding
 
 ## Why setting up subdomains? {#why-setting-up-subdomains}
 
-A subdomain is a division of your domain that can be used to isolate various types of traffic (corporate, marketing information, etc.).
+A subdomain is a division of your domain that can be used to isolate your brands, or various types of traffic (transactional messages, marketing information, etc.).
 
-Let's take the example of the "mybrand.com" domain, that is used to send both informative and marketing communications. In this sitution, you can decide to set up two subdomains:
+Let's take the example of the "mybrand.com" domain, that is used to send both transactional and marketing communications. In this situation, you can decide to set up two subdomains:
 
-* "info.mybrand.com" subdomain for your internal communications,
+* "info.mybrand.com" subdomain for your transactional communications (purchases confirmation, password reset, etc.),
 * "marketing.mybrand.com" subdomain for your prospecting emailings.
 
-By doing so, you will help preserve the reputation of your domain and other subdomains. For example, if the "marketing.mybrand.com" subdomains ended up being blacklisted by Internet Service Providers due to bad deliverability, this would prevent the whole "mybrand.com" domain and "info.mybrand.com" subdomain from being blocked.
+By doing so, you will help preserve the reputation of your domain and other subdomains. For example, if the "marketing.mybrand.com" subdomains ended up being blacklisted by Internet Service Providers due to bad deliverability, this would prevent the whole "mybrand.com" domain and the "info.mybrand.com" subdomain from being blacklisted.
 
 ## Subdomain delegation methods {#subdomain-delegation-methods}
 
