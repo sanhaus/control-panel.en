@@ -23,10 +23,10 @@ Click an element of the list to get more details.
 
 The **[!UICONTROL Open]** button allows you to access directly the Control Panel tab where the change has been made.
 
-![](assets/control_panel_logdetails2.png)
+![](assets/control_panel_logdetails.png)
 
 ## Help resources {#help-resources}
 
 The **[!UICONTROL Help Resources]** section provides useful documentation to help you in your use of the Control Panel and Campaign products. Do not hesitate to explore them.
 
-![](assets/helpresources2.png)
+![](assets/helpresources.png)

@@ -4,7 +4,7 @@ title: Product documentation
 
 # Help Center {#control-panel-documentation}
 
-![](assets/banner.png)
+![](assets/do-not-localize/banner.png)
 
 ## About Control Panel {#about-control-panel}
 
@@ -24,22 +24,22 @@ Key benefits:
 <table>
 <tr>
     <td>
-        <a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/discover.png"/></a>
+        <a href="discover/using/accessing-control-panel.md"><img alt="conditions" src="assets/do-not-localize/discover.png"/></a>
         <div><a href="discover/using/accessing-control-panel.md"><strong>Discover Control Panel</strong></a></div>
         <em>Learn more on the Control Panel and how to access it.</em>
     </td>
     <td>
-        <a href="sftp/using/about-sftp-management.md"><img alt="conditions" src="assets/sftp.png"/></a>
+        <a href="sftp/using/about-sftp-management.md"><img alt="conditions" src="assets/do-not-localize/sftp.png"/></a>
         <div><a href="sftp/using/about-sftp-management.md"><strong>Monitor your SFTP servers</strong></a></div>
         <em>Learn how to manage your SFTP servers.</em>
     </td>
     <td>
-        <a href="subdomains-certificates/using/subdomains-branding.md"><img alt="conditions" src="assets/subdomains.png"/></a>
+        <a href="subdomains-certificates/using/subdomains-branding.md"><img alt="conditions" src="assets/do-not-localize/subdomains.png"/></a>
         <div><a href="subdomains-certificates/using/subdomains-branding.md"><strong>Monitor your subdomains</strong></a></div>
         <em>Learn how to monitor your subdomains and their certificates.</em>
     </td>
     <td>
-        <a href="instances-settings/using/ip-whitelisting-instance-access.md"><img alt="conditions" src="assets/instance_settings.png"/></a>
+        <a href="instances-settings/using/ip-whitelisting-instance-access.md"><img alt="conditions" src="assets/do-not-localize/instance_settings.png"/></a>
         <div><a href="instances-settings/using/ip-whitelisting-instance-access.md"><strong>Manage your instance settings</strong></a></div>
         <br/><em>Learn how to manage your instances settings (Campaign Classic only)</em>
     </td>

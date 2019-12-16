@@ -9,7 +9,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. Navigate to the [Adobe Experience Cloud](https://amc.experiencecloud.adobe.com/exc-content/login.html), then select the **[!UICONTROL Administration]** tab.
 
-    ![](assets/control_panel_add_user1.png)
+    ![](assets/do-not-localize/control_panel_add_user1.png)
 
     >[!NOTE]
     >
@@ -17,11 +17,11 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. Launch the **Admin Console** by clicking the available links.
 
-    ![](assets/control_panel_admin1.png)
+    ![](assets/do-not-localize/control_panel_admin1.png)
 
 1. Select the desired Campaign product.
 
-    ![](assets/control_panel_add_user3.png)
+    ![](assets/do-not-localize/control_panel_add_user3.png)
 
     >[!NOTE]
     >
@@ -29,7 +29,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. The list of instances for your Campaign product displays. Select the instance to which you want to add an Admin user.
 
-    ![](assets/control_panel_add_user4.png)
+    ![](assets/do-not-localize/control_panel_add_user4.png)
 
     >[!NOTE]
     >
@@ -37,7 +37,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. The list of Product Profiles for the selected instance displays. Click the **[!UICONTROL Administrators]** product profile to access the list of Admin users.
 
-    ![](assets/control_panel_add_user_5.png)
+    ![](assets/do-not-localize/control_panel_add_user_5.png)
 
     >[!NOTE]
     >
@@ -45,4 +45,4 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 1. The list of Admin users displays. Click the **[!UICONTROL Add User]** button to add the desired user.
 
-    ![](assets/control_panel_add_user_6.png)
+    ![](assets/do-not-localize/control_panel_add_user_6.png)
