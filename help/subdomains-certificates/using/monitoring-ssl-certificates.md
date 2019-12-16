@@ -27,7 +27,9 @@ You can also easily see which subdomains have expiring certificates and renew th
 >
 >Adobe recommends that you renew an SSL certificate of the associated subdomains **when it is close to the expiration date**. Certificate renewal can take a few days depending on your organization, we recommend that you allocate appropriate time for this process.
 
-The list of subdomains for each of your instances is accessible directly when selecting the **[!UICONTROL Subdomains & Certificates]** card. Subdomains are arranged by the closest expiration date of the SSL certificate, with visual information on the expiration, in days:
+The list of subdomains for each of your production instances is accessible directly when selecting the **[!UICONTROL Subdomains & Certificates]** card.
+
+Subdomains are arranged by the closest expiration date of the SSL certificate, with visual information on the expiration, in days:
 
 * **Green**: the subdomain has not certificate expiring within the next 60 days.
 * **Orange**: one or more subdomains has a certificate that will expire within the next 60 days.
@@ -36,7 +38,14 @@ The list of subdomains for each of your instances is accessible directly when se
 
 ![](assets/subdomains_list.png)
 
-The **[!UICONTROL Last verification]** column indicates when the subdomain was verified for the last time. You can launch a verification at any time by selecting **[!UICONTROL Verify subdomain]**.
+To get more details on a subdomain, click the **[!UICONTROL Subdomain Details]** button.
+The list of all related subdomains displays. It typically includes subdomains of landing pages, resource pages, etc.
+
+The **[!UICONTROL Sender info]** tab provides information on the configured inboxes (Sender, Reply to, Error email).
+ 
+![](assets/subdomain_details.png)
+
+In the subdomains list, the **[!UICONTROL Last verification]** column indicates when the subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** button.
 
 >[!CAUTION]
 >
@@ -44,10 +53,9 @@ The **[!UICONTROL Last verification]** column indicates when the subdomain was v
 
 ![](assets/subdomain_verification.png)
 
-To get more details on a subdomain's certificates, click the **[!UICONTROL Certificate Details]** button.
+When launching a verification, several operations are performed to check that the subdomain is correctly configured:
 
-![](assets/certificate_details4.png)
-
-The list of all related subdomains will be displayed on their certificates. It typically includes subdomains of landing pages, resource pages, etc.
-
-![](assets/monitoring_subdomains_details2.png)
+1. The Control Panel checks that the subdomain belongs to the instance tenant.
+1. An email is sent from the instance using that subdomain to a set of test recipients of "250ok" (a third party email analytics and deliverability platform).
+1. After receiving the email, 250ok reads the email headers and checks if the SPF and DKIM are setup and valid.
+1. Control Panel continuously polls the delivery status from 250ok for around 20 minutes. If the SPF and DKIM passes, it means that the requested subdomain is verified and is fully configured and ready to use for sending emails.

@@ -24,4 +24,11 @@ Subdomain delegation allows you to delegate a sub-section of your domain (techni
 
 * **Use of CNAMEs** (not recommended and not supported through the Control Panel): Create a subdomain and use CNAMEs to point to Adobe-specific records. Using this setup, both Adobe and the customer share responsibility for maintaining DNS.
 
-For more information on each of these methods (implied responsibility, requirements, etc.), refer to [this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+The table below provides a summary of how these methods work, as well as the implied level of effort:
+
+ | Delegationmethod | How it works | Level of effort |
+   |---|---|---|
+   | **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign. In this setup, Adobe is fully responsible for managing the sub-domain and all the DNS records. | Low |
+   | **CNAME, custom method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers. In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
+
+Additional information on domain delegation is available in[this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
