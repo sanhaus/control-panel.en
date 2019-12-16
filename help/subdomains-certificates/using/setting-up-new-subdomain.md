@@ -36,40 +36,38 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 1. Select the desired use case for the subdomain:
 
     * **Marketing communications**: communications that are intended for a commercial purpose. Example: sales email campaign.
-    * **Transactional & operational communications**: transactional communications contains information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email.
-    
-        Organizational communications relates to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
-
-    ![](assets/subdomain5.png)
+    * **Transactional & operational communications**: transactional communications contains information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email. Organizational communications relates to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
 
     >[!NOTE]
     >
-    >Breaking down your subdomains according this way is a best practice for deliverability. By doing so, the reputation of each subdomain is isolated and protected.
+    >Breaking down your subdomains according to use cases is a best practice for deliverability. By doing so, the reputation of each subdomain is isolated and protected.
     >
     >For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
 
-1. Enter the subdomain that you created into your hosting solution with the Adobe Nameserver information, then click **[!UICONTROL Submit]**.
+    ![](assets/subdomain5.png)
 
-    ![](assets/subdomain6.png)
+1. Enter the subdomain that you created into your hosting solution, then click **[!UICONTROL Submit]**.
 
     >[!NOTE]
     >
-    > Make sure you fill in the **full** subdomain name to delegate For example, to delegate the "usoffers.email.weretail.com" subdomain, type "usoffers.email.weretail.com".
+    > Make sure you fill in the **full name** of the subdomain to delegate. For example, to delegate the "usoffers.email.weretail.com" subdomain, type "usoffers.email.weretail.com".
+
+    ![](assets/subdomain6.png)
 
 1. Once the subdomain is submitted, the Control Panel will check that it corrently point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
 
-1. If the checks are passed, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc.
-
-You can get more details on the configuration progress at any time by clicking the **[!UICONTROL Process details]** button.
+1. If the checks are successfull, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc. You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
 
     ![](assets/subdomain7.png)
 
-In the end of the process, the elements below have been created and the subdomains will be configured to work with your Adobe Campaign instance:
+At the end of the process, the subdomains will beconfigured to work with your Adobe Campaign instance, and the elements below will be created:
 
-* **The subdomain** with the following DNS records: SOA, MX, CNAME(s), DKIM, SPF, TXT.
-* **Additional subdomains** to host mirror, resource, tracking pages and domainkey
-* **Inboxes**: Sender, Error, Reply-to
+* **The subdomain** with the following **DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
+* **Additional subdomains** to host mirror, resource, tracking pages and domainkey,
+* **Inboxes**: Sender, Error, Reply-to.
 
 ## Use of CNAMEs {#use-cnames}
 
-The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel. For more on this method, refer to [this page](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel.
+
+To use this method, contact your Adobe Customer Care.

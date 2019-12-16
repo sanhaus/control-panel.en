@@ -54,7 +54,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
 ## Purchasing a certificate with the CSR {#purchasing-certificate}
 
-
+After obtaining a Certificate Signing Request CSR from the Control Panel, purchase an SSL certificate from a Certificate Authority approved by your organization.
 
 ## Installing the SSL certificate {#installing-ssl-certificate}
 

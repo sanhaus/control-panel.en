@@ -45,7 +45,7 @@ The **[!UICONTROL Sender info]** tab provides information on the configured inbo
  
 ![](assets/subdomain_details.png)
 
-In the subdomains list, the **[!UICONTROL Last verification]** column indicates when the subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** button.
+In the subdomains list, the **[!UICONTROL Last verification]** column indicates when the subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** / **[!UICONTROL Verify subdomain]** button.
 
 >[!CAUTION]
 >
