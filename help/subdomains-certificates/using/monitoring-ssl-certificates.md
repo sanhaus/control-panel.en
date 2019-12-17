@@ -15,4 +15,4 @@ Adobe Campaign recommends that you secure the subdomains that host your landing 
 
 ![](assets/no_certificate.png)
 
-If one of your subdomain's SSL certificate is about to expire, you can renew it firectly from the Control Panel. For more on this, refer to this section: [Renewing a subdomain's SSL certificate](../../subdomains-certificates/using/renewing-subdomain-certificate).
+If one of your subdomain's SSL certificate is about to expire, you can renew it firectly from the Control Panel. For more on this, refer to this section: [Renewing a subdomain's SSL certificate](../../subdomains-certificates/using/renewing-subdomain-certificate.md).
