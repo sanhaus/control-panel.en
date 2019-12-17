@@ -13,17 +13,17 @@ It is accessible to **Admin users** only. For more on how to assign users to the
 
 To access the Control Panel from the Experience Cloud Platform,  navigate to the [Experience Cloud Platform homepage](https://amc.experiencecloud.adobe.com/), then click the dedicated link in the **Quick Access** section.
 
-![](assets/quickaccess.png)
+![](assets/do-not-localize/quickaccess.png)
 
 The Control Panel is also accessible from the Experience Cloud Platform **solution picker**:
 
 1. Navigate to the [Adobe Experience Cloud](https://amc.experiencecloud.adobe.com/), then select **Campaign** from the solution picker.
 
-    ![](assets/control_panel_access1.png)
+    ![](assets/do-not-localize/control_panel_access1.png)
 
 1. The list of your Campaign instances displays. Click the **Control Panel** card to launch it.
 
-    ![](assets/control_panel_access2NEW.png)
+    ![](assets/do-not-localize/control_panel_access2.png)
 
 ## Access from the product {#access-product}
 
@@ -37,4 +37,4 @@ The Control Panel is also accessible from the Experience Cloud Platform **soluti
 
 1. Click the **[!UICONTROL Control Panel]** icon.
 
-    ![](assets/control_panel_access4new.png)
+    ![](assets/control_panel_access4.png)

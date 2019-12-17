@@ -77,7 +77,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 
 You can use fingerprints to match the Private keys that are saved on your computer with the corresponding Public keys saved in Control Panel.
 
-![](assets/fingerprintNEW2.png)
+![](assets/fingerprint_compare.png)
 
 The "**...**" button allows you to delete an existing key, or to copy its associated fingerprint into your clipboard.
 
