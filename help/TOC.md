@@ -20,11 +20,6 @@ user-guide-title: Control Panel Help
   + [Logging into your SFTP server](sftp/using/logging-into-sftp-server.md)
   + [Common questions](sftp/using/common-questions.md)
 + Subdomains and certificates {#subdomains-and-certificates}
-  + [Subdomains branding](subdomains-certificates/using/subdomains-branding.md)
-  + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
-  + [Monitoring SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
-  + [Renewing SSL certificates](subdomains-certificates/using/renewing-subdomain-certificate.md)
-+ Subdomains and certificates {#subdomains-and-certificates}
   + Managing subdomains {#managing-subdomains}
     + [Subdomains branding](subdomains-certificates/using/subdomains-branding.md)
     + [Monitoring your subdomains](subdomains-certificates/using/monitoring-subdomains.md)
