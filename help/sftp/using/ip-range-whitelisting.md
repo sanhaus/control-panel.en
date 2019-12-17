@@ -66,4 +66,4 @@ The **[!UICONTROL Job Logs]** in the Control Panel home page let you monitor all
 
 For more on the Control Panel interface, refer to [this section](../../discover/using/discovering-the-interface.md).
 
-![](assets/control_panel_ip_logNEW.png)
+![](assets/control_panel_ip_log.png)

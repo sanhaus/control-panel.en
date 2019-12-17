@@ -19,23 +19,23 @@ To connect to your SFTP server, follow these steps:
 
 1. Launch the Control Panel, then select the **[!UICONTROL Key Management]** tab from the **[!UICONTROL SFTP]** card.
 
-    ![](assets/fingerprintNEW2.png)
+    ![](assets/sftp_card.png)
 
 1. Launch your SFTP client application, then copy-paste the server address from the Control Panel, followed by "campaign.adobe.com", then fill in your username.
 
-    ![](assets/connect1.png)
+    ![](assets/do-not-localize/connect1.png)
 
 1. In the **[!UICONTROL SSH Private Key]** field, select the private key file stored in your computer. It corresponds to a text file that has the same name as your public key, without the ".pub" extension (e.g., "enable").
 
-    ![](assets/connect2.png)
+    ![](assets/do-not-localize/connect2.png)
 
     The **[!UICONTROL Password]** field is automatically filled in with the private key from the file.
 
-    ![](assets/connect3.png)
+    ![](assets/do-not-localize/connect3.png)
 
     You can check that the key you are trying to use is saved in the Control Panel by comparing the fingerprint of the private or public key with the fingerprint of the keys appearing in the SFTP card's Key Management tab.
 
-    ![](assets/fingerprint3.png)
+    ![](assets/fingerprint_compare.png)
 
     >[!NOTE]
     >
@@ -45,4 +45,4 @@ To connect to your SFTP server, follow these steps:
 
 1. Once all the information filled in, click **[!UICONTROL Connect]** to log in to your SFTP server.
 
-    ![](assets/sftpconnected.png)
+    ![](assets/do-not-localize/sftpconnected.png)

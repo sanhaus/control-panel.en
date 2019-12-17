@@ -52,7 +52,7 @@ To whitelist IP addresses, follow these steps:
     >
     >You can search on the internet for free online tools that will help you convert the IP range that you have in hand to CIDR format.
 
-    * **!UICONTROL Label]**: The label that will display in the whitelisted IP addresses list.
+    * **[!UICONTROL Label]**: The label that will display in the whitelisted IP addresses list.
     * **[!UICONTROL Name]**: The name has to be unique for the Access Type, Instance (in case of External API connection) as well as the IP address.
 
 1. Specify the type of access that you want to grant to the IP addresses:

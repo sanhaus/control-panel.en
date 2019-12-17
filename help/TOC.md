@@ -20,10 +20,18 @@ user-guide-title: Control Panel Help
   + [Logging into your SFTP server](sftp/using/logging-into-sftp-server.md)
   + [Common questions](sftp/using/common-questions.md)
 + Subdomains and certificates {#subdomains-and-certificates}
-  + [About subdomains](subdomains-certificates/using/about-subdomains.md)
-  + [Setting up a subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
+  + [Subdomains branding](subdomains-certificates/using/subdomains-branding.md)
+  + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
   + [Monitoring SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
   + [Renewing SSL certificates](subdomains-certificates/using/renewing-subdomain-certificate.md)
++ Subdomains and certificates {#subdomains-and-certificates}
+  + Managing subdomains {#managing-subdomains}
+    + [Subdomains branding](subdomains-certificates/using/subdomains-branding.md)
+    + [Monitoring your subdomains](subdomains-certificates/using/monitoring-subdomains.md)
+    + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
+  + Managing SSL certificates {managing-ceritficates}
+    + [Monitoring SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
+    + [Renewing SSL certificates](subdomains-certificates/using/renewing-subdomain-certificate.md)
 + Instances settings (Campaign Classic) {#instances-settings}
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)

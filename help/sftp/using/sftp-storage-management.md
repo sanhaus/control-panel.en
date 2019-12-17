@@ -11,18 +11,18 @@ It is essential that you regularly monitor available space for each of your SFTP
 
 **Related topics:**
 
-* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/managing-sftp-servers.html)
+* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/monitoring-server-capacity-whitelisting-adding-ssh-key.html)
 * [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/managing-sftp-servers.html)
 
 ## Accessing storage capacity information {#accessing-storage-capacity-information}
 
 The **[!UICONTROL Top utilized SFTP disk capacity]** section in the header includes the top three most utilized servers attached to the instances that you have Admin access to. This information is available in every tab of the SFTP card.
 
-![](assets/control_panel_topspaceNEW.png)
+![](assets/control_panel_topspace.png)
 
 Information about the space used by all instances you have access to is available in the **[!UICONTROL Storage]** tab of the SFTP card. It is updated on each page refresh.
 
-![](assets/control_panel_spaceNEW.png)
+![](assets/control_panel_space.png)
 
 For each instance, a visual alert lets you know when its storage surpasses its capacity:
 
