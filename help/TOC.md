@@ -24,7 +24,7 @@ user-guide-title: Control Panel Help
     + [Subdomains branding](subdomains-certificates/using/subdomains-branding.md)
     + [Monitoring your subdomains](subdomains-certificates/using/monitoring-subdomains.md)
     + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
-  + Managing SSL certificates {managing-ceritficates}
+  + Managing SSL certificates {#managing-ceritficates}
     + [Monitoring SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
     + [Renewing SSL certificates](subdomains-certificates/using/renewing-subdomain-certificate.md)
 + Instances settings (Campaign Classic) {#instances-settings}
