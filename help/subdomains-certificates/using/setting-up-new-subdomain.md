@@ -29,7 +29,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     >[!CAUTION]
     >
-    >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example internal communications to your organization's employees.
+    >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example internal emails to your organization's employees.
 
     ![](assets/subdomain4.png)
 
