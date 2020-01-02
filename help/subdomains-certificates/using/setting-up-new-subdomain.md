@@ -91,3 +91,4 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 ## Use of CNAMEs {#use-cnames}
 
 The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel. To use this method, contact Adobe Customer Care.
+
