@@ -38,7 +38,7 @@ You may have more than one IMS Org ID if you have access to multiple Adobe solut
 To check if your instance is hosted on AWS, follow these steps:
 
 1. Retrieve your login URL. It is the URL that you use to login to your Campaign instance, it mostly ends with ".campaign.adobe.com".
-1. Open the terminal, then execute a **nslookup** operation on your login URL.
+1. Open the terminal, then execute a **[!DNL nslookup]** operation on your login URL.
 
     `doe-macOS% nslookup myinstance.campaign.adobe.com`
 
