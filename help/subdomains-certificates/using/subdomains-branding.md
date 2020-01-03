@@ -5,6 +5,10 @@ description: Learn more about subdomains branding
 
 # Subdomains branding {#subdomains-branding}
 
+>[!NOTE]
+>
+>Subdomain delegation from the Control Panel is currently in **beta**, and subject to frequent updates and modifications without notification.
+
 ## Why setting up subdomains? {#why-setting-up-subdomains}
 
 A subdomain is a division of your domain that can be used to isolate your brands, or various types of traffic (transactional messages, marketing information, etc.).
@@ -31,4 +35,5 @@ The table below provides a summary of how these methods work, as well as the imp
 | **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the sub-domain and all the DNS records. | Low |
 | **CNAME, custom method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
 
-Additional information on domain delegation is available in[this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+Additional information on domain delegation is available in [this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+
