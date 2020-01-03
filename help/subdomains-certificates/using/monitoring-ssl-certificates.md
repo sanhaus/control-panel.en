@@ -41,4 +41,4 @@ If one of your subdomain's SSL certificate is about to expire, you can renew it 
 
 >[!NOTE]
 >
->Certificate renewal from the Control Panel is currently in **beta**, and subject to frequent updates and modifications without notification.
+>Certificate renewal from the Control Panel will soon be available in beta. In the meantime, refer to [this page](https://helpx.adobe.com/campaign/kb/control-panel-subdomains-certificates.html) for more on how to monitor certificates within the Control Panel.
