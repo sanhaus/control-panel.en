@@ -5,6 +5,10 @@ description: Learn how to renew your subdomains' SSL certificates
 
 # Renewing a subdomain's SSL certificate {#renewing-subdomains-ssl-certificates}
 
+>[!NOTE]
+>
+>Certificate renewal from the Control Panel is currently in **beta**, and subject to frequent updates and modifications without notification.
+
 ## About certificates renewal {#about-certificate-renewal-process}
 
 The SSL certificate renewal process includes 3 steps:

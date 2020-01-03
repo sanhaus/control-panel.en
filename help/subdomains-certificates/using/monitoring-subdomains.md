@@ -13,11 +13,11 @@ The list of subdomains for each of your production instances is accessible direc
 
 In the subdomains list, the **[!UICONTROL Last verification]** column indicates when a subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** / **[!UICONTROL Verify subdomain]** button.
 
+![](assets/subdomain_verification.png)
+
 >[!CAUTION]
 >
 >Adobe does not recommend using subdomains with no verificate date as it could mean that these subdomains may be having some deliverability issues.
-
-![](assets/subdomain_verification.png)
 
 When launching a verification, several operations are performed to check that the subdomain is correctly configured (instance tenant check, email sending test, etc.)
 

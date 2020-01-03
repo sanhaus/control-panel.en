@@ -5,35 +5,39 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a new subdomain {#setting-up-subdomain}
 
+>[!NOTE]
+>
+>These capabilities are currently in **beta** , and subject to frequent updates and modifications without notification.
+
 ## Full subdomain delegation {#full-subdomain-delegation}
 
 Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow these steps:
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
+    ![](assets/subdomain1.png)
+
     >[!NOTE]
     >
     >Subdoman delegation is available for **production** instances only.
 
-    ![](assets/subdomain1.png)
-
 1. Click **[!UICONTROL Next]** to confirm the full delegation method.
+
+    ![](assets/subdomain3.png)
 
     >[!NOTE]
     >
     >[CNAME](#use-cnames) and custom methods are currently not supported by the Control Panel.
 
-    ![](assets/subdomain3.png)
-
-1. Create the desired subdomain and nameservers in the hosting solution used by your organization. To do this, copy-paste the Adobe Nameserver information displayed in the wizard. For more on how to create a subdomain in a hosting solution, refer to this tutorial video.
+1. Create the desired subdomain and nameservers in the hosting solution used by your organization. To do this, copy-paste the Adobe Nameserver information displayed in the wizard. For more on how to create a subdomain in a hosting solution, refer to the [tutorial video](https://video.tv.adobe.com/v/30175).
 
     >[!CAUTION]
     >
-    >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example internal emails to your organization's employees.
+    >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example sending internal emails to your organization's employees.
 
     ![](assets/subdomain4.png)
 
-    Note that if you do not have any subdomain configured, the subdomain you are setting up will be considered as the primary subdomain. Inboxes (sender, error, reply-to addresses) will remain the same for all subdomains configured later on on this subdomain.
+    Note that if you do not have any subdomain configured, the subdomain you are setting up will be considered as the **primary subdomain**. Inboxes (sender, error, reply-to addresses) will remain the same for all subdomains configured later on on this subdomain.
 
     Once the subdomain is created with the corresponding Adobe nameserver information, click **[!UICONTROL Next]**.
 

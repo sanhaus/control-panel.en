@@ -38,3 +38,7 @@ The **[!UICONTROL Sender info]** tab provides information on the configured inbo
 ![](assets/subdomain_details.png)
 
 If one of your subdomain's SSL certificate is about to expire, you can renew it directly from the Control Panel. For more on this, refer to this section: [Renewing a subdomain's SSL certificate](../../subdomains-certificates/using/renewing-subdomain-certificate.md).
+
+>[!NOTE]
+>
+>Certificate renewal from the Control Panel is currently in **beta**, and subject to frequent updates and modifications without notification.
