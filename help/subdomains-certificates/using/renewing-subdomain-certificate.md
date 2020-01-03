@@ -5,9 +5,13 @@ description: Learn how to renew your subdomains' SSL certificates
 
 # Renewing a subdomain's SSL certificate {#renewing-subdomains-ssl-certificates}
 
+>[!NOTE]
+>
+>Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
+
 ## About certificates renewal {#about-certificate-renewal-process}
 
-The SSL certificate renewal process includes 3 steps, which are all performed directly from the Control Panel:
+The SSL certificate renewal process includes 3 steps:
 
 1. **Generation of the Certificate Signing Request (CSR)**
     Adobe Customer Care generates a CSR for you. You will need to provide some information required to generate the CSR (such as Common Name, Organization Name and address, etc.).
@@ -15,6 +19,10 @@ The SSL certificate renewal process includes 3 steps, which are all performed di
     Once the CSR is generated, you can download it and use it to purchase the SSL certificate from the Certificate Authority that your company approves.
 1. **Installation of the SSL certificate**
     Once you purchase the SSL certificate, you can install it on the desired subdomain.
+
+>[!NOTE]
+>
+>SSL certificates renewal through the Control Panel is available for **fully delegated subdomains** only.
 
 ## Generating a Certificate Signing Request (CSR) {#generating-csr}
 
@@ -30,11 +38,11 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
 1. A form displays, with all the details required to generate your CSR.
 
-    Make sure you fill in the requested information fully and accurately (contact your internal team, Security and IT teams if necessary), then click **[!UICONTROL Next]**.
+    Make sure you fill in the requested information fully and accurately, otherwise the certificate may not be renewed (contact your internal team, Security and IT teams if necessary), then click **[!UICONTROL Next]**.
 
-    * **[!UICONTROL Organization]**:
-    * **[!UICONTROL Organization Unit]**:
-    * **[!UICONTROL Instance]**: URL of the Campaign instance associated to the subdomain.
+    * **[!UICONTROL Organization]**: offical organization name.
+    * **[!UICONTROL Organization Unit]**: unit linked to the subdomain (example: Marketing, IT).
+    * **[!UICONTROL Instance]** (pre-filled): URL of the Campaign instance associated to the subdomain.
 
     ![](assets/renewal3.png)
 
@@ -58,7 +66,13 @@ After obtaining a Certificate Signing Request CSR from the Control Panel, purcha
 
 ## Installing the SSL certificate {#installing-ssl-certificate}
 
-Once an SSL certificate has been purchased, follow these steps to install it on your instance.
+Once an SSL certificate has been purchased, you can install it on your instance. Before proceeding, make sure you are aware of the prerequisites below:
+
+* The Certificate Signing Request (CSR) must have been generated from the Control Panel. Otherwise, you will not be able to install the certificate from the Control Panel.
+* Make sure that the Certificate Signing Request (CSR) matches the subdomain that has been delegated to Adobe. For example, it cannot contain more subdomains that the one that has been delegated.
+* The certificate must have a current date. It is not possible to install certificates with dates in the future.
+
+To install the certificate, follow these steps:
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired instance, then click the **[!UICONTROL Manage Certificate]** button.
 
@@ -71,3 +85,7 @@ Once an SSL certificate has been purchased, follow these steps to install it on 
 1. Select the .zip file that contains the certificate to install, then click **[!UICONTROL Submit]**.
 
     ![](assets/install2.png)
+
+Once the SSL certificate is installed, the certificate's expiration date and status icon are updated accordingly.
+
+Your subdomain's URL address will change from **http** to **https**.
