@@ -7,7 +7,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 >[!NOTE]
 >
->These capabilities are currently in **beta** , and subject to frequent updates and modifications without notification.
+>Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 

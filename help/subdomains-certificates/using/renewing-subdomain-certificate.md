@@ -7,7 +7,7 @@ description: Learn how to renew your subdomains' SSL certificates
 
 >[!NOTE]
 >
->Certificate renewal from the Control Panel is currently in **beta**, and subject to frequent updates and modifications without notification.
+>Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
 
 ## About certificates renewal {#about-certificate-renewal-process}
 
@@ -63,8 +63,6 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 ## Purchasing a certificate with the CSR {#purchasing-certificate}
 
 After obtaining a Certificate Signing Request CSR from the Control Panel, purchase an SSL certificate from a Certificate Authority approved by your organization.
-
-*Need to add some info on the types of certificates that are supported*
 
 ## Installing the SSL certificate {#installing-ssl-certificate}
 
