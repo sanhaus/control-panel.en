@@ -11,7 +11,12 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
-Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow these steps:
+Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps below.
+
+ >[!NOTE]
+ >
+ >If you do not have any subdomain configured for Adobe, the first subdomain you will set up will be considered as a **primary subdomain**.
+ >A **reverse DNS record** will be created and set as the defalt sending subdomain for inboxes (sender, reply-to, error email addresses).
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
@@ -19,7 +24,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     >[!NOTE]
     >
-    >Subdoman delegation is available for **production** instances only.
+    >Subdomain delegation is available for **production** instances only.
 
 1. Click **[!UICONTROL Next]** to confirm the full delegation method.
 
@@ -37,14 +42,12 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     ![](assets/subdomain4.png)
 
-    Note that if you do not have any subdomain configured, the subdomain you are setting up will be considered as the **primary subdomain**. Inboxes (sender, error, reply-to addresses) will remain the same for all subdomains configured later on on this subdomain.
-
     Once the subdomain is created with the corresponding Adobe nameserver information, click **[!UICONTROL Next]**.
 
 1. Select the desired use case for the subdomain:
 
     * **Marketing communications**: communications that are intended for a commercial purpose. Example: sales email campaign.
-    * **Transactional & operational communications**: transactional communications contains information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email. Organizational communications relates to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
+    * **Transactional & operational communications**: transactional communications contain information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email. Organizational communications relate to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
 
     >[!NOTE]
     >
@@ -62,23 +65,28 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     ![](assets/subdomain6.png)
 
-1. Once the subdomain is submitted, the Control Panel will check that it corrently point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
+1. Once the subdomain is submitted, the Control Panel will check that it correctly point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
 
-1. If the checks are successfull, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc. You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
+1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc. You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
 
     ![](assets/subdomain7.png)
 
     >[!NOTE]
     >
-    >In some cases, delegation goes through but the subdomain may not be successfully verified. The subdomain will go direcly into the **[!UICONTROL Verified subdomains]** list with the **[!UICONTROL Unverified]** status and a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
+    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will go directly into the **[!UICONTROL Verified subdomains]** list with the **[!UICONTROL Unverified]** status and a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
     >
     >Note that while subdomain delegation runs, other requests through the Control Panel will be entered into a queue and performed only after the Subdomain Delegation completes, to prevent any performance issues.
 
 At the end of the process, the subdomains will be configured to work with your Adobe Campaign instance and the elements below will be created:
 
 * **The subdomain** with the following **DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
-* **Additional subdomains** to host mirror, resource, tracking pages and domainkey,
+* **Additional subdomains** to host mirror, resource, tracking pages and domain key,
 * **Inboxes**: Sender, Error, Reply-to.
+
+ >[!NOTE]
+ >
+ >By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
+
 
 You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain Details]** button.
 
@@ -88,9 +96,9 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 
 >[!NOTE]
 >
->Additionally to the processing stage, Adobe wil notify the deliverability team about the new subdomain in order to audit the subdomain that has been created. The audit process can take up to 3 days after the subdomain has been delegated.
+>Additionally to the processing stage, Adobe will notify the deliverability team about the new subdomain in order to audit the subdomain that has been created. The audit process can take up to 3 days after the subdomain has been delegated.
 >
->The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputatiion.
+>The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
 
 ## Use of CNAMEs {#use-cnames}
 
