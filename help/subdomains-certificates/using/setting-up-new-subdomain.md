@@ -15,7 +15,8 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
  >[!NOTE]
  >
- >If you do not have any subdomain configured for Adobe, the first subdomain you will set up will be considered as a **primary subdomain**. PTR records (the domain name associated to the IP address) will be generated from that subdomain, and you will not be able to change them.
+ >If you do not have any subdomain configured for Adobe, the first subdomain you will set up will be considered as a **primary subdomain**.
+ >A **reverse DNS record** will be created and set as the defalt sending subdomain for inboxes (sender, reply-to, error email addresses).
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
