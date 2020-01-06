@@ -9,9 +9,7 @@ It is essential to monitor your subdomains to ensure that are all configured pro
 
 The list of subdomains for each of your production instances is accessible directly when selecting the **[!UICONTROL Subdomains & Certificates]** card.
 
-![](assets/subdomains_list.png)
-
-In the subdomains list, the **[!UICONTROL Last verification]** column indicates when a subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** / **[!UICONTROL Verify subdomain]** button.
+The **[!UICONTROL Last verification]** column indicates when a subdomain was verified for the last time. You can launch a verification at any time by clicking the **...** / **[!UICONTROL Verify subdomain]** button.
 
 ![](assets/subdomain_verification.png)
 

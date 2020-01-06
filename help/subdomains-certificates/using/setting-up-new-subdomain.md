@@ -11,7 +11,11 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
-Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow these steps:
+Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps below.
+
+ >[!NOTE]
+ >
+ >If you do not have any subdomain configured for Adobe, the first subdomain you will set up will be considered as a **primary subdomain**. PTR records (the domain name associated to the IP address) will be generated from that subdomain, and you will not be able to change them.
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
@@ -36,8 +40,6 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example sending internal emails to your organization's employees.
 
     ![](assets/subdomain4.png)
-
-    Note that if you do not have any subdomain configured, the subdomain you are setting up will be considered as the **primary subdomain**. Inboxes (sender, error, reply-to addresses) will remain the same for all subdomains configured later on on this subdomain.
 
     Once the subdomain is created with the corresponding Adobe nameserver information, click **[!UICONTROL Next]**.
 
@@ -79,6 +81,11 @@ At the end of the process, the subdomains will be configured to work with your A
 * **The subdomain** with the following **DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
 * **Additional subdomains** to host mirror, resource, tracking pages and domain key,
 * **Inboxes**: Sender, Error, Reply-to.
+
+ >[!NOTE]
+ >
+ >By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
+
 
 You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain Details]** button.
 
