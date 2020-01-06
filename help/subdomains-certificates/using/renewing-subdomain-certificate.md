@@ -7,7 +7,7 @@ description: Learn how to renew your subdomains' SSL certificates
 
 >[!NOTE]
 >
->Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
+>Certificate renewal from the Control Panel will be available in beta at the end of January.
 
 ## About certificates renewal {#about-certificate-renewal-process}
 
@@ -40,7 +40,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
     Make sure you fill in the requested information fully and accurately, otherwise the certificate may not be renewed (contact your internal team, Security and IT teams if necessary), then click **[!UICONTROL Next]**.
 
-    * **[!UICONTROL Organization]**: offical organization name.
+    * **[!UICONTROL Organization]**: official organization name.
     * **[!UICONTROL Organization Unit]**: unit linked to the subdomain (example: Marketing, IT).
     * **[!UICONTROL Instance]** (pre-filled): URL of the Campaign instance associated to the subdomain.
 
