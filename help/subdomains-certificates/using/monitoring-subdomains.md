@@ -17,8 +17,8 @@ In the subdomains list, the **[!UICONTROL Last verification]** column indicates 
 
 >[!CAUTION]
 >
->Adobe does not recommend using subdomains with no verificate date as it could mean that these subdomains may be having some deliverability issues.
+>Adobe does not recommend using subdomains with no certificate date as it could mean that these subdomains may be having some deliverability issues.
 
 When launching a verification, several operations are performed to check that the subdomain is correctly configured (instance tenant check, email sending test, etc.)
 
-If the subdomain's verification fails, contact Adobe Customer Care for futher investigation.
+If the subdomain's verification fails, contact Adobe Customer Care for further investigation.
