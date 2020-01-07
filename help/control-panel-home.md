@@ -8,11 +8,11 @@ title: Product documentation
 
 ## What's new
 
-* [SSL certificates monitoring](../../subdomains-certificates/using/monitoring-ssl-certificates.md)
+* [SSL certificates monitoring](subdomains-certificates/using/monitoring-ssl-certificates.md)
 
     Learn how to monitor your subdomains' SSL certificates expiration date
 
-* [Subdomains delegation](../../subdomains-certificates/using/subdomains-branding.md)
+* [Subdomains delegation](subdomains-certificates/using/subdomains-branding.md)
 
     Learn more about subdomains branding and the key steps to delegate subdomains to Adobe using the Control Panel
 
