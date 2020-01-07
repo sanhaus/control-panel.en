@@ -7,7 +7,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 >[!NOTE]
 >
->Subdomain delegation from the Control Panel will be available in beta at the end of January, and subject to frequent updates and modifications without notice.
+>Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
 
 If you have any question regardin subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
 
