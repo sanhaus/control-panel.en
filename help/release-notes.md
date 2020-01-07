@@ -23,11 +23,11 @@ to be defined
 We’ve added new capabilities for Admin users to whitelist IP addresses to connect to Campaign Classic instances.
 Additionally, Admin users can now view the list of Campaign Classic instances and eligibility for build upgrades.
 
-For more information, refer to the [dedicated documentation](../../instances-settings/using/ip-whitelisting-instance-access.md).
+For more information, refer to the [dedicated documentation](instances-settings/using/ip-whitelisting-instance-access.md).
 
 ## August 2019 {#august-2019}
 
-We’ve added new capabilities for Admin users to receive notifications before SSL certificates for their domains expire. For more information, refer to the [detailed documentation](../../subdomains-certificates/using/monitoring-ssl-certificates.md).
+We’ve added new capabilities for Admin users to receive notifications before SSL certificates for their domains expire. For more information, refer to the [detailed documentation](subdomains-certificates/using/monitoring-ssl-certificates.md).
 
 Additionally, Admin users can now delete SSH keys that were added to access SFTP servers.
 
@@ -35,4 +35,4 @@ Additionally, Admin users can now delete SSH keys that were added to access SFTP
 
 We've added new features to empower Admin users to take greater control of Campaign Classic instance settings. New Control Panel capabilities include the ability to add URLs that Adobe Campaign connect to for data/file transfers.
 
-For more information, refer to the [detailed documentation](../../instances-settings/using/url-permissions.md).
+For more information, refer to the [detailed documentation](instances-settings/using/url-permissions.md).
