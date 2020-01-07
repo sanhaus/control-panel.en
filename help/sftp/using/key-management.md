@@ -37,7 +37,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 >
 >The steps below are an example of SSH key creation only, please follow your organization guidelines with respect to SSH keys. The example below is just one example of how this can be done and serves as a helpful point of reference for communicating requirements to your team or internal network group.
 
-1. Navigate to the **[!UICONTROL Key Management]** tab, then click the **[!UICONTROL Add public key]** button.
+1. Navigate to the **[!UICONTROL Key Management]** tab, then click the **[!UICONTROL Add new public key]** button.
 
     ![](assets/key0.png)
 

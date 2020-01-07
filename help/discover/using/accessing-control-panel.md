@@ -29,7 +29,7 @@ The Control Panel is also accessible from the Experience Cloud Platform **soluti
 
 >[!NOTE]
 >
->For **Campaign Classic** instances, access from within the product is available from Campaign Classic 19.1 version onwards.
+>Access from within the product is available for Campaign Standard only.
 
 1. Open your Campaign Standard product, then select the **[!UICONTROL Administration]** menu from the **[!UICONTROL Navigation]** pane.
 

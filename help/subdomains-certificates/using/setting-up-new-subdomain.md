@@ -5,9 +5,11 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a new subdomain {#setting-up-subdomain}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
+>Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
+
+If you have any question regardin subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
@@ -15,8 +17,9 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
  >[!NOTE]
  >
- >If you do not have any subdomain configured for Adobe, the first subdomain you will set up will be considered as a **primary subdomain**.
- >A **reverse DNS record** will be created and set as the defalt sending subdomain for inboxes (sender, reply-to, error email addresses).
+ >If the selected instance has no previously configured subdomains, the first subdomain delegated to Adobe will become the **primary subdomain** for that instance, you will not be able to change it in the future.
+ >
+ >Reverse DNS records will be created for other subdomains using the primary subdomain. Reply-to, and bounce addresses for other subdomains will be generated from the primary subdomain.
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
@@ -102,4 +105,4 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 
 ## Use of CNAMEs {#use-cnames}
 
-The use of CNAMEs for subdomain delegation is not recommended by Adobe and not supported through the Control Panel. To use this method, contact Adobe Customer Care.
+The use of CNAMEs for subdomain delegation is not supported through the Control Panel. To use this method, contact Adobe Customer Care.
