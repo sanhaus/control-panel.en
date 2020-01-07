@@ -7,7 +7,7 @@ description: Learn more about subdomains branding
 
 >[!NOTE]
 >
->Subdomain delegation from the Control Panel is currently in beta, and subject to frequent updates and modifications without notification.
+>Subdomain delegation from the Control Panel will be available in beta at the end of January, and subject to frequent updates and modifications without notice.
 
 ## Why setting up subdomains? {#why-setting-up-subdomains}
 
@@ -36,3 +36,5 @@ The table below provides a summary of how these methods work, as well as the imp
 | **CNAME, custom method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
 
 Additional information on domain delegation is available in [this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+
+If you have any question regardin subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
