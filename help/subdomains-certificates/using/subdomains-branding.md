@@ -5,7 +5,7 @@ description: Learn more about subdomains branding
 
 # Subdomains branding {#subdomains-branding}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
 

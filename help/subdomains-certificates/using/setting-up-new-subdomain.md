@@ -5,7 +5,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a new subdomain {#setting-up-subdomain}
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
 
