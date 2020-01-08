@@ -17,8 +17,8 @@ Here you’ll find information about the latest Control Panel releases.
 We’ve added new capabilities for Admin users to delegate subdomains and renew SSL certificates from Control Panel.
 
 For more information, refer to these pages:
-* [Setting up a new subdomain](../../subdomains-certificates/using/setting-up-new-subdomain.md)
-* [Renewing a subdomain's SSL certificate](../../subdomains-certificates/using/renewing-subdomain-certificate.md)
+* [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
+* [Renewing a subdomain's SSL certificate](subdomains-certificates/using/renewing-subdomain-certificate.md)
 
 >[!IMPORTANT]
 >
