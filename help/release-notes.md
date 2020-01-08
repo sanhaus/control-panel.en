@@ -14,7 +14,15 @@ Here you’ll find information about the latest Control Panel releases.
 
 *January 22, 2020*
 
-to be defined
+We’ve added new capabilities for Admin users to delegate subdomains and renew SSL certificates from Control Panel.
+
+For more information, refer to these pages:
+* [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
+* [Renewing a subdomain's SSL certificate](subdomains-certificates/using/renewing-subdomain-certificate.md)
+
+>[!IMPORTANT]
+>
+>These features will be available in beta, and subject to frequent updates and modifications without notice.
 
 ## September 2019 {#september-2019}
 
