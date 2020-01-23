@@ -8,6 +8,8 @@ title: Product documentation
 
 ## What's new
 
+    update test on stage
+
 * [SSL certificates monitoring](subdomains-certificates/using/monitoring-ssl-certificates.md)
 
     Learn how to monitor your subdomains' SSL certificates expiration date
