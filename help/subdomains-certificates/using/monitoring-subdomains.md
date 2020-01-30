@@ -20,3 +20,9 @@ The **[!UICONTROL Last verification]** column indicates when a subdomain was ver
 When launching a verification, several operations are performed to check that the subdomain is correctly configured (instance tenant check, email sending test, etc.)
 
 If the subdomain's verification fails, contact Adobe Customer Care for further investigation.
+
+**Related topics:**
+
+* [Adding SSL certificates (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/adding-ssl-certificates.html)
+* [Renewing a subdomain's SSL certificate](../..help/subdomains-certificates/using/renewing-subdomain-certificate.md)
+* [Subdomains branding](../../subdomains-certificates/using/subdomains-branding.md)

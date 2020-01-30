@@ -101,3 +101,9 @@ To install the certificate, follow these steps:
     ![](assets/install2.png)
 
 Once the SSL certificate is installed, the certificate's expiration date and status icon are updated accordingly.
+
+**Related topics:**
+
+* [Adding SSL certificates (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/adding-ssl-certificates.html)
+* [Subdomains branding](../../subdomains-certificates/using/subdomains-branding.md)
+* [Monitoring your subdomains](../../subdomains-certificates/using/monitoring-subdomains.md)
