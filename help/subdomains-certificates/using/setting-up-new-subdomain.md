@@ -9,7 +9,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 >
 >Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
 
-If you have any question regardin subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
+If you have any question regarding subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
@@ -106,3 +106,9 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 ## Use of CNAMEs {#use-cnames}
 
 The use of CNAMEs for subdomain delegation is not supported through the Control Panel. To use this method, contact Adobe Customer Care.
+
+**Related topics:**
+
+* [Delegating subdomains (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/subdomain-delegation.html)
+* [Subdomains branding](../../subdomains-certificates/using/subdomains-branding.md)
+* [Monitoring your subdomains](../../subdomains-certificates/using/monitoring-subdomains.md)

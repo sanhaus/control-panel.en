@@ -37,4 +37,10 @@ The table below provides a summary of how these methods work, as well as the imp
 
 Additional information on domain delegation is available in [this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
-If you have any question regardin subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
+If you have any question regarding subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
+
+**Related topics:**
+
+* [Setting up a new subdomain](../../subdomains-certificates/using/setting-up-new-subdomain.md)
+* [Delegating subdomains (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-standard-tutorials/administrating/control-panel/subdomain-delegation.html)
+* [Monitoring your subdomains](../../subdomains-certificates/using/monitoring-subdomains.md)
