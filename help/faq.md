@@ -15,7 +15,7 @@ For more information, please refer to [Adobe Experience Cloud documentation](htt
 
 **Where can I find my IMS Org ID?**
 
-One way is to navigate to [Adobe Experience Cloud Home](https://exc-login.experiencecloud.adobe.com/exc-content/login.html?prefixtenantid=amc) > **[!UICONTROL Administration]**. You will find your IMS Org ID at the bottom of Administration **[!UICONTROL Quick Access]** section. You can find more detailed information in the [Adobe Experience Cloud documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
+One way is to navigate to [Adobe Experience Cloud Home](https://experiencecloud.adobe.com/) > **[!UICONTROL Administration]**. You will find your IMS Org ID at the bottom of Administration **[!UICONTROL Quick Access]** section. You can find more detailed information in the [Adobe Experience Cloud documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
 
 The other way is to launch **Admin Console**. Your IMS Org ID will be visible in your URL, it should look something like: https://adminconsole.adobe.com/xxx@AdobeOrg/overview.
 
