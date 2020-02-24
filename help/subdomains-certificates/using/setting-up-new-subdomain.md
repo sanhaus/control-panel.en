@@ -7,9 +7,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 >[!IMPORTANT]
 >
->Subdomain delegation from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
-
-If you have any question regarding subdomain delegation methods, reach out to Adobe Deliverability team, or eventually contact Customer Care to request Deliverability consulting.
+>Subdomain delegation from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
@@ -97,9 +95,9 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 
 ![](assets/subdomains_details_senderinfo.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Additionally to the processing stage, Adobe will notify the deliverability team about the new subdomain in order to audit the subdomain that has been created. The audit process can take up to 3 days after the subdomain has been delegated.
+>Following the processing stage, you should verify with Adobe Customer Care that an audit request has been filed for the deliverability team to audit the new subdomain that has been created. The audit process can take up to 3  10 business days after the subdomain has been delegated.
 >
 >The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
 
