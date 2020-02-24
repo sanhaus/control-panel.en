@@ -41,7 +41,7 @@ If one of your subdomain's SSL certificate is about to expire, you can renew it 
 
 >[!IMPORTANT]
 >
->Certificate renewal from the Control Panel will be available in beta by the end of January, and subject to frequent updates and modifications without notice.
+>Certificate renewal from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
 
 **Related topics:**
 
