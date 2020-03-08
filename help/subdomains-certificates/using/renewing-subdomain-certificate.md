@@ -5,6 +5,13 @@ description: Learn how to renew your subdomains' SSL certificates
 
 # Renewing a subdomain's SSL certificate {#renewing-subdomains-ssl-certificates}
 
+>[!CONTEXTUALHELP]
+>id="cp_add_ssl_certificate"
+>title="Add SSL certificate"
+>abstract="To add an SSL certificate, you need to generate a CSR, purchase the SSL certificate for your subdomains and install the Certificate Bundle."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#generating-csr" text="Generating a Certificate Signing Request (CSR)"
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#installing-ssl-certificate" text="How to install a SSL certificate"
+
 >[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
@@ -25,6 +32,18 @@ The SSL certificate renewal process includes 3 steps:
 >SSL certificates renewal through the Control Panel is available for **fully delegated subdomains** only.
 
 ## Generating a Certificate Signing Request (CSR) {#generating-csr}
+
+>[!CONTEXTUALHELP]
+>id="cp_generate_csr"
+>title="Generate CSR"
+>abstract="Certificate Signing Request has to be generated for the instance and subdomains you are planning to secure prior to purchasing a certificate."
+
+>[!CONTEXTUALHELP]
+>id="cp_select_subdomains"
+>title="Select the subdomains for your CSR"
+>abstract="You can choose to include all or only specific subdomains into your Certificate Signing Request. Only selected subdomains will be certified through purchased SSL certificate."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html#generating-csr" text="Generating a Certificate Signing Request (CSR)"
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html" text="About subdomains branding"
 
 To generate a Certificate Signing Request (CSR), follow these steps:
 
@@ -69,6 +88,12 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 After obtaining a Certificate Signing Request CSR from the Control Panel, purchase an SSL certificate from a Certificate Authority approved by your organization.
 
 ## Installing the SSL certificate {#installing-ssl-certificate}
+
+>[!CONTEXTUALHELP]
+>id="cp_install_ssl_certificate"
+>title="Install SSL Certificate"
+>abstract="Install the SSL Certificate that you purchased from the Certificate Authority approved by your organization."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html" text="About subdomains branding"
 
 Once an SSL certificate has been purchased, you can install it on your instance. Before proceeding, make sure you are aware of the prerequisites below:
 

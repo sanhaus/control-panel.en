@@ -5,6 +5,12 @@ description: Learn more about IP whitelisting in the Control Panel for instance 
 
 # IP whitelisting {#ip-whitelisting}
 
+>[!CONTEXTUALHELP]
+>id="cp_instancesettings_iprange"
+>title="About IP Whitelisting"
+>abstract="Manage IP whitelisting to access your instances."
+>additional-url="https://images-tv.adobe.com/mpcv3/045cac99-f948-478e-ae04-f8c161dcb9e2_1568132508.1920x1080at3000_h264.mp4" text="Watch demo video"
+
 >[!CAUTION]
 >
 >This feature is available for Campaign Classic instances only.
@@ -28,6 +34,11 @@ Make sure you follow the recommendations and limitations below when whitelisting
 * **We do not recommend whitelisting IP addresses of public places** (airports, hotels, etc.). Please use your company VPN address to keep your instance secure at all times.
 
 ## Whitelisting IP addresses for Instance access {#whistelisting-ip-addresses}
+
+>[!CONTEXTUALHELP]
+>id="cp_instancesettings_iprange_add"
+>title="Add New Ip Range"
+>abstract="Define the IP range that you want to whitelist to connect to your instance."
 
 To whitelist IP addresses, follow these steps:
 
