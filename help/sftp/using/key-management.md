@@ -5,6 +5,12 @@ description: Learn how to manage keys to connect to SFTP servers
 
 # Key management {#key-management}
 
+>[!CONTEXTUALHELP]
+>id="cp_key_management"
+>title="About Key Management"
+>abstract="In this tab you can manage your public keys."
+>additional-url="https://images-tv.adobe.com/mpcv3/8a977e03-d76c-44d3-853c-95d0b799c870_1560205338.1920x1080at3000_h264.mp4#t=166" text="Watch demo video"
+
 Adobe recommends that all customers establish connection to their SFTP servers with a **public and private key pair**.
 
 The steps to generate a public SSH key and add it to access the SFTP server are decribed below, as well as recommendations regarding  authentication.
@@ -32,6 +38,11 @@ In very rare cases password based authentication is enabled on some SFTP servers
 ![](assets/control_panel_passwordexpires.png)
 
 ## Installing the SSH key {#installing-ssh-key}
+
+>[!CONTEXTUALHELP]
+>id="cp_sftp_publickey_add"
+>title="Add New Public Key"
+>abstract="Add a new public key for an instance."
 
 >[!CAUTION]
 >

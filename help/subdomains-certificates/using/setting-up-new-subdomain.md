@@ -5,6 +5,12 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a new subdomain {#setting-up-subdomain}
 
+>[!CONTEXTUALHELP]
+>id="cp_subdomain_management"
+>title="Setup new subdomains and manage certificates"
+>abstract="You need to setup a new subdomain and manage your subdomains' SSL certificates to start sending emails or publish landing pages with Adobe Campaign."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html" text="How to monitor your subdomains' SSL certificates"
+
 >[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.

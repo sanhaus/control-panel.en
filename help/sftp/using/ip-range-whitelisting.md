@@ -5,6 +5,12 @@ description: Learn how to whitelist IP ranges for SFTP servers access
 
 # IP range whitelisting {#ip-range-whitelisting}
 
+>[!CONTEXTUALHELP]
+>id="cp_ip_whitelist"
+>title="About IP whitelisting"
+>abstract="In this tab, you can whitelist IP ranges to establish a connection to your SFTP servers. Only SFTP servers that you have access to are shown here. Please contact your Administrator to request access to other SFTP servers."
+>additional-url="https://images-tv.adobe.com/mpcv3/8a977e03-d76c-44d3-853c-95d0b799c870_1560205338.1920x1080at3000_h264.mp4#t=98" text="Watch demo video"
+
 SFTP servers are protected. In order to be able to access them in order to view files or write new ones, you need to whitelist the public IP address of the system or client that accesses the servers.
 
 ## About the CIDR format {#about-cidr-format}
@@ -25,6 +31,11 @@ Make sure you follow the recommendations and limitations below when whitelisting
 * Make sure to **regularly delete whitelisted IP addresses** that you don't need anymore.
 
 ## Whitelisting IP addresses {#whitelisting-ip-addresses}
+
+>[!CONTEXTUALHELP]
+>id="cp_sftp_iprange_add"
+>title="Add New Ip Range"
+>abstract="Define the IP ranges that you want to whitelist to connect to your SFTP servers."
 
 To whitelist an IP range, follow these steps:
 

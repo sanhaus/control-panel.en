@@ -5,6 +5,12 @@ description: Learn more about subdomains branding
 
 # Subdomains branding {#subdomains-branding}
 
+>[!CONTEXTUALHELP]
+>id="cp_certificate_management"
+>title="About subdomains and SSL certificates"
+>abstract="Monitor your subdomains and the associated SSL certificates."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html" text="How to monitor your subdomains' SSL certificates"
+
 >[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
