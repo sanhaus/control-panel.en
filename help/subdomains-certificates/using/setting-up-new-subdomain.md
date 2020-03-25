@@ -43,7 +43,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Create the desired subdomain and nameservers in the hosting solution used by your organization. To do this, copy-paste the Adobe Nameserver information displayed in the wizard. For more on how to create a subdomain in a hosting solution, refer to the [tutorial video](https://video.tv.adobe.com/v/30175).
 
-    >[!CAUTION]
+    >[!IMPORTANT]
     >
     >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example sending internal emails to your organization's employees.
 
