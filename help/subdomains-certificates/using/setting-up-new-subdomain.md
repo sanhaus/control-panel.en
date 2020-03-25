@@ -65,7 +65,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     **You can delegate a subdomains for both Marketing and Transactional use cases**.
 
     * For Marketing use cases, subdomains will be configured on **MID** (Mid sourcing) instances.
-    * For Transactional use cases, subdomains will be configured on ALL **RT** ((Message Center / Real-time messaging) instances to ensure connectivity. The subdomains will therefore operate with all your RT instances.
+    * For Transactional use cases, subdomains will be configured on ALL **RT** (Message Center / Real-time messaging) instances to ensure connectivity. The subdomains will therefore operate with all your RT instances.
 
     >[!NOTE]
     >
