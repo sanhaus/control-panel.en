@@ -5,6 +5,12 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 # Setting up a new subdomain {#setting-up-subdomain}
 
+>[!CONTEXTUALHELP]
+>id="cp_subdomain_management"
+>title="Setup new subdomains and manage certificates"
+>abstract="You need to setup a new subdomain and manage your subdomains' SSL certificates to start sending emails or publish landing pages with Adobe Campaign."
+>additional-url="https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html" text="How to monitor your subdomains' SSL certificates"
+
 >[!IMPORTANT]
 >
 >Subdomain delegation from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
@@ -37,9 +43,11 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Create the desired subdomain and nameservers in the hosting solution used by your organization. To do this, copy-paste the Adobe Nameserver information displayed in the wizard. For more on how to create a subdomain in a hosting solution, refer to the [tutorial video](https://video.tv.adobe.com/v/30175).
 
-    >[!CAUTION]
+    >[!IMPORTANT]
     >
     >When configuring nameservers, make sure you **never delegate your root subdomain to Adobe**. Otherwise, the domain will be able to work with Adobe only. Any other use will be impossible, like for example sending internal emails to your organization's employees.
+    >
+    >Moreover, **do not create a separate zone file** for this new subdomain.
 
     ![](assets/subdomain4.png)
 
@@ -50,13 +58,18 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     * **Marketing communications**: communications that are intended for a commercial purpose. Example: sales email campaign.
     * **Transactional & operational communications**: transactional communications contain information aimed at completing a process that the recipient has started with you. Example: purchase confirmation, password reset email. Organizational communications relate to the exchange of information, ideas, and views within and outside the organization, with no commercial purpose.
 
+    ![](assets/subdomain5.png)
+
+    **Breaking down your subdomains according to use cases is a best practice for deliverability**. By doing so, the reputation of each subdomain is isolated and protected. For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
+
+    **You can delegate a subdomains for both Marketing and Transactional use cases**.
+
+    * For Marketing use cases, subdomains will be configured on **MID** (Mid sourcing) instances.
+    * For Transactional use cases, subdomains will be configured on ALL **RT** (Message Center / Real-time messaging) instances to ensure connectivity. The subdomains will therefore operate with all your RT instances.
+
     >[!NOTE]
     >
-    >Breaking down your subdomains according to use cases is a best practice for deliverability. By doing so, the reputation of each subdomain is isolated and protected.
-    >
-    >For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
-
-    ![](assets/subdomain5.png)
+    >If you are usng Campaign Classic, Control Panel allows you to see what RT/MID instances are connected to the Marketing instance that you are working with. For more on this, refer to [this section](../../instances-settings/using/instance-details.md).
 
 1. Enter the subdomain that you created into your hosting solution, then click **[!UICONTROL Submit]**.
 

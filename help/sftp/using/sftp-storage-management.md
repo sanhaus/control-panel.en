@@ -5,6 +5,12 @@ description: Learn how to monitor and manage your SFTP server's storage
 
 # SFTP storage management {#sftp-storage-management}
 
+>[!CONTEXTUALHELP]
+>id="cp_storage"
+>title="About storage capacity"
+>abstract="In this tab, you can view the storage capacity and utilization information for your SFTP servers. Only SFTP servers that you have access to are shown here. Please contact your Administrator to request access to other SFTP servers."
+>additional-url="https://images-tv.adobe.com/mpcv3/8a977e03-d76c-44d3-853c-95d0b799c870_1560205338.1920x1080at3000_h264.mp4" text="Watch demo video"
+
 You may have different storage capacity provisioned on your SFTP server, depending on your contractual terms.
 
 It is essential that you regularly monitor available space for each of your SFTP servers. Otherwise, you may not be able to save any additional files on the server anymore, or to successfully execute workflows that rely on the updates from this server.

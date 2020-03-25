@@ -5,7 +5,14 @@ description: Learn how to monitor your instance details in the Control Panel
 
 # Instance Details {#instance-details}
 
->[!CAUTION]
+>[!CONTEXTUALHELP]
+>id="cp_instancesettings_instancedetails"
+>title="About Instance details"
+>abstract="View the details of your Adobe Campaign instances: types, names, build information and possible upgrade recommendations."
+>additional-url="https://docs.adobe.com/content/help/en/campaign-classic/using/release-notes/latest-release.html" text="Campaign Classic release notes"
+>additional-url="https://docs.adobe.com/content/help/en/campaign-standard/using/release-notes/release-notes.html" text="Campaign Standard release notes"
+
+>[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 

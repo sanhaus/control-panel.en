@@ -5,7 +5,13 @@ description: Learn how to manage URL permissions in the Control Panel
 
 # URL permissions {#url-permissions}
 
->[!CAUTION]
+>[!CONTEXTUALHELP]
+>id="cp_instancesettings_urlpermissions"
+>title="About URL permissions"
+>abstract="Manage the URLs that your Adobe Campaign instances can connect to."
+>additional-url="https://images-tv.adobe.com/mpcv3/91206a19-d9af-4b6a-8197-0d2810a78941_1563488165.1920x1080at3000_h264.mp4" text="Watch demo video"
+
+>[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 
@@ -30,6 +36,11 @@ Once a URL is added, it is referenced in the configuration file of the instance 
 * The Control Panel supports **http**, **https**, and **sftp** protocols. Entering invalid URLs or protocols will result in errors.
 
 ## Managing URL permissions {#managing-url-permissions}
+
+>[!CONTEXTUALHELP]
+>id="cp_instancesettings_url_add"
+>title="Add new URL"
+>abstract="Add URLs to allow connections to your Campaign instance."
 
 To add a URL that your instance can connect to, follow these steps:
 

@@ -19,6 +19,11 @@ Adobe Campaign recommends that you secure the subdomains that host your landing 
 
 ## Monitoring SSL certificates {#monitoring-certificates}
 
+>[!CONTEXTUALHELP]
+>id="cp_subdomain_details"
+>title="Subdomain details"
+>abstract="Retrieve information on your subdomains."
+
 The status of your subdomains' SSL certificates is available directly from the list of subdomains when selecting the **[!UICONTROL Subdomains & Certificates]** card.
 
 Subdomains are arranged by the closest expiration date of the SSL certificate, with visual information on the expiration, in days:
