@@ -73,9 +73,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Enter the subdomain that you created into your hosting solution, then click **[!UICONTROL Submit]**.
 
-    >[!NOTE]
-    >
-    > Make sure you fill in the **full name** of the subdomain to delegate. For example, to delegate the "usoffers.email.weretail.com" subdomain, type "usoffers.email.weretail.com".
+    Make sure you fill in the **full name** of the subdomain to delegate. For example, to delegate the "usoffers.email.weretail.com" subdomain, type "usoffers.email.weretail.com".
 
     ![](assets/subdomain6.png)
 
