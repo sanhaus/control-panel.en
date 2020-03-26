@@ -11,7 +11,7 @@ description: Learn how to manage URL permissions in the Control Panel
 >abstract="Manage the URLs that your Adobe Campaign instances can connect to."
 >additional-url="https://images-tv.adobe.com/mpcv3/91206a19-d9af-4b6a-8197-0d2810a78941_1563488165.1920x1080at3000_h264.mp4" text="Watch demo video"
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 
