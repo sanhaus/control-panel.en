@@ -27,11 +27,10 @@ user-guide-title: Control Panel Help
     + [Setting up a new subdomain](subdomains-certificates/using/setting-up-new-subdomain.md)
     + [Monitoring SSL certificates](subdomains-certificates/using/monitoring-ssl-certificates.md)
     + [Renewing SSL certificates](subdomains-certificates/using/renewing-subdomain-certificate.md)
-* Performance monitoring {#performance-monitoring}
++ Performance monitoring {#performance-monitoring}
   + [About perfomance monitoring](performance-monitoring/using/about-performance-monitoring.md)
   + [Database monitoring](performance-monitoring/using/database-monitoring.md)
-  + [Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
-  + [Alerting](performance-monitoring/using/alerting.md)
+  + [Email alerting](performance-monitoring/using/email-alerting.md)
 + Instances settings (Campaign Classic) {#instances-settings}
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
