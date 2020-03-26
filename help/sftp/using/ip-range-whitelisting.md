@@ -53,7 +53,7 @@ To whitelist an IP range, follow these steps:
 
     ![](assets/control_panel_add_range2.png)
 
-    >[!CAUTION]
+    >[!IMPORTANT]
     >
     >An IP range cannot overlap an existing whitelisted range. In that case, first delete the range that contains the overlapping IP.
     >
