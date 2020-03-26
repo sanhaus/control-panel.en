@@ -13,7 +13,7 @@ The **[!UICONTROL Last verification]** column indicates when a subdomain was ver
 
 ![](assets/subdomain_verification.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe does not recommend using subdomains with no certificate date as it could mean that these subdomains may be having some deliverability issues.
 

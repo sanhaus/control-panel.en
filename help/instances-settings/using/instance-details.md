@@ -12,7 +12,7 @@ description: Learn how to monitor your instance details in the Control Panel
 >additional-url="https://docs.adobe.com/content/help/en/campaign-classic/using/release-notes/latest-release.html" text="Campaign Classic release notes"
 >additional-url="https://docs.adobe.com/content/help/en/campaign-standard/using/release-notes/release-notes.html" text="Campaign Standard release notes"
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 

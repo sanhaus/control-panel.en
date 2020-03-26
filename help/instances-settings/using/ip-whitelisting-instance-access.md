@@ -11,7 +11,7 @@ description: Learn more about IP whitelisting in the Control Panel for instance 
 >abstract="Manage IP whitelisting to access your instances."
 >additional-url="https://images-tv.adobe.com/mpcv3/045cac99-f948-478e-ae04-f8c161dcb9e2_1568132508.1920x1080at3000_h264.mp4" text="Watch demo video"
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 

@@ -31,7 +31,7 @@ Make sure you always use the same authentication to connect to the server, and y
 
 In very rare cases password based authentication is enabled on some SFTP servers. Adobe recommends that you use key based authentication, as this method is more efficient and secure. You can request to switch to key based authentication by contacting Customer Care.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
 
@@ -44,7 +44,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
 >title="Add New Public Key"
 >abstract="Add a new public key for an instance."
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >The steps below are an example of SSH key creation only, please follow your organization guidelines with respect to SSH keys. The example below is just one example of how this can be done and serves as a helpful point of reference for communicating requirements to your team or internal network group.
 
