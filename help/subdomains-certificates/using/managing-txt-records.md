@@ -3,7 +3,7 @@ title: Managing TXT records
 description: Learn how to manage TXT records for domain ownership verification.
 ---
 
-# Managing TXT records {#txt-records}
+# Managing TXT records {#managing-txt-records}
 
 >[!CONTEXTUALHELP]
 >id="cp_siteverification_add"
