@@ -125,6 +125,10 @@ To install the certificate, follow these steps:
 
     ![](assets/install2.png)
 
+>[!NOTE]
+>
+>The certificate will get installed on all domains/subdomains included in the CSR. Any additional domain/subdomain present in the certificate will not be taken into account.
+
 Once the SSL certificate is installed, the certificate's expiration date and status icon are updated accordingly.
 
 **Related topics:**
