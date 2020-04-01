@@ -3,57 +3,30 @@ title: Database monitoring
 description: Learn how to monitor your Campaign database in the Control Panel
 ---
 
-# Database monitoring {#database-monitoring}
+# Email alerting {#email-alerting}
 
-## About instances databases {#about-instances-databases}
+In order to provide greater flexibility to your work, Control Panel is equipped with real-time email alerting functionality.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of database space.
+To subscribe to these alerts follow these steps:
 
-Databases include all **assets**, **workflows** and **data** that is stored in Adobe Campaign.
+1. Click the **[!UICONTROL Alerting notifications]** button available from any location in the Control Panel.
 
-Over time, databases can reach their maximum capacity, especially if the stored resources are never deleted from the instance, or if there are many workflows in a paused state.
+1. Click **[!UICONTROL Subscribe]**. An email is sent to confirm your subscription.
 
-Overflowing an instance database can lead to several issues (inability to login, to send emails etc.). Monitoring your instances' databases is therefore essential to ensure optimal performance.
-
->[!NOTE]
->
->The amount of database space provided as shown in the Control Panel may not reflect the amount of Database space specified in your contract. Most often, larger database space is provided to you temporarily to ensure performance of your system.
-
-## Monitoring database usage {#monitoring-instances-database}
-
-Control Panel allows you to monitor the database usage for each of your Campaign instances. To do this, follow the steps below.
+![](assets/subscribing.png)
 
 >[!NOTE]
 >
->To receive notifications when one of your databases is reaching its capacity, please subscribe to
-1. Open the **[!UICONTROL Performance Monitoring]** card, then select the **[!UICONTROL Databases]** tab.
+>You can sign out from email alerts at any time using the **[!UICONTROL Alerting notifications]** button.
 
-1. Select the desired instance from the **[!UICONTROL Instance List]**.
+After subscribing, Control Panel will notify about system issues and recommend the actions to take.
 
-    The upper area provides information on the instance's database capacity and used space.
+Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
 
-    ![](assets/databases_dashboard.png)
+The list of alerts is as follows:
 
-    The lower area provides a graphical representation of the database utilization over the last 7 days. You can change the displayed period of time using the available filters in the upper-right corner.
+* **SFTP storage usage**: One of your SFTP servers has reached 80% or more of its capacity. See [SFTP storage management](../../sftp/using/sftp-storage-management.md).
 
-    Hovering over the graph allows you to get detailed information on the selected period of time.
+* **Database usage**: One of your instances' databases has reached 80% or more of its capacity. See [Database monitoring](../../performance-monitoring/using/database-monitoring.md).
 
-    ![](assets/databases_dashboard_detail.png)
-
-## Preventing database overload {#preventing-database-overload}
-
-Campaign Standard and Classic offer various ways of preventing overconsumption of database disk space.
-
-The section below provides useful resources from Campaign documentations to help you optimize your databases usage:
-
-**Workflows monitoring**
-
-* [Workflows best practices](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/best-practices-workflows.html) (Campaign Standard)
-* [Monitoring workflow execution](https://docs.adobe.com/help/en/campaign-classic/using/automating-with-workflows/monitoring-workflows/monitoring-workflow-execution.html) (Campaign Classic)
-
-**Database maintenance**
-
-* Database cleanup technnical workflow ([Campaign Standard](https://docs.adobe.com/help/en/campaign-standard/using/administrating/application-settings/technical-workflowshtml#list-of-technical-workflows) / [Campaign Classic](https://docs.adobe.com/help/en/campaign-classic/using/monitoring-campaign-classic/data-processing/database-cleanup-workflow.html))
-* [Database maintenance guide](https://docs.adobe.com/content/help/en/campaign-classic/using/monitoring-campaign-classic/database-maintenance/recommendations.html) (Campaign Classic)
-* [Database performance troubleshooting](https://docs.adobe.com/content/help/en/campaign-classic/using/monitoring-campaign-classic/troubleshooting/database-performances.html) (Campaign Classic)
-* [Database-related options](https://docs.adobe.com/help/en/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#database) (Campaign Classic)
+* **SSL certificate expiration**: One of your subdomains' SSL certificates has expired or is going to expire in  60 days or less. See [Monitoring subdomains' SSL certificates](../../subdomains-certificates/using/monitoring-ssl-certificates.md).
