@@ -17,11 +17,17 @@ Overflowing an instance database can lead to several issues (inability to login,
 
 >[!NOTE]
 >
->Note that there may be some discrepancies between your current database space capacity and the amount specified in your contrat for distinct periods of time to ensure higher performance.
+>The amount of database space provided as shown in the Control Panel may not reflect the amount of Database space specified in your contract. Most often, larger database space is provided to you temporarily to ensure performance of your system.
 
 ## Monitoring database usage {#monitoring-instances-database}
 
-1. Open the **[!UICONTROL Health Monitoring]** card, then select the **[!UICONTROL Databases]** tab.
+Control Panel allows you to monitor the database usage for each of your Campaign instances. To do this, follow the steps below.
+
+>[!NOTE]
+>
+>To receive notifications when one of your databases is reaching its capacity, please subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md/).
+
+1. Open the **[!UICONTROL Performance Monitoring]** card, then select the **[!UICONTROL Databases]** tab.
 
 1. Select the desired instance from the **[!UICONTROL Instance List]**.
 
