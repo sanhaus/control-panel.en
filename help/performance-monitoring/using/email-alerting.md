@@ -9,19 +9,19 @@ In order to provide greater flexibility to your work, Control Panel is equipped 
 
 To subscribe to these alerts follow these steps:
 
-1. Click the **[!UICONTROL Alerting notifications]** button available from any location in the Control Panel.
-
-1. Click **[!UICONTROL Subscribe]**. An email is sent to confirm your subscription.
+1. Click the **[!UICONTROL Alerting notifications]** button available from any location in the Control Panel, then click **[!UICONTROL Subscribe]**.
 
 ![](assets/subscribing.png)
 
->[!NOTE]
->
->You can sign out from email alerts at any time using the **[!UICONTROL Alerting notifications]** button.
+1. An email is sent to confirm your subscription.
+
+![](assets/email_subscription.png)
 
 After subscribing, Control Panel will notify about system issues and recommend the actions to take.
 
-Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
+>[!NOTE]
+>
+>Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
 
 The list of alerts is as follows:
 
