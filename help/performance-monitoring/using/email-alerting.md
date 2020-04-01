@@ -21,9 +21,7 @@ To subscribe to these alerts follow these steps:
 
 After subscribing, Control Panel will notify about system issues and recommend the actions to take.
 
->[!NOTE]
->
->Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
+Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
 
 The list of alerts is as follows:
 
