@@ -1,6 +1,6 @@
 ---
-title: Database monitoring
-description: Learn how to monitor your Campaign database in the Control Panel
+title: Email alerting
+description: Learn how to receive email notifications in case of issues on your Campaign instances
 ---
 
 # Email alerting {#email-alerting}
