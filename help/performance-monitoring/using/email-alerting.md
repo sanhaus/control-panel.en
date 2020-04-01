@@ -1,6 +1,6 @@
 ---
 title: Email alerting
-description: Learn how to xxxx in the Control Panel
+description: Learn how to subscribe to email notifications about performance issues in the Control Panel
 ---
 
 # Email alerting {#email-alerting}
@@ -26,5 +26,5 @@ Email alerts are sent to everyone who has signed up for **all instances** that t
 The list of alerts is as follows:
 
 * **SFTP storage usage**: One of your SFTP servers has reached 80% or more of its capacity. See [SFTP storage management](../../sftp/using/sftp-storage-management.md).
-* **Database usage**; One of your instances' databases has reached 80% or more of its capacity. See [Database monitoring](../../performance-monitoring/using/database-monitoring.md).
+* **Database usage**: One of your instances' databases has reached 80% or more of its capacity. See [Database monitoring](../../performance-monitoring/using/database-monitoring.md).
 * **SSL certificate expiration**: One of your subdomains' SSL certificates has expired or is going to expire in  60 days or less. See [Monitoring subdomains' SSL certificates](../../subdomains-certificates/using/monitoring-ssl-certificates.md).
