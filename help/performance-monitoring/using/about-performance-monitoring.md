@@ -16,6 +16,6 @@ The **[!Performance monitoring]** card in the Control Panel home page allows you
 ![](assets/performance_card.png)
 
 
-Moreover, Control Panel allows you to sign up to receive email notifications each time that an issue is detected on one of your Campaign instances. For more on this, refer to [this section](../../performance-monitoring/using/email-alerting.md).
+Moreover, Control Panel allows you to sign up to receive email notifications each time that an issue is detected on one of your Campaign instances. For more on this, refer to 
 
 ![](assets/email_subscription.png)
