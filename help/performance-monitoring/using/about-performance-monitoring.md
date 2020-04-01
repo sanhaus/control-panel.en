@@ -7,7 +7,7 @@ description: Learn how to monitor your instances performance in the Control Pane
 
 Control Panel provides several functionalities to help you monitor your instances and ensure optimal performances.
 
-The **[!UICONTROL Performance monitoring]** card in the Control Panel home page allows you to monitor the usage of your Campaign instances like, for example, theirs database capacity. For more on this, refer to [this section](../../performance-monitoring/using/database-monitoring.md).
+The **[!UICONTROL Performance monitoring]** card in the Control Panel home page allows you to monitor the usage of your Campaign instances like, for example, their database capacity. For more on this, refer to [this section](../../performance-monitoring/using/database-monitoring.md).
 
 ![](assets/performance_card.png)
 
