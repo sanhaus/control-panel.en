@@ -23,10 +23,6 @@ Overflowing an instance database can lead to several issues (inability to login,
 
 Control Panel allows you to monitor the database usage for each of your Campaign instances. To do this, follow the steps below.
 
->[!NOTE]
->
->To receive notifications when one of your databases is reaching its capacity, please subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md/).
-
 1. Open the **[!UICONTROL Performance Monitoring]** card, then select the **[!UICONTROL Databases]** tab.
 
 1. Select the desired instance from the **[!UICONTROL Instance List]**.
@@ -41,6 +37,10 @@ Control Panel allows you to monitor the database usage for each of your Campaign
 
     ![](assets/databases_dashboard_detail.png)
 
+>[!NOTE]
+>
+>You can also receive notifications when one of your databases is reaching its capacity. To do this, subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md)
+
 ## Preventing database overload {#preventing-database-overload}
 
 Campaign Standard and Classic offer various ways of preventing overconsumption of database disk space.
@@ -54,7 +54,7 @@ The section below provides useful resources from Campaign documentations to help
 
 **Database maintenance**
 
-* Database cleanup technnical workflow ([Campaign Standard](https://docs.adobe.com/help/en/campaign-standard/using/administrating/application-settings/technical-workflowshtml#list-of-technical-workflows) / [Campaign Classic](https://docs.adobe.com/help/en/campaign-classic/using/monitoring-campaign-classic/data-processing/database-cleanup-workflow.html))
+* Database cleanup technnical workflow ([Campaign Standard](https://docs.adobe.com/help/en/campaign-standard/using/administrating/application-settings/technical-workflows.html#list-of-technical-workflows) / [Campaign Classic](https://docs.adobe.com/help/en/campaign-classic/using/monitoring-campaign-classic/data-processing/database-cleanup-workflow.html))
 * [Database maintenance guide](https://docs.adobe.com/content/help/en/campaign-classic/using/monitoring-campaign-classic/database-maintenance/recommendations.html) (Campaign Classic)
 * [Database performance troubleshooting](https://docs.adobe.com/content/help/en/campaign-classic/using/monitoring-campaign-classic/troubleshooting/database-performances.html) (Campaign Classic)
 * [Database-related options](https://docs.adobe.com/help/en/campaign-classic/using/installing-campaign-classic/appendices/configuring-campaign-options.html#database) (Campaign Classic)
