@@ -31,6 +31,7 @@ user-guide-title: Control Panel Help
 + Performance monitoring {#performance-monitoring}
   + [About perfomance monitoring](performance-monitoring/using/about-performance-monitoring.md)
   + [Database monitoring](performance-monitoring/using/database-monitoring.md)
+  + [Email alerting](performance-monitoring/using/email-alerting.md)
 + Instances settings (Campaign Classic) {#instances-settings}
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
