@@ -25,7 +25,8 @@ Control Panel allows you to monitor the database usage for each of your Campaign
 
 >[!NOTE]
 >
->To receive notifications when one of your databases is reaching its capacity, please subscribe to
+>To receive notifications when one of your databases is reaching its capacity, please subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md
+)
 1. Open the **[!UICONTROL Performance Monitoring]** card, then select the **[!UICONTROL Databases]** tab.
 
 1. Select the desired instance from the **[!UICONTROL Instance List]**.

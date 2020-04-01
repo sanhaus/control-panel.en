@@ -1,6 +1,6 @@
 ---
 title: Email alerting
-description: Learn how to receive email notifications in case of issues on your Campaign instances
+description: Learn how to receive email notifications in case of issues with your Campaign instances
 ---
 
 # Email alerting {#email-alerting}
