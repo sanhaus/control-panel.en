@@ -1,21 +1,32 @@
 ---
 title: Email alerting
-description: Learn how to xxxx in the Control Panel
+description: Learn how to receive email notifications in case of issues with your Campaign instances
 ---
 
 # Email alerting {#email-alerting}
 
+## About email alerts {#about-email-alerts}
+
 In order to provide greater flexibility to your work, Control Panel is equipped with real-time email alerting functionality.
 
-After subscribing to email alerts, Control Panel will notify you about system issues and recommend the actions to take.
+To subscribe to these alerts follow these steps:
 
->[!NOTE]
->
->Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
+1. Click the **[!UICONTROL Alerting notifications]** button available from any location in the Control Panel, then click **[!UICONTROL Subscribe]**.
 
-The list of notifications is as follows:
+![](assets/subscribing.png)
 
-* xxxx
-* xxxx
-* xxxx
-* xxxx
+1. An email is sent to confirm your subscription.
+
+![](assets/email_subscription.png)
+
+After subscribing, Control Panel will notify about system issues and recommend the actions to take.
+
+Email alerts are sent to everyone who has signed up for **all instances** that they are Administrators of.
+
+The list of alerts is as follows:
+
+* **SFTP storage usage**: One of your SFTP servers has reached 80% or more of its capacity. See [SFTP storage management](../../sftp/using/sftp-storage-management.md).
+
+* **Database usage**: One of your instances' databases has reached 80% or more of its capacity. See [Database monitoring](../../performance-monitoring/using/database-monitoring.md).
+
+* **SSL certificate expiration**: One of your subdomains' SSL certificates has expired or is going to expire in  60 days or less. See [Monitoring subdomains' SSL certificates](../../subdomains-certificates/using/monitoring-ssl-certificates.md).
