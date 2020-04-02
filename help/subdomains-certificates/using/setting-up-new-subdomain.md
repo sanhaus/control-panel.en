@@ -99,12 +99,13 @@ At the end of the process, the subdomains will be configured to work with your A
  >
  >By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
 
+You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain details]** and **[!UICONTROL Sender info]** buttons.
 
-You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain Details]** button.
+![](assets/detail_buttons.png)
 
-![](assets/subdomain_details_general.png)
+![](assets/subdomain_details.png)
 
-![](assets/subdomains_details_senderinfo.png)
+![](assets/sender_info.png)
 
 >[!IMPORTANT]
 >
