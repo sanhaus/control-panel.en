@@ -22,10 +22,6 @@ It is essential that you regularly monitor available space for each of your SFTP
 
 ## Accessing storage capacity information {#accessing-storage-capacity-information}
 
-The **[!UICONTROL Top utilized SFTP disk capacity]** section in the header includes the top three most utilized servers attached to the instances that you have Admin access to. This information is available in every tab of the SFTP card.
-
-![](assets/control_panel_topspace.png)
-
 Information about the space used by all instances you have access to is available in the **[!UICONTROL Storage]** tab of the SFTP card. It is updated on each page refresh.
 
 ![](assets/control_panel_space.png)
