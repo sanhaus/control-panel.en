@@ -31,7 +31,11 @@ Control Panel allows you to monitor the database usage for each of your Campaign
 
     ![](assets/databases_dashboard.png)
 
-    The lower area provides a graphical representation of the database utilization over the last 7 days. You can change the displayed period of time using the available filters in the upper-right corner.
+    The lower area provides a graphical representation of the minimum, average and maximum database utilization over the last 7 days, as well as the 90% database utilization threshold, represented by a red dotted curve.
+
+    You can change the displayed period of time using the available filters in the upper-right corner.
+
+    For better readability, you can also highlight one or several curves in the graph. To do this, select them from the  **[!UICONTROL Aggregation Type]** legend.
 
     Hovering over the graph allows you to get detailed information on the selected period of time.
 
@@ -39,7 +43,7 @@ Control Panel allows you to monitor the database usage for each of your Campaign
 
 >[!NOTE]
 >
->You can also receive notifications when one of your databases is reaching its capacity. To do this, subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md)
+>Additionally to this dashboard, you can receive notifications when one of your databases is reaching its capacity. To do this, subscribe to [email alerts](../../performance-monitoring/using/email-alerting.md)
 
 ## Preventing database overload {#preventing-database-overload}
 
