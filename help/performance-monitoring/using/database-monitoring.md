@@ -5,6 +5,10 @@ description: Learn how to monitor your Campaign database in the Control Panel
 
 # Database monitoring {#database-monitoring}
 
+>[!IMPORTANT]
+>
+>Database monitoring from the Control Panel will be available by the end of April.
+
 ## About instances databases {#about-instances-databases}
 
 According to your contract, each of your Campaign instances is provisioned with a specific amount of database space.
