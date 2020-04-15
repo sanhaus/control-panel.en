@@ -10,10 +10,6 @@ description: Learn how to manage TXT records for domain ownership verification.
 >title="Managing TXT records"
 >abstract="Some services like Google require that you add a TXT record to your domain settings in order to verify that you own the domain."
 
->[!IMPORTANT]
->
->TXT records managements from the Control Panel will be available by the end of April.
-
 ## About TXT records {#about-txt-records}
 
 TXT records are a type of DNS records used to provide text information about a domain, that can be read by external sources.

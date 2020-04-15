@@ -5,10 +5,6 @@ description: Learn how to receive email notifications in case of issues with you
 
 # Email alerting {#email-alerting}
 
->[!IMPORTANT]
->
->Email alerting from the Control Panel will be available by the end of April.
-
 ## About email alerts {#about-email-alerts}
 
 In order to provide greater flexibility to your work, Control Panel is equipped with real-time email alerting functionality.
