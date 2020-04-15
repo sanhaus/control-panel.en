@@ -12,16 +12,14 @@ Here you’ll find information about the latest Control Panel releases.
 
 ## April 2020 {#april-2020}
 
-New capabilities will be released in Campaign Control Panel in April:
-
 **Google TXT record management**
-Add Google TXT site verification record to all your subdomains used to send emails to GMAIL addresses through the Campaign Control Panel.
+Add Google TXT site verification record to all your subdomains used to send emails to Gmail addresses through the Campaign Control Panel.
 
 **Database space monitoring**
-Campaign Control Panel will be equipped with database monitoring capabilities, allowing you to view your database space utilization on-demand and over time.
+Campaign Control Panel is equipped with database monitoring capabilities, allowing you to view your database space utilization on-demand and over time.
 
 **Email alerting**
-Campaign Control Panel will be equipped with real-time email alerting capabilities, allowing you to login to the Control Panel and sign up to receive alerts when your system is at risk of performance deterioration, or an action is required to ensure high performance for the future.  
+Campaign Control Panel is equipped with real-time email alerting capabilities, allowing you to login to the Control Panel and sign up to receive alerts when your system is at risk of performance deterioration, or an action is required to ensure high performance for the future.  
 
 ## January 2020 {#january-2020}
 

@@ -8,13 +8,17 @@ title: Product documentation
 
 ## What's new
 
-* [SSL certificates monitoring](subdomains-certificates/using/monitoring-ssl-certificates.md)
+* [Google TXT record management](subdomains-certificates/using/managing-txt-records.md)
 
-    Learn how to monitor your subdomains' SSL certificates expiration date
+    Add Google TXT site verification record to all your subdomains used to send emails to Gmail addresses through the Campaign Control Panel.
 
-* [Subdomains delegation](subdomains-certificates/using/subdomains-branding.md)
+* [Database space monitoring](performance-monitoring/using/database-monitoring.md)
 
-    Learn more about subdomains branding and the key steps to delegate subdomains to Adobe using the Control Panel
+    View your database space utilization on-demand and over time.
+
+* [Email alerting](performance-monitoring/using/email-alerting.md)
+
+    Login to the Control Panel and sign up to receive alerts when your system is at risk of performance deterioration, or an action is required to ensure high performance for the future.  
 
 ## Additional Resources {#additional-resources}
 
