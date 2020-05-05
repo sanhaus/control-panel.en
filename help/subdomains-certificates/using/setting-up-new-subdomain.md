@@ -79,7 +79,11 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Once the subdomain is submitted, the Control Panel will check that it correctly point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
 
-1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc. You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
+1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc.
+
+    Eventually, the Deliverability team will be notified about the new subdomain, in order to audit it. The audit process can take up to 3-10 business days after the subdomain has been delegated. The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
+
+    You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
 
     ![](assets/subdomain7.png)
 
@@ -91,13 +95,11 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 At the end of the process, the subdomains will be configured to work with your Adobe Campaign instance and the elements below will be created:
 
-* **The subdomain** with the following **DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
+* **The subdomain with the following DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
 * **Additional subdomains** to host mirror, resource, tracking pages and domain key,
 * **Inboxes**: Sender, Error, Reply-to.
 
- >[!NOTE]
- >
- >By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
+    By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
 
 You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain details]** and **[!UICONTROL Sender info]** buttons.
 
@@ -106,12 +108,6 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 ![](assets/subdomain_details.png)
 
 ![](assets/sender_info.png)
-
->[!IMPORTANT]
->
->Following the processing stage, you should verify with Adobe Customer Care that an audit request has been filed for the deliverability team to audit the new subdomain that has been created. The audit process can take up to 3  10 business days after the subdomain has been delegated.
->
->The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
 
 ## Use of CNAMEs {#use-cnames}
 
