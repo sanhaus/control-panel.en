@@ -58,7 +58,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
     * **key type** (RSA)
     * **key length**
     * **real name**
-    * **comment** (adding a label in the comment field allows you to identify the key easily Control Panel).
+    * **comment** (adding a label in the comment field allows you to identify the key easily in Control Panel).
     * **email**
     * **expiration** (date or "0" for no expiration date)
     * **passphrase**
@@ -69,7 +69,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     `gpg -a --export <fingerprint>`
 
-1. Access the **[!UICONTROL GPG Keys]** tab, then select the instance on which you want to install the public key.
+1. To install the public key into Control Panel, access the **[!UICONTROL GPG Keys]** tab, then select the desired instance.
 
 1. Click the **[!UICONTROL Install Key]** button.
 
@@ -83,7 +83,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     ![](assets/gpg_install_paste.png)
 
-2. Click the **!UICONTROL Install Key]** button.gog
+1. Click the **!UICONTROL Install Key]** button.
 
 Once the public key is installed, it displays in the list. You can use the **...** button to download it or copy its fingerpint.
 
