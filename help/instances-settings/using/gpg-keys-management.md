@@ -1,13 +1,9 @@
 ---
 title: GPG keys management
-description: Learn how to manage GPG keys to encrypt and decrypt data within Campaign Classic.
+description: Learn how to manage GPG keys to encrypt and decrypt data within Adobe Campaign.
 ---
 
 # GPG keys management {#gpg-keys-management}
-
->[!IMPORTANT]
->
->This feature is available for Campaign Classic instances only.
 
 ## About GPG encryption {about-gpg-encryption}
 
@@ -17,9 +13,9 @@ To implement GPG encryption with Campaign, GPG keys must be installed on a marke
 
 You will then be able to:
 
-* **Encrypt sent data**: Campaign Classic sends data out, and encrypts them with the installed public key.
+* **Encrypt sent data**: Adobe Campaign sends data out, and encrypts them with the installed public key.
 
-* **Decrypt incoming data**: Campaign Classic receives data that has been encrypted from an outside system using a public key shared by the Control Panel. Campaign Classic decrypts the data using a private key that is generated from the Control Panel.
+* **Decrypt incoming data**: Adobe Campaign receives data that has been encrypted from an outside system using a public key shared by the Control Panel. Adobe Campaign decrypts the data using a private key that is generated from the Control Panel.
 
 ## Monitoring GPG keys
 
@@ -32,7 +28,6 @@ The list displays all encryption and decryption GPG keys that have been installe
 * **[!UICONTROL Name]**: The name that has been defined when installing or generating the key.
 * **[!UICONTROL Use case]**: This column specifies if the key has been installed for data encryption, or generated to allow data decrypt ion.
 * **[!UICONTROL Fingerprint]**: the fingerprint of the key.
-* **[!UICONTROL Expires]**: The key's expiration date. Note that Control Panel will notifies you 30 days, then 10 days before a key expires.
 
 As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
 
@@ -40,29 +35,39 @@ As a best practice, we recommend that you remove any key that you do not need an
 
 >[!IMPORTANT]
 >
->Before removing a key, make sure that it is not used in any Campaign Classic workflow to prevent them from failing.
+>Before removing a key, make sure that it is not used in any Adobe Campaign workflow to prevent them from failing.
 
 ## Encrypting data {#encrypting-data}
 
-Control Panel allows you to encrypt data coming out from your Campaign Classic instance.
+Control Panel allows you to encrypt data coming out from your Adobe Campaign instance.
 
 To do this, you need to generate a GPG key pair from a PGP encryption tool, then install the public key into Control Panel. You will then be able to encrypt data before sending it from you instance. To do this, follow these steps:
 
-1. Generate a GPG public/private key pair using a PGP encryption tool. Required parameters are:
-
-    ```
-    key_type="RSA",
-    key_length=3072,
-    name_real="Campaign Operations",
-    name_comment=<User provided label>,
-    name_email="CampaignOperations@adobe.com",
-    expire_date="date" / "0" (no expiration date),
-    passphrase="passphrase"
-    ```
+1. Generate a GPG public/private key pair using a PGP encryption tool. To do this, install a PGP utility or GNuPG software.
 
     >[!NOTE]
-    >   
-    >In order to identify the public key easily in Campaign workflows, include a comment in the key's UID field with the name of your choice.
+    >
+    >Open source free sotware to generate keys is available. However, make sure you follow the guidelines of your organization and use the PGP utility recommended by your IT/Security organization.
+
+1. Once the utility is installed, run the command below, in Mac Terminal or Wndows Machine.
+
+    `gpg --full-generate-key`
+
+1. When prompted, specify the desired parameters for your key. Required parameters are:
+
+    * **key type** (RSA)
+    * **key length**
+    * **real name**
+    * **comment** (adding a label in the comment field allows you to identify the key easily Control Panel).
+    * **email**
+    * **expiration** (date or "0" for no expiration date)
+    * **passphrase**
+
+    ![](assets/gpg_command.png)
+
+1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerpint of the key that you generated.
+
+    `gpg -a --export <fingerprint>`
 
 1. Access the **[!UICONTROL GPG Keys]** tab, then select the instance on which you want to install the public key.
 
@@ -78,22 +83,24 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     ![](assets/gpg_install_paste.png)
 
-2. Click the **!UICONTROL Install Key]** button.
+2. Click the **!UICONTROL Install Key]** button.gog
 
 Once the public key is installed, it displays in the list. You can use the **...** button to download it or copy its fingerpint.
 
 ![](assets/gpg_install_download.png)
 
-The key is then available for use in Campaign Classic workflows. You can use it to encrypt data when using a **[!UICONTROL Data extraction (file)]** activity.
+The key is then available for use in Adobe Campaign workflows. You can use it to encrypt data when using data extraction activities.
 
-For more on this, refer to Campaign Classic documentation:
+For more on this, refer to Adobe Campaign documentations:
 
-* [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)
-* [Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)
+Campaign Classic | Campaign Standard
+---------|----------
+ [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)|[Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)
+ [Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)|[Extract file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/extract-file.html)
 
 ## Decrypting data {#decrypting-data}
 
-Control Panel allows you to decrypt external data coming into your Campaign Classic instances.
+Control Panel allows you to decrypt external data coming into your Adobe Campaign instances.
 
 To do this, you need to generate a GPG key pair directly from the Control Panel.
 
@@ -102,7 +109,7 @@ To do this, you need to generate a GPG key pair directly from the Control Panel.
 
 To generate a key pair in Control Panel, follow these steps:
 
-1. Access the **[!UICONTROL GPG Keys]** tab, then select the desired Campaign Classic instance.
+1. Access the **[!UICONTROL GPG Keys]** tab, then select the desired Adobe Campaign instance.
 
 1. Click the **[!UICONTROL Generate Key]** button.
 
@@ -118,9 +125,11 @@ You can use the **...** button to download the public key or copy its fingerpint
 
 ![](assets/gpg_generate_list.png)
 
-The pubic key is then available to be shared with any external system. Campaign Classic will be able to use the private key in **[!UICONTROL Data loading (file)]** activities to decrypt data that have been encrypted with the public key.
+The pubic key is then available to be shared with any external system. Adobe Campaign will be able to use the private key in data loading activities to decrypt data that have been encrypted with the public key.
 
-For more on this, refer to Campaign Classic documentation:
+For more on this, refer to Adobe Campaign documentations:
 
-* [Unzipping or decrypting a file before processing](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/importing-data.html#unzipping-or-decrypting-a-file-before-processing)
-* [Data loading (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/data-loading--file-.html)
+Campaign Classic | Campaign Standard
+---------|----------
+ [Unzipping or decrypting a file before processing](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/importing-data.html#unzipping-or-decrypting-a-file-before-processing)|[Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
+ [Data loading (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/data-loading--file-.html)|[Load file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/load-file.html)
