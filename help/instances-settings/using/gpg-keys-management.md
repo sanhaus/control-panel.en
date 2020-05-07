@@ -40,6 +40,10 @@ The list displays all encryption and decryption GPG keys that have been installe
     * Warning (yellow) is shown 60 days before.
     * A "Expired" red banner will display once a key expires.
 
+    >[!NOTE]
+    >
+    >Note that no email notification will be sent by Control Panel.
+
 As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
 
 ![](assets/gpg_delete.png)
@@ -68,9 +72,8 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     * **key type**: RSA
     * **key length**: 1024 - 4096 bits
-    * **real name**: Allows to track who created the key pair. Enter a contact name, your department / organization name etc.
-    * **comment**: adding a label in the comment field allows you to identify the key easily in Control Panel keys list.
-    * **email**: When encrypting data, your workflow should specify the recipient (based on the email) so that the correct key is used. The email address to identify the recipient is the one specified in this field.
+    * **real name** and **email address**: Allows to track who created the key pair. Enter a name and email address linked to your organization or department.
+    * **comment**: adding a label to the comment field allows you to identify the key easily in Control Panel keys list.
     * **expiration**: Date or "0" for no expiration date.
     * **passphrase**
 
@@ -106,8 +109,8 @@ For more on this, refer to Adobe Campaign documentations:
 
 Campaign Classic | Campaign Standard
 ---------|----------
- [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)|[Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)
- [Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)|[Extract file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/extract-file.html)
+ [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)|[Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
+ [Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)|[Extract file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/extract-file.html)
 
 ## Decrypting data {#decrypting-data}
 
