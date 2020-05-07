@@ -48,5 +48,3 @@ To delete a record, select it from the records list, then click the remove butto
 >[!NOTE]
 >
 >The only record that you can delete from the DNS records list is the one that you have previously added (in our case the Google TXT record).
-
-
