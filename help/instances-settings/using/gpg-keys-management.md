@@ -34,6 +34,11 @@ The list displays all encryption and decryption GPG keys that have been installe
     ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
 
 * **[!UICONTROL Fingerprint]**: the fingerprint of the key.
+* **[!UICONTROL Expires]**: The key's expiration date. Note that Control Panel will provide visual indications as the key approaches its expiry date:
+
+    * Urgent (red) is shown 30 days before.
+    * Warning (yellow) is shown 60 days before.
+    * A "Expired" red banner will display once a key expires.
 
 As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
 
