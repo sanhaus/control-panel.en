@@ -5,7 +5,7 @@ description: Learn how to manage GPG keys to encrypt and decrypt data within Ado
 
 # GPG keys management {#gpg-keys-management}
 
-## About GPG encryption {about-gpg-encryption}
+## About GPG encryption {#about-gpg-encryption}
 
 GPG encryption allows you to protect your data using a system of public-private keys pairs that follow the [OpenPGP](https://www.openpgp.org/about/standard/) specification.
 
@@ -31,7 +31,7 @@ The list displays all encryption and decryption GPG keys that have been installe
 * **[!UICONTROL Use case]**: This column specifies the key's use case:
 
     ![](assets/gpg_icon_encrypt.png): The key has been installed for data encryption.
-    
+
     ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
 
 * **[!UICONTROL Fingerprint]**: the fingerprint of the key.
