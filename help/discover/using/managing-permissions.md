@@ -49,4 +49,4 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 
 >[!NOTE]
 >
->Once the access is configured, note that the user will have to log out of Adobe Experience CLoud and log back in again, in order to access Control Panel.
+>Once the access is configured, the user will have to log out of Adobe Experience Cloud and log back in again, in order to access Control Panel.
