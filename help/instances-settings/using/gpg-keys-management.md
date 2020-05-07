@@ -31,6 +31,7 @@ The list displays all encryption and decryption GPG keys that have been installe
 * **[!UICONTROL Use case]**: This column specifies the key's use case:
 
     ![](assets/gpg_icon_encrypt.png): The key has been installed for data encryption.
+    
     ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
 
 * **[!UICONTROL Fingerprint]**: the fingerprint of the key.
@@ -38,7 +39,7 @@ The list displays all encryption and decryption GPG keys that have been installe
 
     * Urgent (red) is shown 30 days before.
     * Warning (yellow) is shown 60 days before.
-    * A "Expired" red banner will display once a key expires.
+    * An "Expired" red banner will display once a key expires.
 
     >[!NOTE]
     >
