@@ -8,7 +8,7 @@ Here you’ll find information about the latest Control Panel releases.
 
 >[!NOTE]
 >
->Please note that Control Panel is available for customers hosted on AWS only. No upgrades are required to access Control Panel. Please make sure you are an Admin user to access it.
+>Please note that Control Panel is available for customers hosted on AWS only, except for hybrid environments which are not yet supported. . No upgrades are required to access Control Panel. Please make sure you are an Admin user to access it.
 
 ## April 2020 {#april-2020}
 
