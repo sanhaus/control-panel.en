@@ -7,15 +7,17 @@ description: Learn how to manage GPG keys to encrypt and decrypt data within Ado
 
 ## About GPG encryption {about-gpg-encryption}
 
-GPG encryption allows you to protect your data using a system of public-private keys pairs. Once implemented, you can decrypt incoming data and encrypt your data before transfer occurs, to ensure that they will not be accessed by anyone without a valid matching key pair.
+GPG encryption allows you to protect your data using a system of public-private keys pairs that follow the [OpenPGP](https://www.openpgp.org/about/standard/) specification.
 
-To implement GPG encryption with Campaign, GPG keys must be installed on a marketing instance by an Administrator user directly from the Control Panel.
+Once implemented, you can have incoming data decrypted and outgoing data encrypted before transfer occurs, to ensure that they will not be accessed by anyone without a valid matching key pair.
+
+To implement GPG encryption with Campaign, GPG keys must be installed and/or generated on a marketing instance by an Administrator user directly from the Control Panel.
 
 You will then be able to:
 
-* **Encrypt sent data**: Adobe Campaign sends data out, and encrypts them with the installed public key.
+* **Encrypt sent data**: Adobe Campaign sends data out after encrypting it with the installed public key.
 
-* **Decrypt incoming data**: Adobe Campaign receives data that has been encrypted from an outside system using a public key shared by the Control Panel. Adobe Campaign decrypts the data using a private key that is generated from the Control Panel.
+* **Decrypt incoming data**: Adobe Campaign receives data that has been encrypted from an outside system using a public key downloaded from the Control Panel. Adobe Campaign decrypts the data using a private key that is generated from the Control Panel.
 
 ## Monitoring GPG keys
 
@@ -26,7 +28,11 @@ To access GPG keys installed and generated for your instances, open the **[!UICO
 The list displays all encryption and decryption GPG keys that have been installed and generated for your instances with detailed information on each key:
 
 * **[!UICONTROL Name]**: The name that has been defined when installing or generating the key.
-* **[!UICONTROL Use case]**: This column specifies if the key has been installed for data encryption, or generated to allow data decrypt ion.
+* **[!UICONTROL Use case]**: This column specifies the key's use case:
+
+    ![](assets/gpg_icon_encrypt.png): The key has been installed for data encryption.
+    ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
+
 * **[!UICONTROL Fingerprint]**: the fingerprint of the key.
 
 As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
@@ -43,7 +49,7 @@ Control Panel allows you to encrypt data coming out from your Adobe Campaign ins
 
 To do this, you need to generate a GPG key pair from a PGP encryption tool, then install the public key into Control Panel. You will then be able to encrypt data before sending it from you instance. To do this, follow these steps:
 
-1. Generate a GPG public/private key pair using a PGP encryption tool. To do this, install a PGP utility or GNuPG software.
+1. Generate a public/private key pair using a GPG encryption tool following the [OpenPGP speficification](https://www.openpgp.org/about/standard/). To do this, install a GPG utility or GNuPG software.
 
     >[!NOTE]
     >
@@ -55,12 +61,12 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
 1. When prompted, specify the desired parameters for your key. Required parameters are:
 
-    * **key type** (RSA)
-    * **key length**
-    * **real name**
-    * **comment** (adding a label in the comment field allows you to identify the key easily in Control Panel).
-    * **email**
-    * **expiration** (date or "0" for no expiration date)
+    * **key type**: RSA
+    * **key length**: 1024 - 4096 bits
+    * **real name**: Allows to track who created the key pair. Enter a contact name, your department / organization name etc.
+    * **comment**: adding a label in the comment field allows you to identify the key easily in Control Panel keys list.
+    * **email**: When encrypting data, your workflow should specify the recipient (based on the email) so that the correct key is used. The email address to identify the recipient is the one specified in this field.
+    * **expiration**: Date or "0" for no expiration date.
     * **passphrase**
 
     ![](assets/gpg_command.png)
