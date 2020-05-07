@@ -46,3 +46,7 @@ The Control Panel is available to all Admin users of a Campaign instance. Follow
 1. The list of Admin users displays. Click the **[!UICONTROL Add User]** button to add the desired user.
 
     ![](assets/do-not-localize/control_panel_add_user_6.png)
+
+>[!NOTE]
+>
+>Once the access is configured, note that the user will have to log out of Adobe Experience CLoud and log back in again, in order to access Control Panel.
