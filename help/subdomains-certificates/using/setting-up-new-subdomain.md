@@ -79,6 +79,10 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Once the subdomain is submitted, the Control Panel will check that it correctly point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
 
+    >[!NOTE]
+    >
+    >Note that while subdomain delegation runs, other requests through the Control Panel will be entered into a queue and performed only after the Subdomain Delegation completes, to prevent any performance issues.
+
 1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc.
 
     Eventually, the Deliverability team will be notified about the new subdomain, in order to audit it. The audit process can take up to 3-10 business days after the subdomain has been delegated. The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
@@ -89,9 +93,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     >[!NOTE]
     >
-    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will go directly into the **[!UICONTROL Verified subdomains]** list with the **[!UICONTROL Unverified]** status and a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
-    >
-    >Note that while subdomain delegation runs, other requests through the Control Panel will be entered into a queue and performed only after the Subdomain Delegation completes, to prevent any performance issues.
+    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will stay into the **[!UICONTROL Processing]** list with a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
 
 At the end of the process, the subdomains will be configured to work with your Adobe Campaign instance and the elements below will be created:
 
