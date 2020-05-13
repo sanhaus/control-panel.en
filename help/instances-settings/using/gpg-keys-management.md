@@ -63,9 +63,9 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     >[!NOTE]
     >
-    >Open source free sotware to generate keys is available. However, make sure you follow the guidelines of your organization and use the PGP utility recommended by your IT/Security organization.
+    >Open source free software to generate keys is available. However, make sure you follow the guidelines of your organization and use the GPG utility recommended by your IT/Security organization.
 
-1. Once the utility is installed, run the command below, in Mac Terminal or Wndows Machine.
+1. Once the utility is installed, run the command below, in Mac Terminal or Wndows command.
 
     `gpg --full-generate-key`
 
@@ -106,7 +106,7 @@ Once the public key is installed, it displays in the list. You can use the **...
 
 The key is then available for use in Adobe Campaign workflows. You can use it to encrypt data when using data extraction activities.
 
-For more on this, refer to Adobe Campaign documentations:
+For more on this, refer to Adobe Campaign documentation:
 
 Campaign Classic | Campaign Standard
 ---------|----------
@@ -140,9 +140,9 @@ You can use the **...** button to download the public key or copy its fingerpint
 
 ![](assets/gpg_generate_list.png)
 
-The pubic key is then available to be shared with any external system. Adobe Campaign will be able to use the private key in data loading activities to decrypt data that have been encrypted with the public key.
+The pubic key is then available to be shared with any external system. Adobe Campaign will be able to use the private key in data loading activities to decrypt data that has been encrypted with the public key.
 
-For more on this, refer to Adobe Campaign documentations:
+For more on this, refer to Adobe Campaign documentation:
 
 Campaign Classic | Campaign Standard
 ---------|----------
