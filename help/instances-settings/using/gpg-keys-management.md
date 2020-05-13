@@ -59,7 +59,7 @@ Control Panel allows you to encrypt data coming out from your Adobe Campaign ins
 
 To do this, you need to generate a GPG key pair from a PGP encryption tool, then install the public key into Control Panel. You will then be able to encrypt data before sending it from you instance. To do this, follow these steps:
 
-1. Generate a public/private key pair using a GPG encryption tool following the [OpenPGP speficification](https://www.openpgp.org/about/standard/). To do this, install a GPG utility or GNuPG software.
+1. Generate a public/private key pair using a GPG encryption tool following the [OpenPGP speficification](https://www.openpgp.org/about/standard/). To do this, install a GPG utility or GNuGP software.
 
     >[!NOTE]
     >
@@ -80,7 +80,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     ![](assets/gpg_command.png)
 
-1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerpint of the key that you generated.
+1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerprint of the key that you generated.
 
     `gpg -a --export <fingerprint>`
 
@@ -100,7 +100,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
 1. Click the **!UICONTROL Install Key]** button.
 
-Once the public key is installed, it displays in the list. You can use the **...** button to download it or copy its fingerpint.
+Once the public key is installed, it displays in the list. You can use the **...** button to download it or copy its fingerprint.
 
 ![](assets/gpg_install_download.png)
 
@@ -136,7 +136,7 @@ To generate a key pair in Control Panel, follow these steps:
 
 Once the key pair is generated, the public key displays in the list. Note that decryption key pairs are generated with no expiration date.
 
-You can use the **...** button to download the public key or copy its fingerpint.
+You can use the **...** button to download the public key or copy its fingerprint.
 
 ![](assets/gpg_generate_list.png)
 
