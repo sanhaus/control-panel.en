@@ -36,5 +36,4 @@ user-guide-title: Control Panel Help
   + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
   + [Instance details](instances-settings/using/instance-details.md)
-  + [GPG Keys management](instances-settings/using/gpg-keys-management.md)
 + [FAQ](faq.md)
