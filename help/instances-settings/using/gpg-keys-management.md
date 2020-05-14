@@ -98,7 +98,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     ![](assets/gpg_install_paste.png)
 
-1. Click the **!UICONTROL Install Key]** button.
+1. Click the **[!UICONTROL Install Key]** button.
 
 Once the public key is installed, it displays in the list. You can use the **...** button to download it or copy its fingerprint.
 
@@ -108,10 +108,15 @@ The key is then available for use in Adobe Campaign workflows. You can use it to
 
 For more on this, refer to Adobe Campaign documentation:
 
-Campaign Classic | Campaign Standard
----------|----------
- [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)|[Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
- [Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)|[Extract file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/extract-file.html)
+**Campaign Classic:**
+
+* [Zipping or encrypting a file](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/how-to-use-workflow-data.html#zipping-or-encrypting-a-file)
+ * [Extract file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/extract-file.html)
+
+** Campaign Standard:**
+
+* [Data extraction (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/extraction--file-.html)
+ * [Load file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/load-file.html)
 
 ## Decrypting data {#decrypting-data}
 
@@ -144,7 +149,12 @@ The pubic key is then available to be shared with any external system. Adobe Cam
 
 For more on this, refer to Adobe Campaign documentation:
 
-Campaign Classic | Campaign Standard
----------|----------
- [Unzipping or decrypting a file before processing](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/importing-data.html#unzipping-or-decrypting-a-file-before-processing)|[Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
- [Data loading (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/data-loading--file-.html)|[Load file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/load-file.html)
+**Campaign Classic:**
+
+* [Unzipping or decrypting a file before processing](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/general-operation/importing-data.html#unzipping-or-decrypting-a-file-before-processing)
+* [Data loading (file) activity](https://docs.adobe.com/content/help/en/campaign-classic/using/automating-with-workflows/action-activities/data-loading--file-.html)
+
+**Campaign Standard:**
+
+* [Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
+* [Load file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/load-file.html)
