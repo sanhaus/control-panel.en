@@ -78,7 +78,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
     * **expiration**: Date or "0" for no expiration date.
     * **passphrase**
 
-    ![](assets/gpg_command.png)
+    ![](assets/do-not-localize/gpg_command.png)
 
 1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerprint of the key that you generated.
 
