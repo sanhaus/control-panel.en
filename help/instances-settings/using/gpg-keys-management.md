@@ -19,40 +19,6 @@ You will then be able to:
 
 * **Decrypt incoming data**: Adobe Campaign receives data that has been encrypted from an outside system using a public key downloaded from the Control Panel. Adobe Campaign decrypts the data using a private key that is generated from the Control Panel.
 
-## Monitoring GPG keys
-
-To access GPG keys installed and generated for your instances, open the **[!UICONTROL Instance settings]** card, then select the **[!UICONTROL GPG keys]** tab.
-
-![](assets/gpg_list.png)
-
-The list displays all encryption and decryption GPG keys that have been installed and generated for your instances with detailed information on each key:
-
-* **[!UICONTROL Name]**: The name that has been defined when installing or generating the key.
-* **[!UICONTROL Use case]**: This column specifies the key's use case:
-
-    ![](assets/gpg_icon_encrypt.png): The key has been installed for data encryption.
-
-    ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
-
-* **[!UICONTROL Fingerprint]**: the fingerprint of the key.
-* **[!UICONTROL Expires]**: The key's expiration date. Note that Control Panel will provide visual indications as the key approaches its expiry date:
-
-    * Urgent (red) is shown 30 days before.
-    * Warning (yellow) is shown 60 days before.
-    * An "Expired" red banner will display once a key expires.
-
-    >[!NOTE]
-    >
-    >Note that no email notification will be sent by Control Panel.
-
-As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
-
-![](assets/gpg_delete.png)
-
->[!IMPORTANT]
->
->Before removing a key, make sure that it is not used in any Adobe Campaign workflow to prevent them from failing.
-
 ## Encrypting data {#encrypting-data}
 
 Control Panel allows you to encrypt data coming out from your Adobe Campaign instance.
@@ -65,7 +31,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
     >
     >Open source free software to generate keys is available. However, make sure you follow the guidelines of your organization and use the GPG utility recommended by your IT/Security organization.
 
-1. Once the utility is installed, run the command below, in Mac Terminal or Wndows command.
+1. Once the utility is installed, run the command below, in Mac Terminal or Windows command.
 
     `gpg --full-generate-key`
 
@@ -78,13 +44,13 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
     * **expiration**: Date or "0" for no expiration date.
     * **passphrase**
 
-    ![](assets/gpg_command.png)
+    ![](assets/do-not-localize/gpg_command.png)
 
 1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerprint of the key that you generated.
 
     `gpg -a --export <fingerprint>`
 
-1. To install the public key into Control Panel, access the **[!UICONTROL GPG Keys]** tab, then select the desired instance.
+1. To install the public key into Control Panel, open the **[!UICONTROL Instance settings]** card, then select the **[!UICONTROL GPG keys]** tab and the desired instance.
 
 1. Click the **[!UICONTROL Install Key]** button.
 
@@ -129,7 +95,7 @@ To do this, you need to generate a GPG key pair directly from the Control Panel.
 
 To generate a key pair in Control Panel, follow these steps:
 
-1. Access the **[!UICONTROL GPG Keys]** tab, then select the desired Adobe Campaign instance.
+1. Open the **[!UICONTROL Instance settings]** card, then select the **[!UICONTROL GPG keys]** tab and the desired Adobe Campaign instance.
 
 1. Click the **[!UICONTROL Generate Key]** button.
 
@@ -158,3 +124,37 @@ For more on this, refer to Adobe Campaign documentation:
 
 * [Managing encrypted data](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/workflow-general-operation/importing-data.html#managing-encrypted-data)
 * [Load file activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/load-file.html)
+
+## Monitoring GPG keys
+
+To access GPG keys installed and generated for your instances, open the **[!UICONTROL Instance settings]** card, then select the **[!UICONTROL GPG keys]** tab.
+
+![](assets/gpg_list.png)
+
+The list displays all encryption and decryption GPG keys that have been installed and generated for your instances with detailed information on each key:
+
+* **[!UICONTROL Name]**: The name that has been defined when installing or generating the key.
+* **[!UICONTROL Use case]**: This column specifies the key's use case:
+
+    ![](assets/gpg_icon_encrypt.png): The key has been installed for data encryption.
+
+    ![](assets/gpg_icon_decrypt.png): The key has been generated to allow data decryption.
+
+* **[!UICONTROL Fingerprint]**: the fingerprint of the key.
+* **[!UICONTROL Expires]**: The key's expiration date. Note that Control Panel will provide visual indications as the key approaches its expiry date:
+
+    * Urgent (red) is shown 30 days before.
+    * Warning (yellow) is shown 60 days before.
+    * An "Expired" red banner will display once a key expires.
+
+    >[!NOTE]
+    >
+    >Note that no email notification will be sent by Control Panel.
+
+As a best practice, we recommend that you remove any key that you do not need anymore. To do this, click the **...** button then select **[!UICONTROL Delete Key].**.
+
+![](assets/gpg_delete.png)
+
+>[!IMPORTANT]
+>
+>Before removing a key, make sure that it is not used in any Adobe Campaign workflow to prevent them from failing.
