@@ -14,7 +14,7 @@ Here you’ll find information about the latest Control Panel releases.
 
 **GPG keys management**
 
-Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data. [Read more](instances-settings/using/gpg-keys-management.md)
+Control Panel now allows you to generate a pair of GPG keys, so you can easily decrypt the data coming to Campaign from the outside. In addition, we have added a capability so you can install a public GPG key to encrypt data leaving Campaign. [Read more](instances-settings/using/gpg-keys-management.md)
 
 **Certificate management for CNAME subdomains**
 
