@@ -27,10 +27,6 @@ The SSL certificate renewal process includes 3 steps:
 1. **Installation of the SSL certificate**
     Once you purchase the SSL certificate, you can install it on the desired subdomain.
 
->[!NOTE]
->
->SSL certificates renewal through the Control Panel is available for **fully delegated subdomains** only.
-
 ## Generating a Certificate Signing Request (CSR) {#generating-csr}
 
 >[!CONTEXTUALHELP]
