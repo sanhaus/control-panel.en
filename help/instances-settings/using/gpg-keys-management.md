@@ -25,7 +25,7 @@ Control Panel allows you to encrypt data coming out from your Adobe Campaign ins
 
 To do this, you need to generate a GPG key pair from a PGP encryption tool, then install the public key into Control Panel. You will then be able to encrypt data before sending it from you instance. To do this, follow these steps:
 
-1. Generate a public/private key pair using a GPG encryption tool following the [OpenPGP speficification](https://www.openpgp.org/about/standard/). To do this, install a GPG utility or GNuGP software.
+1. Generate a public/private key pair using a GPG encryption tool following the [OpenPGP specification](https://www.openpgp.org/about/standard/). To do this, install a GPG utility or GNuGP software.
 
     >[!NOTE]
     >
