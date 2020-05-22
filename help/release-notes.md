@@ -12,10 +12,6 @@ Here you’ll find information about the latest Control Panel releases.
 
 ## May 2020 (#may-2020)
 
-**GPG keys management**
-
-Control Panel now allows you to generate a pair of GPG keys, so you can easily decrypt the data coming to Campaign from the outside. In addition, we have added a capability so you can install a public GPG key to encrypt data leaving Campaign. [Read more](instances-settings/using/gpg-keys-management.md)
-
 **Certificate management for CNAME subdomains**
 
 Control Panel now allows you to renew the SSL certificates of your subdomains that have been delegated with the CNAME method. [Read more](subdomains-certificates/using/renewing-subdomain-certificate.md)
