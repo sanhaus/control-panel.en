@@ -10,7 +10,7 @@ title: Product documentation
 
 [Certificate management for CNAME subdomains](subdomains-certificates/using/renewing-subdomain-certificate.md)
 
-    Control Panel now allows you to renew the SSL certificates of your subdomains that have been delegated with the CNAME method.
+Control Panel now allows you to renew the SSL certificates of your subdomains that have been delegated with the CNAME method.
 
 ## Additional Resources {#additional-resources}
 
