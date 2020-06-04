@@ -8,18 +8,27 @@ Here you’ll find information about the latest Control Panel releases.
 
 >[!NOTE]
 >
->Please note that Control Panel is available for customers hosted on AWS only. No upgrades are required to access Control Panel. Please make sure you are an Admin user to access it.
+>Please note that Control Panel is available for customers hosted on AWS only, except for hybrid environments which are not yet supported. No upgrades are required to access Control Panel. Please make sure you are an Admin user to access it.
+
+## May 2020 {#may-2020}
+
+**Certificate management for CNAME subdomains**
+
+Control Panel now allows you to renew the SSL certificates of your subdomains that have been delegated with the CNAME method. [Read more](subdomains-certificates/using/renewing-subdomain-certificate.md)
 
 ## April 2020 {#april-2020}
 
 **Google TXT record management**
-Add Google TXT site verification record to all your subdomains used to send emails to Gmail addresses through the Campaign Control Panel.
+
+Add Google TXT site verification record to all your subdomains used to send emails to Gmail addresses through the Campaign Control Panel. [Read more](subdomains-certificates/using/managing-txt-records.md)
 
 **Database space monitoring**
-Campaign Control Panel is equipped with database monitoring capabilities, allowing you to view your database space utilization on-demand and over time.
+
+Campaign Control Panel is equipped with database monitoring capabilities, allowing you to view your database space utilization on-demand and over time. [Read more](performance-monitoring/using/database-monitoring.md)
 
 **Email alerting**
-Campaign Control Panel is equipped with real-time email alerting capabilities, allowing you to login to the Control Panel and sign up to receive alerts when your system is at risk of performance deterioration, or an action is required to ensure high performance for the future.  
+
+Campaign Control Panel is equipped with real-time email alerting capabilities, allowing you to login to the Control Panel and sign up to receive alerts when your system is at risk of performance deterioration, or an action is required to ensure high performance for the future. [Read more](performance-monitoring/using/email-alerting.md)
 
 ## January 2020 {#january-2020}
 

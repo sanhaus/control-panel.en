@@ -27,10 +27,6 @@ The SSL certificate renewal process includes 3 steps:
 1. **Installation of the SSL certificate**
     Once you purchase the SSL certificate, you can install it on the desired subdomain.
 
->[!NOTE]
->
->SSL certificates renewal through the Control Panel is available for **fully delegated subdomains** only.
-
 ## Generating a Certificate Signing Request (CSR) {#generating-csr}
 
 >[!CONTEXTUALHELP]
@@ -51,7 +47,7 @@ To generate a Certificate Signing Request (CSR), follow these steps:
 
     ![](assets/renewal1.png)
 
-1. Select **[!UICONTROL Generate a CSR]**, then click **[!UICONTROL Next]** to launch the wizard that will guide you through the CSR generation process.
+1. Select **[!UICONTROL 1 - Generate a CSR]**, then click **[!UICONTROL Next]** to launch the wizard that will guide you through the CSR generation process.
 
     ![](assets/renewal2.png)
 
@@ -117,7 +113,7 @@ To install the certificate, follow these steps:
 
     ![](assets/renewal1.png)
 
-1. Click **[!UICONTROL Install SSL Certificate]**, then **[!UICONTROL Next]** to launch the wizard that will guide you through the certificate installation process.
+1. Select **[!UICONTROL 3 - Install Certificate Bundle]**, then click **[!UICONTROL Next]** to launch the wizard that will guide you through the certificate installation process.
 
     ![](assets/install1.png)
 

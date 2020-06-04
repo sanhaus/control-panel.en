@@ -18,6 +18,11 @@ In order to ensure high inbox rates, and low spam rates, some services like Goog
 
 Currently, Gmail is among one of the most popular email addresses providers. In order to ensure good deliverability and successful delivery of emails to Gmail addresses, Adobe Campaign allows you to add special Google site verification TXT records to your subdomains to ensure that it is verified.
 
+Additional resources:
+
+* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/google-txt-record-management.html)
+* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/google-txt-record-management.html)
+
 ## Adding a Google TXT record for a subdomain {#adding-a-google-txt-record}
 
 To add a Google TXT record to your subdomain used to email Gmail addresses, follow these steps:
@@ -37,7 +42,6 @@ To add a Google TXT record to your subdomain used to email Gmail addresses, foll
     ![](assets/txt_txtadded.png)
 
 Once the TXT record is added, you need to have it verified by Google. To do this, navigate to the G Suite Admin tools then launch the verification step (see [G Suite Admin Help](https://support.google.com/a/answer/183895)).
-
 
 To delete a record, select it from the records list, then click the remove button.
 
