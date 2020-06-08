@@ -9,7 +9,7 @@ description: Learn how to get real-time information on the latest and historical
 >
 >Active profiles monitoring from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
 
-## About Active profiles {#about-active-profiles}
+## About active profiles {#about-active-profiles}
 
 According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes.
 
