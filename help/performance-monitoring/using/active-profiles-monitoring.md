@@ -14,7 +14,7 @@ description: Learn how to get real-time information on the latest and historical
 >* Campaign Standard customers hosted on AWS from build number 10368,
 >* Campaign Classic customers from build number 8931.
 >
->If you are using older build, you need to upgrade to use this feature.
+>If you are using a previous build, you need to upgrade to use this feature.
 
 ## About active profiles {#about-active-profiles}
 
