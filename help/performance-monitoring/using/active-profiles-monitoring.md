@@ -8,6 +8,13 @@ description: Learn how to get real-time information on the latest and historical
 >[!IMPORTANT]
 >
 >Active profiles monitoring from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
+>
+>The feature is available to:
+>
+>* Campaign Standard customers hosted on AWS from build number 10368,
+>* Campaign Classic customers from build number 8931.
+>
+>If you are using older build, you need to upgrade to use this feature.
 
 ## About active profiles {#about-active-profiles}
 
