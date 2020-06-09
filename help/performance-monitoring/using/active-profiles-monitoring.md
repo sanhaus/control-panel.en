@@ -37,7 +37,7 @@ To do this, follow these steps:
 
 1. The number of active profiles used by the instance displays, as well as the last time the billing workflow was run on your instance.
 
-![](assets/active-profiles.png)
+![](assets/active-profiles-graph.png)
 
 >[!NOTE]
 >
