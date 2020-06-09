@@ -9,12 +9,7 @@ description: Learn how to get real-time information on the latest and historical
 >
 >Active profiles monitoring from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
 >
->The feature is available to:
->
->* Campaign Standard customers hosted on AWS from build number 10368,
->* Campaign Classic customers from build number 8931.
->
->If you are using a previous build, you need to upgrade to use this feature.
+>The feature is available to customers hosted on AWS from Campaign Standard 10368 build and Campaign Classic 8931 build. If you are using a previous build, you need to upgrade to use this feature.
 
 ## About active profiles {#about-active-profiles}
 
@@ -42,7 +37,7 @@ To do this, follow these steps:
 
 1. The number of active profiles used by the instance displays, as well as the last time the billing workflow was run on your instance.
 
-![](assets/active-profiles-count.png)
+![](assets/active-profiles.png)
 
 >[!NOTE]
 >
