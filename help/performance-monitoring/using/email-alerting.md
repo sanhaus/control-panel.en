@@ -5,8 +5,6 @@ description: Learn how to receive email notifications in case of issues with you
 
 # Email alerting {#email-alerting}
 
-## About email alerts {#about-email-alerts}
-
 In order to provide greater flexibility to your work, Control Panel is equipped with real-time email alerting functionality.
 
 To subscribe to these alerts follow these steps:
