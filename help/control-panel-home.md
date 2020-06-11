@@ -8,13 +8,9 @@ title: Product documentation
 
 ## What's new
 
-* [GPG keys management](instances-settings/using/gpg-keys-management.md)
+[Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
 
-    Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data.
-
-* [Certificate management for CNAME subdomains](subdomains-certificates/using/renewing-subdomain-certificate.md))
-
-    Control Panel now allows you to renew the SSL certificates of your subdomains that have been delegated with the CNAME method.
+Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes.
 
 ## Additional Resources {#additional-resources}
 

@@ -71,7 +71,7 @@ In very rare cases password based authentication is enabled on some SFTP servers
     **Linux and Mac:**
 
     Use the Terminal to generate a public and private key pair:
-    1. Enter this command: `ssh-keygen -t rsa -C <your_email@example.com>`.
+    1. Enter this command: `ssh-keygen -m pem -t rsa -b 2048 -C "your_email@example.com"`.
     1. Provide a name to your key when prompted. If the .ssh directory does not exist, the system will create one for you.
     1. Enter, then re-enter, a passphrase when prompted. It can also be left blank.
     1. A key pair "name" and "name.pub" is created by the system. Search for the "name.pub" file, then open it. It should have alpha-numeric string ending with the email address that you specified.
