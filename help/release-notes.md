@@ -10,6 +10,18 @@ Here you’ll find information about the latest Control Panel releases.
 >
 >Please note that Control Panel is available for customers hosted on AWS only, except for hybrid environments which are not yet supported. No upgrades are required to access Control Panel. Please make sure you are an Admin user to access it.
 
+## June 2020 {#june-2020}
+
+**Active profiles monitoring**
+
+Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes. [Read more](performance-monitoring/using/active-profiles-monitoring.md)
+
+>[!IMPORTANT]
+>
+>Active profiles monitoring from the Control Panel is available in beta, and subject to frequent updates and modifications without notice.
+>
+>The feature is available to customers hosted on AWS from Campaign Standard 10368 build and Campaign Classic 8931 build. If you are using a previous build, you need to upgrade to use this feature.
+
 ## May 2020 {#may-2020}
 
 **Certificate management for CNAME subdomains**
