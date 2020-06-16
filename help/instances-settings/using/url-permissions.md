@@ -13,7 +13,7 @@ description: Learn how to manage URL permissions in the Control Panel
 
 >[!IMPORTANT]
 >
->This feature is available for Campaign Classic instances only.
+>This feature is available for Campaign Classic instances only, from build 8850. If you are using a previous build, you need to upgrade to use this feature.
 
 ## About URL permissions {#about-url-permissions}
 
