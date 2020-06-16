@@ -17,13 +17,7 @@ description: Learn how to set up a new subdomain for your campaign instances
 
 ## Full subdomain delegation {#full-subdomain-delegation}
 
-Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow the steps below.
-
- >[!NOTE]
- >
- >If the selected instance has no previously configured subdomains, the first subdomain delegated to Adobe will become the **primary subdomain** for that instance, you will not be able to change it in the future.
- >
- >Reverse DNS records will be created for other subdomains using the primary subdomain. Reply-to, and bounce addresses for other subdomains will be generated from the primary subdomain.
+Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do this, follow these steps:
 
 1. In the **[!UICONTROL Subdomains & Certificates]** card, select the desired production instance, then click **[!UICONTROL Setup new subdomain]**.
 
@@ -32,14 +26,14 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
     >[!NOTE]
     >
     >Subdomain delegation is available for **production** instances only.
+    >
+    >If the selected instance has no previously configured subdomains, the first subdomain delegated to Adobe will become the **primary subdomain** for that instance, you will not be able to change it in the future. Reverse DNS records will be created for other subdomains using the primary subdomain. Reply-to, and bounce addresses for other subdomains will be generated from the primary subdomain.
 
 1. Click **[!UICONTROL Next]** to confirm the full delegation method.
 
-    ![](assets/subdomain3.png)
+    Note that [CNAME](#use-cnames) and custom methods are currently not supported by the Control Panel.
 
-    >[!NOTE]
-    >
-    >[CNAME](#use-cnames) and custom methods are currently not supported by the Control Panel.
+    ![](assets/subdomain3.png)
 
 1. Create the desired subdomain and nameservers in the hosting solution used by your organization. To do this, copy-paste the Adobe Nameserver information displayed in the wizard. For more on how to create a subdomain in a hosting solution, refer to the [tutorial video](https://video.tv.adobe.com/v/30175).
 
@@ -51,7 +45,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     ![](assets/subdomain4.png)
 
-    Once the subdomain is created with the corresponding Adobe nameserver information, click **[!UICONTROL Next]**.
+1. Once the subdomain is created with the corresponding Adobe nameserver information, click **[!UICONTROL Next]**.
 
 1. Select the desired use case for the subdomain:
 
@@ -69,7 +63,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     >[!NOTE]
     >
-    >If you are using Campaign Classic, Control Panel allows you to see what RT/MID instances are connected to the Marketing instance that you are working with. For more on this, refer to [this section](../../instances-settings/using/instance-details.md).
+    >If you are using Campaign Classic, Control Panel allows you to see what RT/MID instances are connected to the Marketing instance that you are working with. For more on this, refer to the [Instance Details](../../instances-settings/using/instance-details.md) section.
 
 1. Enter the subdomain that you created into your hosting solution, then click **[!UICONTROL Submit]**.
 
@@ -79,25 +73,31 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
 1. Once the subdomain is submitted, the Control Panel will check that it correctly point to Adobe NS records and that the Start of Authority (SOA) record does not exist for this subdomain.
 
-1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc. You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
-
-    ![](assets/subdomain7.png)
-
     >[!NOTE]
-    >
-    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will go directly into the **[!UICONTROL Verified subdomains]** list with the **[!UICONTROL Unverified]** status and a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
     >
     >Note that while subdomain delegation runs, other requests through the Control Panel will be entered into a queue and performed only after the Subdomain Delegation completes, to prevent any performance issues.
 
+1. If the checks are successful, the Control Panel will start setting up the subdomain with DNS records, additional URLs, inboxes etc.
+
+    ![](assets/subdomain7.png)
+
+    Eventually, the **Deliverability team** will be notified about the new subdomain, in order to audit it. The audit process can take up to 10 business days after the subdomain has been delegated. The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
+
+    You can get more details on the configuration progress by clicking the **[!UICONTROL Process details]** button.
+
+    ![](assets/subdomain_audit.png)
+
+    >[!NOTE]
+    >
+    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will stay into the **[!UICONTROL Processing]** list with a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
+
 At the end of the process, the subdomains will be configured to work with your Adobe Campaign instance and the elements below will be created:
 
-* **The subdomain** with the following **DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
+* **The subdomain with the following DNS records**: SOA, MX, CNAME(s), DKIM, SPF, TXT,
 * **Additional subdomains** to host mirror, resource, tracking pages and domain key,
 * **Inboxes**: Sender, Error, Reply-to.
 
- >[!NOTE]
- >
- >By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
+    By default, the "Reply-to" inbox from the Control Panel is configured to clear emails and is not reviewable. If you want to monitor your "Reply-to" inbox for your marketing campaigns, do not use this address.
 
 You can get more details on the subdomain by clicking the **[!UICONTROL Subdomain details]** and **[!UICONTROL Sender info]** buttons.
 
@@ -106,12 +106,6 @@ You can get more details on the subdomain by clicking the **[!UICONTROL Subdomai
 ![](assets/subdomain_details.png)
 
 ![](assets/sender_info.png)
-
->[!IMPORTANT]
->
->Following the processing stage, you should verify with Adobe Customer Care that an audit request has been filed for the deliverability team to audit the new subdomain that has been created. The audit process can take up to 3  10 business days after the subdomain has been delegated.
->
->The checks that are performed include feedback loops and spam complaint loops testing. We therefore do not recommend using the subdomain before the audit has been completed, as it could result in bad subdomain reputation.
 
 ## Use of CNAMEs {#use-cnames}
 
