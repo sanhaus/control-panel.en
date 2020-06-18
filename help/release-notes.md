@@ -64,7 +64,7 @@ For more information, refer to these pages:
 
 *September 16, 2019*
 
-We’ve added new capabilities for Admin users to whitelist IP addresses to connect to Campaign Classic instances.
+We’ve added new capabilities for Admin users to add IP addresses to the allow list in order to connect to Campaign Classic instances.
 Additionally, Admin users can now view the list of Campaign Classic instances and eligibility for build upgrades.
 
 For more information, refer to the [dedicated documentation](instances-settings/using/ip-whitelisting-instance-access.md).

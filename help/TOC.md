@@ -17,7 +17,7 @@ user-guide-title: Control Panel Help
 + SFTP management {#sftp-management}
   + [About SFTP management](sftp/using/about-sftp-management.md)
   + [SFTP storage management](sftp/using/sftp-storage-management.md)
-  + [IP range whitelisting](sftp/using/ip-range-whitelisting.md)
+  + [IP range allow listing](sftp/using/ip-range-whitelisting.md)
   + [Key management](sftp/using/key-management.md)
   + [Logging into your SFTP server](sftp/using/logging-into-sftp-server.md)
   + [Common questions](sftp/using/common-questions.md)
@@ -34,7 +34,7 @@ user-guide-title: Control Panel Help
   + [Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
   + [Email alerting](performance-monitoring/using/email-alerting.md)
 + Instances settings (Campaign Classic) {#instances-settings}
-  + [IP whitelisting for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
+  + [IP allow listing for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
   + [Instance details](instances-settings/using/instance-details.md)
   + [GPG Keys management](instances-settings/using/gpg-keys-management.md)
