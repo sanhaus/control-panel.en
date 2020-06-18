@@ -40,13 +40,13 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
     * **key type**: RSA
     * **key length**: 1024 - 4096 bits
     * **real name** and **email address**: Allows to track who created the key pair. Enter a name and email address linked to your organization or department.
-    * **comment**: adding a label to the comment field allows you to identify the key easily in Control Panel keys list.
+    * **comment**: adding a label to the comment field will help you easily identify the key to use to encrypt your data.
     * **expiration**: Date or "0" for no expiration date.
     * **passphrase**
 
     ![](assets/do-not-localize/gpg_command.png)
 
-1. Once confirmed, the script will generate a key that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerprint of the key that you generated.
+1. Once confirmed, the script will generate a key with its associated fingerprint, that you can export into a file, or paste directly into the Control Panel. To export the file, run this command followed by the fingerprint of the key that you generated.
 
     `gpg -a --export <fingerprint>`
 
@@ -56,7 +56,7 @@ To do this, you need to generate a GPG key pair from a PGP encryption tool, then
 
     ![](assets/gpg_install_button.png)
 
-1. Paste the public key that has been generated from your PGP encryption tool. You can also directly drag and drop the public key file.
+1. Paste the public key that has been generated from your PGP encryption tool. You can also directly drag and drop the public key file that you exported.
 
     >[!NOTE]
     >
