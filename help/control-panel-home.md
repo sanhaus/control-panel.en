@@ -8,17 +8,13 @@ title: Product documentation
 
 ## What's new
 
-<<<<<<< HEAD
-[Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
-=======
 * [GPG keys management](instances-settings/using/gpg-keys-management.md)
 
     Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data.
 
-* [Certificate management for CNAME subdomains](subdomains-certificates/using/renewing-subdomain-certificate.md))
->>>>>>> parent of 98f2fa0... removed gpg keys feature
+* [Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
 
-Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes.
+    Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes.
 
 ## Additional Resources {#additional-resources}
 
