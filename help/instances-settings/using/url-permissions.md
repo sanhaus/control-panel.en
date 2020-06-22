@@ -86,4 +86,4 @@ Keep in mind that, if you delete a URL, your instance will not be able to call i
 
 **I added a new URL, but my instance is still unable to connect to that URL. Why is that?**
 
-In some cases, URLs you try to connect to require whitelisting, password entry or another form of authentication. The Control Panel does not manage additional authentication.
+In some cases, URLs you try to connect to require allow listing, password entry or another form of authentication. The Control Panel does not manage additional authentication.

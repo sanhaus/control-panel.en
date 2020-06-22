@@ -12,6 +12,14 @@ Here you’ll find information about the latest Control Panel releases.
 
 ## June 2020 {#june-2020}
 
+**GPG keys management**
+
+Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data. [Read more](instances-settings/using/gpg-keys-management.md)
+
+**'Whitelist' / 'Blacklist' removal**
+
+Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. Some occurrences of these terms may still exist in the product UI, option names and internal code, but will be replaced in upcoming Campaign releases with ‘blocklist’ and ‘allowlist.’
+
 **Active profiles monitoring**
 
 Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes. [Read more](performance-monitoring/using/active-profiles-monitoring.md)
@@ -23,6 +31,10 @@ Control Panel now allows you to monitor the number of active profiles that are u
 >The feature is available to customers hosted on AWS from Campaign Standard 10368 build and Campaign Classic 8931 build. If you are using a previous build, you need to upgrade to use this feature.
 
 ## May 2020 {#may-2020}
+
+**GPG keys management**
+
+Control Panel now allows you to generate a pair of GPG keys, so you can easily decrypt the data coming to Campaign from the outside. In addition, we have added a capability so you can install a public GPG key to encrypt data leaving Campaign. [Read more](instances-settings/using/gpg-keys-management.md)
 
 **Certificate management for CNAME subdomains**
 
@@ -60,7 +72,7 @@ For more information, refer to these pages:
 
 *September 16, 2019*
 
-We’ve added new capabilities for Admin users to whitelist IP addresses to connect to Campaign Classic instances.
+We’ve added new capabilities for Admin users to add IP addresses to the allow list in order to connect to Campaign Classic instances.
 Additionally, Admin users can now view the list of Campaign Classic instances and eligibility for build upgrades.
 
 For more information, refer to the [dedicated documentation](instances-settings/using/ip-whitelisting-instance-access.md).

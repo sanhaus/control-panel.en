@@ -24,7 +24,7 @@ Let's take the example of the "mybrand.com" domain, that is used to send both tr
 * "info.mybrand.com" subdomain for your transactional communications (purchases confirmation, password reset, etc.),
 * "marketing.mybrand.com" subdomain for your prospecting emailings.
 
-By doing so, you will help preserve the reputation of your domain and other subdomains. For example, if the "marketing.mybrand.com" subdomains ended up being blacklisted by Internet Service Providers due to bad deliverability, this would prevent the whole "mybrand.com" domain and the "info.mybrand.com" subdomain from being blacklisted.
+By doing so, you will help preserve the reputation of your domain and other subdomains. For example, if the "marketing.mybrand.com" subdomains ended up being added to the block list by Internet Service Providers due to bad deliverability, this would prevent the whole "mybrand.com" domain and the "info.mybrand.com" subdomain from being added to the block list.
 
 ## Subdomain delegation methods {#subdomain-delegation-methods}
 
@@ -38,7 +38,7 @@ The table below provides a summary of how these methods work, as well as the imp
 
 | Delegation method | How it works | Level of effort |
 |---|---|---|
-| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the sub-domain and all the DNS records. | Low |
+| **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Campaign.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
 | **CNAME, custom method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Campaign DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
 
 Additional information on domain delegation is available in [this documentation](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).

@@ -54,7 +54,7 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     ![](assets/subdomain5.png)
 
-    **Breaking down your subdomains according to use cases is a best practice for deliverability**. By doing so, the reputation of each subdomain is isolated and protected. For example, if your subdomain for marketing communications ends up being blacklisted by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
+    **Breaking down your subdomains according to use cases is a best practice for deliverability**. By doing so, the reputation of each subdomain is isolated and protected. For example, if your subdomain for marketing communications ends up being added to the block list by Internet Service Providers, your transactional communications subdomain will not be impacted, and will keep being able to send communications.
 
     **You can delegate a subdomains for both Marketing and Transactional use cases**:
 
