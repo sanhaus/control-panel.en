@@ -8,9 +8,9 @@ title: Product documentation
 
 ## What's new
 
-* Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. Some occurrences of these terms may still exist in the product UI, option names and internal code, but will be replaced in upcoming Campaign releases with ‘blocklist’ and ‘allowlist.’
+* Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. [Read more](release-notes.md)
 
-* [Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md): Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes.
+* **Active profiles monitoring**: Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes. [Read more](performance-monitoring/using/active-profiles-monitoring.md)
 
 ## Additional Resources {#additional-resources}
 
