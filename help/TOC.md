@@ -33,8 +33,9 @@ user-guide-title: Control Panel Help
   + [Database monitoring](performance-monitoring/using/database-monitoring.md)
   + [Active profiles monitoring](performance-monitoring/using/active-profiles-monitoring.md)
   + [Email alerting](performance-monitoring/using/email-alerting.md)
-+ Instances settings (Campaign Classic) {#instances-settings}
++ Instances settings {#instances-settings}
   + [IP allow listing for instance access](instances-settings/using/ip-whitelisting-instance-access.md)
   + [URL permissions](instances-settings/using/url-permissions.md)
   + [Instance details](instances-settings/using/instance-details.md)
+  + [GPG Keys management](instances-settings/using/gpg-keys-management.md)
 + [FAQ](faq.md)

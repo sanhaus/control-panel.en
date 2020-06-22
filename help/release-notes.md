@@ -14,7 +14,11 @@ Here you’ll find information about the latest Control Panel releases.
 
 **Subdomain deliverability audit**
 
-    After delegating a new subdomain, Control Panel now allows you to track the audit performed by the Deliverability team. [Read more](subdomains-certificates/using/setting-up-new-subdomain.md)
+After delegating a new subdomain, Control Panel now allows you to track the audit performed by the Deliverability team. [Read more](subdomains-certificates/using/setting-up-new-subdomain.md)
+
+**GPG keys management**
+
+Control Panel now allows you to generate a pair of GPG keys, so you can easily decrypt the data coming to Campaign from the outside. In addition, we have added a capability so you can install a public GPG key to encrypt data leaving Campaign. [Read more](instances-settings/using/gpg-keys-management.md)
 
 **'Whitelist' / 'Blacklist' removal**
 
