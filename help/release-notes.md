@@ -12,6 +12,10 @@ Here you’ll find information about the latest Control Panel releases.
 
 ## June 2020 {#june-2020}
 
+**Subdomain deliverability audit**
+
+    After delegating a new subdomain, Control Panel now allows you to track the audit performed by the Deliverability team. [Read more](subdomains-certificates/using/setting-up-new-subdomain.md)
+
 **'Whitelist' / 'Blacklist' removal**
 
 Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. Some occurrences of these terms may still exist in the product UI, option names and internal code, but will be replaced in upcoming Campaign releases with ‘blocklist’ and ‘allowlist.’
