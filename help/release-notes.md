@@ -12,6 +12,10 @@ Here you’ll find information about the latest Control Panel releases.
 
 ## June 2020 {#june-2020}
 
+**'Whitelist' / 'Blacklist' removal**
+
+Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. Some occurrences of these terms may still exist in the product UI, option names and internal code, but will be replaced in upcoming Campaign releases with ‘blocklist’ and ‘allowlist.’
+
 **Active profiles monitoring**
 
 Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes. [Read more](performance-monitoring/using/active-profiles-monitoring.md)
@@ -60,7 +64,7 @@ For more information, refer to these pages:
 
 *September 16, 2019*
 
-We’ve added new capabilities for Admin users to whitelist IP addresses to connect to Campaign Classic instances.
+We’ve added new capabilities for Admin users to add IP addresses to the allow list in order to connect to Campaign Classic instances.
 Additionally, Admin users can now view the list of Campaign Classic instances and eligibility for build upgrades.
 
 For more information, refer to the [dedicated documentation](instances-settings/using/ip-whitelisting-instance-access.md).

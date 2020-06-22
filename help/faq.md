@@ -89,7 +89,7 @@ The Control Panel empowers product admins to directly manage various settings an
 
 **What are some of the current capabilities of the Control Panel?**
 
-Control Panel allows you to track storage, whitelist IPs, and manage SSH keys for your SFTP servers on your own based on your needs, and other actions.
+Control Panel allows you to track storage, add IPs to the allow list, and manage SSH keys for your SFTP servers on your own based on your needs, and other actions.
 
 For more information, refer to the Control Panel supported actions documentation.
 

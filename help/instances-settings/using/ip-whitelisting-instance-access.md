@@ -1,48 +1,48 @@
 ---
-title: IP whitelisting
-description: Learn more about IP whitelisting in the Control Panel for instance access
+title: IP allow listing
+description: Learn how to add IP addresses to the allow list in the Control Panel for instance access
 ---
 
-# IP whitelisting {#ip-whitelisting}
+# IP allow listing {#ip-whitelisting}
 
 >[!CONTEXTUALHELP]
 >id="cp_instancesettings_iprange"
->title="About IP Whitelisting"
->abstract="Manage IP whitelisting to access your instances."
+>title="About IP allow listing"
+>abstract="Add IP addresses to the allow list to access your instances."
 >additional-url="https://images-tv.adobe.com/mpcv3/045cac99-f948-478e-ae04-f8c161dcb9e2_1568132508.1920x1080at3000_h264.mp4" text="Watch demo video"
 
 >[!IMPORTANT]
 >
 >This feature is available for Campaign Classic instances only.
 
-## About IP whitelisting {#about-ip-whitelisting}
+## About IP allow listing {#about-ip-whitelisting}
 
 By default, your Adobe Campaign Classic instance is not accessible from various IP addresses.
 
-If your IP address has not been whitelisted, you will not be able to login to the instance from this address. The same way, you may not be able to connect an API to your Message Center or Marketing instance if the IP address has not been whitelisted with the instance explicitly.
+If your IP address has not been added to the allow list, you will not be able to login to the instance from this address. The same way, you may not be able to connect an API to your Message Center or Marketing instance if the IP address has not been added to the allow list with the instance explicitly.
 
-Control Panel allows you to set up new connections to your instances by whitelisting IP addresses ranges. To do this, follow the steps described below.
+Control Panel allows you to set up new connections to your instances by adding IP addresses ranges to the allow list. To do this, follow the steps described below.
 
-Once IP addresses whitelisted, you can create and link Campaign operators to them so that the users can access the instance.
+Once IP addresses are on the allow list, you can create and link Campaign operators to them so that the users can access the instance.
 
 ## Best practices {#best-practices}
 
-Make sure you follow the recommendations and limitations below when whitelisting IP addresses in the Control Panel.
+Make sure you follow the recommendations and limitations below when adding IP addresses to the allow list in the Control Panel.
 
 * **Do not enable IP access to all Access Types** if you do not intend the IP address to connect to your RT servers, or AEM security zone.
-* **If you temporarily enabled access to your instance for an IP address**, make sure to remove the IP addresses from the whitelisted IP addresses once you don't it need anymore to connect to your instance.
-* **We do not recommend whitelisting IP addresses of public places** (airports, hotels, etc.). Please use your company VPN address to keep your instance secure at all times.
+* **If you temporarily enabled access to your instance for an IP address**, make sure to remove the IP addresses from the allow list once you don't it need anymore to connect to your instance.
+* **We do not recommend adding IP addresses of public places to the allow list** (airports, hotels, etc.). Please use your company VPN address to keep your instance secure at all times.
 
-## Whitelisting IP addresses for Instance access {#whistelisting-ip-addresses}
+## Adding IP addresses to the allow list for Instance access {#whistelisting-ip-addresses}
 
 >[!CONTEXTUALHELP]
 >id="cp_instancesettings_iprange_add"
 >title="Add New Ip Range"
->abstract="Define the IP range that you want to whitelist to connect to your instance."
+>abstract="Define the IP range that you want to add to the allow list to connect to your instance."
 
-To whitelist IP addresses, follow these steps:
+To add IP addresses to the allow list, follow these steps:
 
-1. Open the **[!UICONTROL Instances Settings card]** to access the IP whitelisting tab, then click **[!UICONTROL Add new IP Range]**.
+1. Open the **[!UICONTROL Instances Settings card]** to access the IP allow listing tab, then click **[!UICONTROL Add new IP Range]**.
 
     >[!NOTE]
     >
@@ -50,12 +50,12 @@ To whitelist IP addresses, follow these steps:
 
     ![](assets/ip_whitelist_list1.png)
 
-1. Fill in the information for the IP Range that you want to whitelist as described below.
+1. Fill in the information for the IP Range that you want to add to the allow list as described below.
 
     ![](assets/ip_whitelist_add1.png)
 
-    * **[!UICONTROL Instance(s)]**: The instances to which the IP addresses will be able to connect. Several instances can be manipulated at the same time. For example, IP whitelisting can be performed on both Production and Stage instances through the same step.
-    * **[!UICONTROL IP Range]**: The IP range that you want to whitelist, in the CIDR format. Note that an IP range cannot overlap an existing whitelisted range. In that case, first delete the range that contains the overlapping IP.
+    * **[!UICONTROL Instance(s)]**: The instances to which the IP addresses will be able to connect. Several instances can be manipulated at the same time. For example, IP allow listing can be performed on both Production and Stage instances through the same step.
+    * **[!UICONTROL IP Range]**: The IP range that you want to add to the allow list, in the CIDR format. Note that an IP range cannot overlap an existing range on the allow list. In that case, first delete the range that contains the overlapping IP.
 
     >[!NOTE]
     >
@@ -63,7 +63,7 @@ To whitelist IP addresses, follow these steps:
     >
     >You can search on the internet for free online tools that will help you convert the IP range that you have in hand to CIDR format.
 
-    * **[!UICONTROL Label]**: The label that will display in the whitelisted IP addresses list.
+    * **[!UICONTROL Label]**: The label that will display in the allow list.
     * **[!UICONTROL Name]**: The name has to be unique for the Access Type, Instance (in case of External API connection) as well as the IP address.
 
 1. Specify the type of access that you want to grant to the IP addresses:
@@ -74,12 +74,12 @@ To whitelist IP addresses, follow these steps:
 
     ![](assets/ip_whitelist_acesstype.png)
 
-1. Click the **[!UICONTROL Save]** button. The IP Range is added to the list of whitelisted IP addresses.
+1. Click the **[!UICONTROL Save]** button. The IP Range is added to the allow list.
 
     ![](assets/ip_whitelist_added.png)
 
-To delete whitelisted IP ranges, select them then click the **[!UICONTROL Delete IP range]** button.
+To delete IP ranges from the allow list, select them then click the **[!UICONTROL Delete IP range]** button.
 
 **Related topics:**
-* [IP whitelisting (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/ip-whitelisting.html)
+* [IP allow listing (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/ip-whitelisting.html)
 * [Linking a security zone to an operator](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Linking_a_security_zone_to_an_operator)
