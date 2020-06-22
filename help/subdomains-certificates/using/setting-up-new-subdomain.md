@@ -87,9 +87,11 @@ Control Panel allows you to fully delegate a subdomain to Adobe Campaign. To do 
 
     ![](assets/subdomain_audit.png)
 
-    >[!NOTE]
-    >
-    >In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will stay into the **[!UICONTROL Processing]** list with a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
+    **Troubleshooting:**
+    
+    * In some cases, delegation goes through, but the subdomain may not be successfully verified. The subdomain will stay into the **[!UICONTROL Configured]** list with a job log providing information on the error. Contact Customer Care if you have trouble resolving the issue.
+    * If the subdomain is being shown as “Unverified” after being configured, launch a new subdomain verification (**...** / **[!UICONTROL Verify subdomain]**). If it still shows the same status, the reason could be that there is some customisation done on recipients schema, which cannot be verified using standard processes. Please try sending out a campaign with that subdomain.
+    * If the subdomain configuration is taking too long (more than 10 business days) at deliverability audit step, please reach out to Customer Care.
 
 At the end of the process, the subdomains will be configured to work with your Adobe Campaign instance and the elements below will be created:
 
