@@ -3,7 +3,7 @@ title: IP range allow listing
 description: Learn how to add IP ranges to the allow list for SFTP servers access
 ---
 
-# IP range allow listing {#ip-range-whitelisting}
+# IP range allow listing {#ip-range-allow-listing}
 
 >[!CONTEXTUALHELP]
 >id="cp_ip_whitelist"

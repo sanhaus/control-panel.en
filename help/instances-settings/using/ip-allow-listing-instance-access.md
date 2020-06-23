@@ -3,7 +3,7 @@ title: IP allow listing
 description: Learn how to add IP addresses to the allow list in the Control Panel for instance access
 ---
 
-# IP allow listing {#ip-whitelisting}
+# IP allow listing {#ip-allow-listing}
 
 >[!CONTEXTUALHELP]
 >id="cp_instancesettings_iprange"
@@ -15,7 +15,7 @@ description: Learn how to add IP addresses to the allow list in the Control Pane
 >
 >This feature is available for Campaign Classic instances only.
 
-## About IP allow listing {#about-ip-whitelisting}
+## About IP allow listing {#about-ip-allow-listing}
 
 By default, your Adobe Campaign Classic instance is not accessible from various IP addresses.
 
@@ -33,7 +33,7 @@ Make sure you follow the recommendations and limitations below when adding IP ad
 * **If you temporarily enabled access to your instance for an IP address**, make sure to remove the IP addresses from the allow list once you don't it need anymore to connect to your instance.
 * **We do not recommend adding IP addresses of public places to the allow list** (airports, hotels, etc.). Please use your company VPN address to keep your instance secure at all times.
 
-## Adding IP addresses to the allow list for Instance access {#whistelisting-ip-addresses}
+## Adding IP addresses to the allow list for Instance access {#adding-ip-addresses-allow-list}
 
 >[!CONTEXTUALHELP]
 >id="cp_instancesettings_iprange_add"
