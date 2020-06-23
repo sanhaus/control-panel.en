@@ -8,9 +8,15 @@ title: Product documentation
 
 ## What's new
 
-* Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. [Read more](release-notes.md)
+* **Subdomain deliverability audit**
 
-* **Active profiles monitoring**: Control Panel now allows you to monitor the number of active profiles that are used by your instances and counted for billing purposes. [Read more](performance-monitoring/using/active-profiles-monitoring.md)
+    After delegating a new subdomain, Control Panel now allows you to track the audit performed by the Deliverability team. [Read more](subdomains-certificates/using/setting-up-new-subdomain.md)
+
+* **GPG keys management**
+
+    Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data. [Read more](instances-settings/using/gpg-keys-management.md)
+
+* Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. [Read more](release-notes.md)
 
 ## Additional Resources {#additional-resources}
 
