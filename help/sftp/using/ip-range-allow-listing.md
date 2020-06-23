@@ -30,7 +30,7 @@ Make sure you follow the recommendations and limitations below when adding IP ad
 * Only **public IP addresses** can be added to the allow list.
 * Make sure to **regularly delete IP addresses** that you don't need anymore from the allow list.
 
-## Adding IP addresses to the allow list {#whitelisting-ip-addresses}
+## Adding IP addresses to the allow list {#adding-ip-addresses-allow-list}
 
 >[!CONTEXTUALHELP]
 >id="cp_sftp_iprange_add"
