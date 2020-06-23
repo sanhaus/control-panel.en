@@ -42,8 +42,8 @@ Key benefits:
         <em>Learn how to monitor your subdomains and their certificates.</em>
     </td>
     <td>
-        <a href="../../instances-settings/using/ip-whitelisting-instance-access.md"><img alt="conditions" src="assets/do-not-localize/instance_settings.png"/></a>
-        <div><a href="../../instances-settings/using/ip-whitelisting-instance-access.md"><strong>Manage your instance settings</strong></a></div>
+        <a href="../../instances-settings/using/ip-allow-listing-instance-access.md"><img alt="conditions" src="assets/do-not-localize/instance_settings.png"/></a>
+        <div><a href="../../instances-settings/using/ip-allow-listing-instance-access.md"><strong>Manage your instance settings</strong></a></div>
         <br/><em>Learn how to manage your instances settings (Campaign Classic only).</em>
     </td>
     <td>
