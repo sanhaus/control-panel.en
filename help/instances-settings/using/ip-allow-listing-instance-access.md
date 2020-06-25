@@ -81,5 +81,5 @@ To add IP addresses to the allow list, follow these steps:
 To delete IP ranges from the allow list, select them then click the **[!UICONTROL Delete IP range]** button.
 
 **Related topics:**
-* [IP allow listing (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/ip-whitelisting.html)
+* [IP allow listing (tutorial video)](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/ip-allow-listing.html)
 * [Linking a security zone to an operator](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html#Linking_a_security_zone_to_an_operator)

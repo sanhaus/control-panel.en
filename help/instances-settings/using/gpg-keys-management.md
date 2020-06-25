@@ -19,6 +19,12 @@ You will then be able to:
 
 * **Decrypt incoming data**: Adobe Campaign receives data that has been encrypted from an outside system using a public key downloaded from the Control Panel. Adobe Campaign decrypts the data using a private key that is generated from the Control Panel.
 
+**Related topics:**
+
+* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/generating-and-installing-gpg-keys.html)
+* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/generating-and-installing-gpg-keys.html)
+
+
 ## Encrypting data {#encrypting-data}
 
 Control Panel allows you to encrypt data coming out from your Adobe Campaign instance.

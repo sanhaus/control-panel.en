@@ -16,8 +16,6 @@ title: Product documentation
 
     Install and/or generate GPG keys on a marketing instance, in order to encrypt data sent from Campaign and to decrypt incoming data. [Read more](instances-settings/using/gpg-keys-management.md)
 
-* Both ‘whitelist’ and ‘blacklist’ terms have been removed from Adobe Campaign documentation. [Read more](release-notes.md)
-
 ## Additional Resources {#additional-resources}
 
 <table>
