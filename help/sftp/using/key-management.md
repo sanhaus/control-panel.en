@@ -35,8 +35,6 @@ In very rare cases password based authentication is enabled on some SFTP servers
 >
 >If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
 
-![](assets/control_panel_passwordexpires.png)
-
 ## Installing the SSH key {#installing-ssh-key}
 
 >[!CONTEXTUALHELP]
