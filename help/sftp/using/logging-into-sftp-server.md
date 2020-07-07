@@ -12,7 +12,7 @@ Before logging in to the server, make sure that:
 * Your SFTP server is **hosted by Adobe**.
 * Your **username** has been setup for the server. You can check this information directly in the Control Panel, in the **Key management** tab from the SFTP Card.
 * You have a **private and public key pair** to login to the SFTP server. Refer to [this section](../../sftp/using/key-management.md) for more on how to add the SSH key.
-* Your **public IP address has been added to the allow list** on the SFTP server. If not, refer to [this section](../../sftp/using/ip-range-whitelisting.md) for more on how to add your IP range to the allow list.
+* Your **public IP address has been added to the allow list** on the SFTP server. If not, refer to [this section](../../sftp/using/ip-range-allow-listing.md) for more on how to add your IP range to the allow list.
 * You have an access to a **SFTP client software**. You can consult your IT department for SFTP client application that they recommend to use, or search for one on the internet if this is allowed by your company policies.
 
 To connect to your SFTP server, follow these steps:

@@ -15,7 +15,7 @@ Adobe recommends that all customers establish connection to their SFTP servers w
 
 The steps to generate a public SSH key and add it to access the SFTP server are decribed below, as well as recommendations regarding  authentication.
 
-Once access to the server is set up, remember to **add the IP addresses that will require access to the server to the allow list** so that you can connect to it. For more on this, refer to [this section](../../instances-settings/using/ip-whitelisting-instance-access.md).
+Once access to the server is set up, remember to **add the IP addresses that will require access to the server to the allow list** so that you can connect to it. For more on this, refer to [this section](../../instances-settings/using/ip-allow-listing-instance-access.md).
 
 >[!NOTE]
 >
@@ -34,8 +34,6 @@ In very rare cases password based authentication is enabled on some SFTP servers
 >[!IMPORTANT]
 >
 >If you password expires, even if there are keys installed on your system, you will not be able to login to your SFTP accounts.
-
-![](assets/control_panel_passwordexpires.png)
 
 ## Installing the SSH key {#installing-ssh-key}
 
