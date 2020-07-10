@@ -39,7 +39,7 @@ Make sure you follow the recommendations and limitations below when adding IP ad
 
 To add an IP range to the allow list, follow these steps:
 
-1. Open the **[!UICONTROL SFTP]** card, then select the **[!UICONTROL IP Whistelisting]** tab.
+1. Open the **[!UICONTROL SFTP]** card, then select the **[!UICONTROL IP Allow Listing]** tab.
 1. The list of IP addresses on the allow list displays for each instance. Select the desired instance from the left-hand side list, then click the **[!UICONTROL Add new IP range]** button.
 
     ![](assets/control_panel_add_range.png)
