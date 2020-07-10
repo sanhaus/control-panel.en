@@ -19,8 +19,8 @@ After delegating a new subdomain, Control Panel now allows you to track the audi
 **GPG keys management** 
 
 Control Panel now allows you to generate a pair of GPG keys, so you can easily decrypt the data coming to Campaign from the outside. In addition, we have added a capability so you can install a public GPG key to encrypt data leaving Campaign. [Read more](instances-settings/using/gpg-keys-management.md)
-* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/generating-and-installing-gpg-keys.html)
-* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/generating-and-installing-gpg-keys.html)
+* [Campaign Standard tutorial videos](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/gpg-key-management/gpg-key-management-overview.html)
+* [Campaign Classic tutorial videos](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/gpg-key-management-overview.html)
 
 **Active profiles monitoring**
 
