@@ -5,33 +5,33 @@ description: Common questions related to the Control Panel
 
 # FAQ {#faq}
 
-## IMS Org ID {#ims-org-id}
+## IMS Organization ID {#ims-org-id}
 
-**What is an IMS Org ID?**
+**What is an IMS Organization ID?**
 
 It is a unique ID that is given to your instance when you first log onto Adobe Experience Cloud. It should be in the format: xxx@AdobeOrg.
 
 For more information, please refer to [Adobe Experience Cloud documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
 
-**Where can I find my IMS Org ID?**
+**Where can I find my IMS Organization ID?**
 
-One way is to navigate to [Adobe Experience Cloud Home](https://experiencecloud.adobe.com/) > **[!UICONTROL Administration]**. You will find your IMS Org ID at the bottom of Administration **[!UICONTROL Quick Access]** section. You can find more detailed information in the [Adobe Experience Cloud documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
+One way is to navigate to [Adobe Experience Cloud Home](https://experiencecloud.adobe.com/) > **[!UICONTROL Administration]**. You will find your IMS Organization ID at the bottom of Administration **[!UICONTROL Quick Access]** section. You can find more detailed information in the [Adobe Experience Cloud documentation](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html).
 
-The other way is to launch **Admin Console**. Your IMS Org ID will be visible in your URL, it should look something like: https://adminconsole.adobe.com/xxx@AdobeOrg/overview.
+The other way is to launch **Admin Console**. Your IMS Organization ID will be visible in your URL, it should look something like: https://adminconsole.adobe.com/xxx@AdobeOrg/overview.
 
-**Why do I need to know my IMS Org ID?**
+**Why do I need to know my IMS Organization ID?**
 
 In order for you to manage settings for your instance, we want to ensure that you're getting the right information for the right instance in case you're using multiple instances for your company.
 
-**What if I have multiple IMS Org IDs?**
+**What if I have multiple IMS Organization IDs?**
 
-You may have more than one IMS Org ID if you have access to multiple Adobe solutions. In this case, the correct IMS Org ID you should be using is the one you see under your Adobe Campaign instance.
+You may have more than one IMS Organization ID if you have access to multiple Adobe solutions. In this case, the correct IMS Organization ID you should be using is the one you see under your Adobe Campaign instance.
 
 >[!NOTE]
 >
->If you have the same IMS Org ID for Adobe Campaign and Adobe Analytics, this is great. Having one IMS Org ID between Analytics and Campaign is a requirement if you plan to integrate the solutions to take advantage of complex use cases such as shopping cart abandonment (for AA + AC).
+>If you have the same IMS Organization ID for Adobe Campaign and Adobe Analytics, this is great. Having one IMS Organization ID between Analytics and Campaign is a requirement if you plan to integrate the solutions to take advantage of complex use cases such as shopping cart abandonment (for AA + AC).
 >
->If you have different IMS Org IDs for Adobe Campaign and Adobe Analytics, please reach out to Customer Care to get them aligned.
+>If you have different IMS Organization IDs for Adobe Campaign and Adobe Analytics, please reach out to Customer Care to get them aligned.
 
 **How can I know that my Adobe Campaign instance is hosted on AWS or not?**
 

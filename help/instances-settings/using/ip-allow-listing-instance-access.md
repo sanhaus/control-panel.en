@@ -46,7 +46,7 @@ To add IP addresses to the allow list, follow these steps:
 
     >[!NOTE]
     >
-    >If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS ORG ID is not associated with any Adobe Campaign Classic instances
+    >If the Instance Settings card is not visible on the homepage of the Control Panel, this means your IMS Organization ID is not associated with any Adobe Campaign Classic instances
 
     ![](assets/ip_whitelist_list1.png)
 
