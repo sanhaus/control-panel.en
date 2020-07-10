@@ -21,9 +21,8 @@ You will then be able to:
 
 **Related topics:**
 
-* [Campaign Standard tutorial videos](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/generating-and-installing-gpg-keys.html)
+* [Campaign Standard tutorial videos](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/gpg-key-management/gpg-key-management-overview.html)
 * [Campaign Classic tutorial videos](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/gpg-key-management-overview.html)
-
 
 ## Encrypting data {#encrypting-data}
 
