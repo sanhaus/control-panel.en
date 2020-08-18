@@ -1,6 +1,7 @@
 ---
 title: About SFTP management
 description: Learn more about SFTP management in the Control Panel
+testing: SSECD-836
 ---
 
 # About SFTP management {#about-sftp-management}
