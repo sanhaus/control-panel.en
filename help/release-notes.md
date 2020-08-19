@@ -4,7 +4,7 @@ title: Control Panel releases
 
 # Control Panel releases {#control-panel-releases}
 
-Here you’ll find information about the latest Control Panel releases.
+Here you will find information about the latest Control Panel releases.
 
 >[!NOTE]
 >
