@@ -106,7 +106,7 @@ To generate a key pair in Control Panel, follow these steps:
 
     ![](assets/gpg_generate.png)
 
-1. Specify the name of the key, then click **!UICONTROL Generate Key]**. This name will help you identify the key to use for decryption in Campaign workflows
+1. Specify the name of the key, then click **[!UICONTROL Generate Key]**. This name will help you identify the key to use for decryption in Campaign workflows
 
     ![](assets/gpg_generate_name.png)
 
