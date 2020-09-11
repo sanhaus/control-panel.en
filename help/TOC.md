@@ -2,10 +2,10 @@
 product: adobe campaign
 sub-product: control panel
 audience: end-user
-user-guide-title: Control Panel Help
+user-guide-title: Control Panel Guide
 ---
 
-# Control Panel Help {#using}
+# Control Panel Guide {#using}
 
 + [Product documentation](control-panel-home.md)
 + [Release notes](release-notes.md)
