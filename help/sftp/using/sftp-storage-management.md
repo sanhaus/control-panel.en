@@ -17,8 +17,8 @@ It is essential that you regularly monitor available space for each of your SFTP
 
 **Related topics:**
 
-* [Campaign Standard tutorial video](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/administrating/control-panel/monitoring-server-capacity-allow-listing-adding-ssh-key.html)
-* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/monitoring-server-capacity-allow-listing-adding-ssh-key.html)
+* [Campaign Standard tutorial video](hhttps://docs.adobe.com/content/help/en/campaign-standard-learn/control-panel/sftp-management/monitoring-server-capacity.html)
+* [Campaign Classic tutorial video](https://docs.adobe.com/content/help/en/campaign-classic-learn/control-panel/sftp-management/monitoring-server-capacity.html)
 
 ## Accessing storage capacity information {#accessing-storage-capacity-information}
 
